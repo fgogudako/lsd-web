@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="grad_10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E1C2B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#170B16;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow_10" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#grad_10)" rx="12"/>
+  <rect x="25" y="25" width="750" height="450" fill="none" stroke="#D4AF37" stroke-width="2" stroke-dasharray="8 6" rx="8" opacity="0.6"/>
+  
+  <g transform="translate(400, 150)" filter="url(#shadow_10)">
+    <circle cx="0" cy="0" r="50" fill="#D4AF37" opacity="0.15"/>
+    <circle cx="0" cy="0" r="40" fill="#D4AF37" opacity="0.9"/>
+    <path d="M-22 14 L22 14 L22 9 L-22 9 Z M-18 7 L-12 -14 L-7 7 Z M-5 7 L0 -14 L5 7 Z M7 7 L12 -14 L18 7 Z M-22 -16 L0 -30 L22 -16 Z" fill="#8B1E1E"/>
+  </g>
+
+  <rect x="250" y="220" width="300" height="34" rx="17" fill="#D4AF37" opacity="0.2" />
+  <text x="400" y="243" fill="#D4AF37" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" letter-spacing="1.5">BẢO TÀNG CHỨNG TÍCH CHIẾN TRANH</text>
+
+  <text x="400" y="295" fill="#FFFFFF" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold" text-anchor="middle">Góc nhìn từ chứng tích lịch sử</text>
+  
+  <text x="400" y="335" fill="#E5E7EB" font-family="'Segoe UI', sans-serif" font-size="15" text-anchor="middle">28 Võ Văn Tần, Phường Võ Thị Sáu, Quận 3, TP.HCM</text>
+
+  <rect x="180" y="380" width="440" height="36" rx="6" fill="#000000" opacity="0.35"/>
+  <text x="400" y="403" fill="#D1D5DB" font-family="'Segoe UI', sans-serif" font-size="13" font-style="italic" text-anchor="middle">[Vị trí placeholder ảnh - Sẽ thay bằng ảnh hiện vật Bảo tàng sau]</text>
+</svg>

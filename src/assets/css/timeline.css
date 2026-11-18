@@ -1,0 +1,445 @@
+/* ==========================================================================
+   TIMELINE.CSS - CHẾ ĐỘ SLIDE THUYẾT TRÌNH & INTERACTIVE TIMELINE Ở ĐÁY
+   Hỗ trợ trình chiếu mượt mà, chuyển trang giai đoạn, thanh tiến trình ở dưới.
+   ========================================================================== */
+
+/* Khung trình chiếu Slide tổng thể */
+.presentation-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 640px;
+  position: relative;
+}
+
+/* Thanh điều hướng nhanh trên đầu Slide */
+.slide-header-bar {
+  background: #FDFCF9;
+  border-bottom: 1px solid var(--border-light);
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.slide-stage-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary-red-light);
+  border: 1px solid #E5BDBF;
+  color: var(--primary-red);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.slide-assignee-badge {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background: #F1ECE4;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.slide-controls-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slide-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  color: var(--dark-charcoal);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition-normal);
+}
+
+.slide-btn:hover:not(:disabled) {
+  background: var(--primary-red);
+  color: #FFF;
+  border-color: var(--primary-red);
+}
+
+.slide-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Khu vực nội dung chính của Slide */
+.slide-body {
+  padding: 2rem 2.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.slide-title-area {
+  margin-bottom: 1.5rem;
+}
+
+.slide-title-area h3 {
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+  color: var(--primary-red);
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+
+.slide-period-meta {
+  font-size: 0.95rem;
+  color: var(--gold-accent);
+  font-weight: 600;
+}
+
+/* Các Tab nội dung chi tiết bên trong 1 Giai đoạn */
+.stage-tabs-nav {
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px solid #EFEAE2;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.stage-tab-btn {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  position: relative;
+  transition: var(--transition-normal);
+  white-space: nowrap;
+}
+
+.stage-tab-btn:hover {
+  color: var(--primary-red);
+  background: rgba(139, 30, 30, 0.04);
+}
+
+.stage-tab-btn.active {
+  color: var(--primary-red);
+  font-weight: 700;
+}
+
+.stage-tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--primary-red);
+  border-radius: 3px 3px 0 0;
+}
+
+/* Nội dung của từng Tab */
+.stage-tab-pane {
+  display: none;
+  animation: fadeIn 0.25s ease;
+}
+
+.stage-tab-pane.active-pane {
+  display: block;
+}
+
+/* Bố cục 2 cột (Nội dung & Ảnh hiện vật) */
+.stage-content-split {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.stage-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stage-list li {
+  position: relative;
+  padding-left: 26px;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #333333;
+}
+
+.stage-list li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--gold-accent);
+  font-size: 0.9rem;
+}
+
+/* Thẻ hiện vật thu nhỏ trong Slide */
+.artifact-preview-card {
+  background: #FDFCF9;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.artifact-preview-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: #D6BCBC;
+}
+
+.artifact-preview-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 10px;
+  border: 1px solid #ECE7DE;
+}
+
+.artifact-preview-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary-red);
+  margin-bottom: 4px;
+}
+
+.artifact-preview-loc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.artifact-preview-desc {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+/* Hộp ghi nhớ kiến thức trọng tâm */
+.keynotes-box {
+  background: linear-gradient(135deg, #FFFDF8, #FBF5E5);
+  border: 1px solid #E5D6A5;
+  border-left: 4px solid var(--gold-accent);
+  border-radius: var(--radius-sm);
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.keynotes-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #7A5B0B;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.keynotes-list {
+  padding-left: 20px;
+  font-size: 0.94rem;
+  color: #4A3E2A;
+}
+
+.keynotes-list li {
+  margin-bottom: 6px;
+}
+
+/* ==========================================================================
+   INTERACTIVE TIMELINE Ở ĐÁY SLIDE (THE BOTTOM DOCKED TIMELINE BAR)
+   ========================================================================== */
+
+.bottom-timeline-bar {
+  background: #201A18;
+  color: #FFFFFF;
+  padding: 1.2rem 1.5rem 1.4rem;
+  border-top: 2px solid var(--gold-accent);
+}
+
+.timeline-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: #B5ADA5;
+  margin-bottom: 14px;
+}
+
+.timeline-key-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.key-badge {
+  background: #3B3330;
+  color: #F0ECE6;
+  border: 1px solid #554A45;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-family: monospace;
+}
+
+/* Dãy các điểm mốc thời gian */
+.timeline-track-wrapper {
+  position: relative;
+  margin: 0 1rem;
+}
+
+.timeline-track-line {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #473C37;
+  z-index: 1;
+}
+
+.timeline-progress-fill {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold-accent), #FFDD6B);
+  z-index: 2;
+  transition: width 0.35s ease;
+  width: 0%;
+}
+
+.timeline-nodes {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-node {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #A39B94;
+  outline: none;
+  padding: 0;
+  transition: var(--transition-normal);
+  max-width: 110px;
+}
+
+.node-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #2D2522;
+  border: 2px solid #554842;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #D1C9C2;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  transition: var(--transition-normal);
+}
+
+.timeline-node:hover .node-dot {
+  border-color: var(--gold-accent);
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+
+.node-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.node-sub {
+  font-size: 0.72rem;
+  opacity: 0.75;
+  text-align: center;
+  margin-top: 2px;
+}
+
+/* Trạng thái Active của nút trên Timeline */
+.timeline-node.active .node-dot {
+  background: var(--primary-red);
+  border-color: var(--gold-accent);
+  color: #FFE699;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+  transform: scale(1.2);
+}
+
+.timeline-node.active .node-label {
+  color: #FFDD6B;
+}
+
+.timeline-node.completed .node-dot {
+  background: #473B25;
+  border-color: var(--gold-accent);
+  color: #EBD9B2;
+}
+
+/* ==========================================================================
+   RESPONSIVE CHO TIMELINE & SLIDE
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .stage-content-split {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .artifact-preview-card {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 680px) {
+  .node-sub {
+    display: none;
+  }
+  .node-dot {
+    width: 26px;
+    height: 26px;
+    font-size: 0.7rem;
+  }
+  .node-label {
+    font-size: 0.75rem;
+  }
+  .slide-stage-badge {
+    font-size: 0.8rem;
+  }
+  .timeline-info-row {
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+  }
+}
