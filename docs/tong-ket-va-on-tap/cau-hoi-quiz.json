@@ -118,6 +118,19 @@
   },
   {
     "id": 10,
+    "stage": "1969-1973",
+    "question": "Chiến thắng 'Hà Nội - Điện Biên Phủ trên không' diễn ra trong bao nhiêu ngày đêm vào tháng 12/1972?",
+    "options": [
+      "10 ngày đêm",
+      "12 ngày đêm",
+      "15 ngày đêm",
+      "20 ngày đêm"
+    ],
+    "answer": 1,
+    "explanation": "Chiến thắng lịch sử diễn ra trong 12 ngày đêm (từ 18/12 đến 30/12/1972), đánh bại cuộc tập kích chiến lược bằng pháo đài bay B-52 của đế quốc Mỹ, buộc Mỹ phải ký kết Hiệp định Paris."
+  },
+  {
+    "id": 11,
     "stage": "1973-1975",
     "question": "Nghị quyết Trung ương 21 (7/1973) khẳng định con đường cách mạng miền Nam là gì?",
     "options": [
@@ -130,7 +143,7 @@
     "explanation": "Nghị quyết Trung ương 21 khẳng định trong bất kỳ tình hình nào, con đường cách mạng miền Nam vẫn là con đường bạo lực cách mạng, chủ động tiến công và phản công."
   },
   {
-    "id": 11,
+    "id": 12,
     "stage": "1973-1975",
     "question": "Kế hoạch chiến lược được Bộ Chính trị đề ra cuối năm 1974 - đầu năm 1975 chủ trương giải phóng miền Nam trong thời gian nào?",
     "options": [
@@ -143,7 +156,7 @@
     "explanation": "Bộ Chính trị đề ra kế hoạch giải phóng miền Nam trong hai năm 1975 - 1976, đồng thời nhấn mạnh nếu thời cơ đến vào đầu hoặc cuối năm 1975 thì lập tức giải phóng miền Nam trong năm 1975."
   },
   {
-    "id": 12,
+    "id": 13,
     "stage": "1973-1975",
     "question": "Thắng lợi Phước Long đầu năm 1975 cung cấp căn cứ thực tiễn quan trọng nào cho Bộ Chính trị?",
     "options": [
@@ -156,7 +169,7 @@
     "explanation": "Thắng lợi Phước Long cho thấy quân đội Sài Gòn suy yếu và Mỹ không có khả năng can thiệp quân sự trở lại như trước, giúp Bộ Chính trị đánh giá thời cơ chiến lược."
   },
   {
-    "id": 13,
+    "id": 14,
     "stage": "1973-1975",
     "question": "Trình tự các chiến dịch lớn trong Cuộc Tổng tiến công và nổi dậy mùa Xuân 1975 là gì?",
     "options": [
@@ -169,7 +182,46 @@
     "explanation": "Cuộc Tổng tiến công diễn ra qua các chiến dịch Tây Nguyên, Huế - Đà Nẵng và Chiến dịch Hồ Chí Minh, với tốc độ phát triển nhanh và liên tục."
   },
   {
-    "id": 14,
+    "id": 15,
+    "stage": "1973-1975",
+    "question": "Chiến thắng quân sự nào đầu năm 1975 được coi là 'đòn trinh sát chiến lược', chứng minh quân đội Sài Gòn suy yếu rõ rệt và Mỹ khó có khả năng can thiệp trở lại?",
+    "options": [
+      "Chiến thắng Phước Long (Đường 14)",
+      "Chiến thắng Buôn Ma Thuột",
+      "Chiến thắng Nông Sơn - Trung Phước",
+      "Chiến thắng Xuân Lộc"
+    ],
+    "answer": 0,
+    "explanation": "Chiến thắng Đường 14 - Phước Long (06/01/1975) đã mở toang cánh cửa phía Bắc Sài Gòn, củng cố thêm cơ sở thực tiễn để Bộ Chính trị hạ quyết tâm giải phóng hoàn toàn miền Nam trong năm 1975."
+  },
+  {
+    "id": 16,
+    "stage": "1973-1975",
+    "question": "Trận đánh then chốt nào mở màn cho Chiến dịch Tây Nguyên thắng lợi, tạo ra sự sụp đổ dây chuyền của địch vào tháng 3/1975?",
+    "options": [
+      "Trận Pleiku",
+      "Trận Kon Tum",
+      "Trận Buôn Ma Thuột",
+      "Trận Cheo Reo"
+    ],
+    "answer": 2,
+    "explanation": "Đòn tiến công bất ngờ, hiểm hóc giải phóng thị xã Buôn Ma Thuột (10/03/1975) đã đánh trúng 'tử huyệt' của hệ thống phòng thủ địch ở Tây Nguyên, buộc địch tháo chạy hỗn loạn."
+  },
+  {
+    "id": 17,
+    "stage": "1973-1975",
+    "question": "Ai là tác giả của bức điện mật lịch sử: 'Thần tốc, thần tốc hơn nữa, táo bạo, táo bạo hơn nữa, tranh thủ từng phút, từng giờ, xốc tới mặt trận, giải phóng miền Nam...' ngày 07/04/1975?",
+    "options": [
+      "Đồng chí Lê Duẩn",
+      "Đại tướng Võ Nguyên Giáp",
+      "Đại tướng Văn Tiến Dũng",
+      "Đồng chí Nguyễn Văn Linh"
+    ],
+    "answer": 1,
+    "explanation": "Đại tướng Võ Nguyên Giáp - Bí thư Quân ủy Trung ương kiêm Bộ trưởng Bộ Quốc phòng đã ký bức điện khẩn lịch sử truyền đi mệnh lệnh chiến đấu hừng hực cho toàn quân tiến vào giải phóng Sài Gòn."
+  },
+  {
+    "id": 18,
     "stage": "Tổng kết",
     "question": "Yếu tố nào sau đây là một trong bốn nguyên nhân thắng lợi của cuộc kháng chiến chống Mỹ, cứu nước?",
     "options": [
@@ -182,7 +234,7 @@
     "explanation": "Miền Bắc vừa xây dựng, bảo vệ hậu phương xã hội chủ nghĩa vừa chi viện liên tục cho tiền tuyến miền Nam; đây là một nguyên nhân quan trọng của thắng lợi."
   },
   {
-    "id": 15,
+    "id": 19,
     "stage": "Tổng kết",
     "question": "Ý nghĩa lịch sử cơ bản của thắng lợi năm 1975 đối với Việt Nam là gì?",
     "options": [
