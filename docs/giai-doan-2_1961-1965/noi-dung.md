@@ -10,13 +10,6 @@
 ---
 
 ## 1. Bối cảnh lịch sử
-> *Gợi ý định hướng nghiên cứu:*
-> - Sau thất bại của phong trào Đồng Khởi, Mỹ chuyển sang áp dụng chiến lược chiến tranh nào? Tổng thống Mỹ nào đề xướng?
-> - Bản chất và công thức của "Chiến tranh đặc biệt" là gì? (Quân đội nào tác chiến? Dưới sự chỉ huy của ai? Dựa vào vũ khí gì?)
-> - Âm mưu của kế hoạch Staley-Taylor và Johnson-McNamara? Quốc sách "Ấp chiến lược" đóng vai trò như thế nào?
-> - Các chiến thuật cơ động mới của Mỹ ("trực thăng vận", "thiết xa vận") được áp dụng ra sao?
-
-**Nội dung bạn tự soạn:**
 
 Bước sang năm 1961, trước thất bại của hình thức thực dân mới điển hình, đế quốc Mỹ dưới thời Tổng thống John F. Kennedy chuyển hướng áp dụng chiến lược **"Chiến tranh đặc biệt"** (*Special War Strategy*) — một bộ phận trong chiến lược toàn cầu "Phản ứng linh hoạt". Đây là hình thức chiến tranh dựa trên công thức: **"cố vấn và vũ khí Mỹ + quân chủ lực Việt Nam Cộng hòa"**, nhằm dùng người Việt đánh người Việt dưới sự chỉ huy và hỗ trợ của người Mỹ.
 
@@ -32,13 +25,6 @@ Về mặt chiến thuật, địch áp dụng hai phương thức cơ động m
 ---
 
 ## 2. Chủ trương & Đường lối của Đảng
-> *Gợi ý định hướng nghiên cứu:*
-> - Các chỉ thị của Bộ Chính trị (tháng 1/1961 và 2/1962) đã xác định phương châm tác chiến ra sao?
-> - Phân tích nội dung và ý nghĩa chiến lược của phương châm tác chiến trên **3 vùng chiến lược** (rừng núi, nông thôn đồng bằng, đô thị)?
-> - Phân tích phương thức tiến công địch bằng **"ba mũi giáp công"** (quân sự, chính trị, binh vận)?
-> - Quyết tâm đánh Mỹ tại Hội nghị Trung ương 9 (12/1963)?
-
-**Nội dung bạn tự soạn:**
 
 Trước âm mưu và hành động leo thang của địch, Đảng đã kịp thời đề ra đường lối lãnh đạo sắc bén, chủ động và sáng tạo.
 
@@ -65,18 +51,11 @@ Tháng 12-1963, Trung ương Đảng họp Hội nghị lần thứ 9, xác đ�
 ---
 
 ## 3. Giá trị thực tiễn & Thắng lợi tiêu biểu
-> *Gợi ý định hướng nghiên cứu:*
-> - Phong trào phá "Ấp chiến lược" của đồng bào miền Nam đã diễn ra quyết liệt như thế nào?
-> - Diễn biến và ý nghĩa lịch sử to lớn của **Chiến thắng Ấp Bắc (2/1/1963)**? Tại sao nói trận Ấp Bắc chứng minh ta có thể đánh bại chiến thuật "trực thăng vận" và "thiết xa vận"?
-> - Các chiến dịch tiến công liên tiếp cuối 1964 - đầu 1965: Bình Giã, Ba Gia, Đồng Xoài đã làm sụp đổ hoàn toàn chiến lược "Chiến tranh đặc biệt" như thế nào?
-> - Phong trào đấu tranh chính trị ở các đô thị (học sinh, sinh viên, Phật giáo)?
-
-**Nội dung bạn tự soạn:**
 
 Dưới sự lãnh đạo đúng đắn của Đảng, quân và dân miền Nam đã liên tiếp giành được những thắng lợi to lớn, từng bước đánh bại hoàn toàn chiến lược "Chiến tranh đặc biệt".
 
 **Chiến thắng Ấp Bắc (2/1/1963):**
-Đây là thắng lợi quân sự vang dội đầu tiên của quân và dân miền Nam, diễn ra tại Mỹ Tho. Trận Ấp Bắc đã thể hiện rõ sức mạnh tổng hợp của đấu tranh **vũ trang kết hợp với đấu tranh chính trị và binh vận**, đồng thời **bác bỏ trên thực tế** hiệu quả của hai chiến thuật "trực thăng vận" và "thiết xa vận" — vũ khí chủ lực mà địch đang đặt nhiều kỳ vọng. Sau trận này, một phong trào "tìm Mỹ mà đánh, lùng ngụy mà diệt" lan rộng khắp chiến trường miền Nam.
+Đây là thắng lợi quân sự vang dội đầu tiên của quân và dân miền Nam, diễn ra tại Mỹ Tho. Trận Ấp Bắc đã thể hiện rõ sức mạnh tổng hợp của đấu tranh **vũ trang kết hợp với đấu tranh chính trị và binh vận**, đồng thời **bác bỏ trên thực tế** hiệu quả của hai chiến thuật "trực thăng vận" và "thiết xa vận" — vũ khí chủ lực mà địch đang đặt nhiều kỳ vọng. Sau trận này, phong trào **"Thi đua Ấp Bắc, giết giặc lập công"** lan rộng khắp chiến trường miền Nam.
 
 **Phong trào phá "Ấp chiến lược":**
 Từ đầu năm 1963, quân dân miền Nam đẩy mạnh phong trào phá ấp chiến lược với phương châm **"bám đất, bám làng", "một tấc không đi, một ly không rời"**, trực tiếp làm sụp đổ "quốc sách" then chốt của địch, trả lại quyền làm chủ cho nhân dân ở khắp vùng nông thôn.
@@ -85,9 +64,9 @@ Từ đầu năm 1963, quân dân miền Nam đẩy mạnh phong trào phá ấp
 Song song với mặt trận quân sự, phong trào đấu tranh chính trị ở các đô thị bùng phát mạnh mẽ từ giữa năm 1963, lôi cuốn đông đảo học sinh, sinh viên, trí thức, công nhân và đồng bào Phật giáo tham gia, góp phần làm rung chuyển bộ máy kẻ thù từ bên trong.
 
 **Các chiến dịch Bình Giã, Ba Gia, Đồng Xoài (1964-1965):**
-Được sự chi viện tích cực từ miền Bắc, quân và dân miền Nam tiến hành hàng loạt chiến dịch: **Bình Giã (12/1964), Ba Gia (5/1965), Đồng Xoài (7/1965)**. Các chiến thắng này đã sáng tạo và khẳng định vững chắc phương châm tác chiến **"2 chân, 3 mũi, 3 vùng"**, đồng thời đánh sập toàn bộ ba trụ cột của chiến lược "Chiến tranh đặc biệt": ngụy quân-ngụy quyền, hệ thống ấp chiến lược, và sự ổn định ở các đô thị.
+Được sự chi viện tích cực từ miền Bắc, quân và dân miền Nam tiến hành hàng loạt chiến dịch: **Bình Giã (12/1964), Ba Gia (5/1965), Đồng Xoài (6/1965)**. Các chiến thắng này đã sáng tạo và khẳng định vững chắc phương châm tác chiến **"2 chân, 3 mũi, 3 vùng"**, đồng thời đánh sập toàn bộ ba trụ cột của chiến lược "Chiến tranh đặc biệt": ngụy quân-ngụy quyền, hệ thống ấp chiến lược, và sự ổn định ở các đô thị.
 
-Đến đầu năm 1965, chiến lược "Chiến tranh đặc biệt" của đế quốc Mỹ đã **hoàn toàn phá sản**, tạo cơ sở vững chắc để cách mạng miền Nam tiếp tục tiến lên giai đoạn mới.
+Đến giữa năm 1965, chiến lược "Chiến tranh đặc biệt" của đế quốc Mỹ đã **hoàn toàn phá sản**, tạo cơ sở vững chắc để cách mạng miền Nam tiếp tục tiến lên giai đoạn mới.
 
 *Nguồn tài liệu trích dẫn (ref.md):*
 - Đoạn **"Vượt qua khó khăn, cách mạng miền Nam tiếp tục có bước phát triển mới..."** → ref.md, dòng 359-375 (Trang 202 - 205 trong giáo trình)
@@ -109,7 +88,7 @@ Song song với mặt trận quân sự, phong trào đấu tranh chính trị �
 - **Vị trí / Phòng trưng bày tại Bảo tàng:** Sân ngoài trời
 - **Tên file ảnh đính kèm:** ![Trực thăng UH-1 Huey trưng bày tại bảo tàng](./images/truc-thang-uh1-huey.jpg)
 - **Mô tả hiện vật & Ý nghĩa lịch sử:** 
-  Chiếc trực thăng **Bell UH-1 Iroquois** (thường được gọi là "Huey"), mang dòng chữ **"UNITED STATES ARMY"**, đang được trưng bày nguyên trạng tại sân ngoài trời Bảo tàng. Đây là loại trực thăng chủ lực trong chiến thuật **"trực thăng vận"** — phương thức cơ động tốc độ cao mà quân đội Mỹ kỳ vọng sẽ tạo ra lợi thế quyết định. Phía trước thân máy bay vẫn còn nguyên cụm bệ phóng rocket, minh chứng cho hỏa lực tối tân mà địch triển khai. Tuy nhiên, chính chiếc trực thăng này và những đồng loại của nó đã bị quân dân ta đánh bại thực tế tại **Trận Ấp Bắc (2/1/1963)**: dù địch huy động nhiều chiếc UH-1 đổ bộ quân, bộ đội và du kích địa phương vẫn bình tĩnh, kiên quyết chiến đấu, bắn rơi nhiều máy bay, chứng minh rằng ý chí và trí tuệ của chiến tranh nhân dân hoàn toàn có thể đánh bại vũ khí tối tân của đế quốc.
+  Chiếc trực thăng **Bell UH-1 Iroquois** (thường được gọi là "Huey"), mang dòng chữ **"UNITED STATES ARMY"**, đang được trưng bày nguyên trạng tại sân ngoài trời Bảo tàng. Đây là loại trực thăng chủ lực trong chiến thuật **"trực thăng vận"** — phương thức cơ động tốc độ cao mà quân đội Mỹ kỳ vọng sẽ tạo ra lợi thế quyết định. Phía trước thân máy bay vẫn còn nguyên cụm bệ phóng rocket, minh chứng cho hỏa lực tối tân mà địch triển khai. Trong **Trận Ấp Bắc (2/1/1963)**, quân giải phóng đã bắn rơi nhiều trực thăng UH-1 khi địch huy động chúng để đổ bộ quân, chứng minh rằng ý chí và trí tuệ của chiến tranh nhân dân hoàn toàn có thể đánh bại ưu thế vũ khí tối tân của đế quốc.
 
 ---
 
@@ -118,8 +97,8 @@ Song song với mặt trận quân sự, phong trào đấu tranh chính trị �
 1. **Chiến lược "Chiến tranh đặc biệt" (1961-1965):** Công thức = cố vấn + vũ khí Mỹ + quân chủ lực Việt Nam Cộng hòa; được chia thành 2 kế hoạch: **Staley-Taylor (1961-1963)** và **Johnson-McNamara (1964-1965)**; chiến thuật chủ đạo là "trực thăng vận" và "thiết xa vận".
 2. **Chỉ thị của Bộ Chính trị (1/1961 và 2/1962):** Xác định phương châm **ba vùng chiến lược** (rừng núi, nông thôn đồng bằng, đô thị) + **ba mũi giáp công** (quân sự, chính trị, binh vận); đánh dấu bước chuyển từ khởi nghĩa từng phần sang chiến tranh cách mạng.
 3. **Nghị quyết Trung ương 9 (12/1963):** Khẳng định đấu tranh vũ trang "đóng vai trò quyết định trực tiếp" — văn kiện thể hiện rõ nhất quyết tâm đánh Mỹ của Đảng trong giai đoạn này.
-4. **Chiến thắng Ấp Bắc (2/1/1963):** Thắng lợi quân sự mang tính bước ngoặt, lần đầu tiên đánh bại chiến thuật trực thăng vận và thiết xa vận trên thực địa; khai sinh phong trào "tìm Mỹ mà đánh, lùng ngụy mà diệt".
-5. **Phá sản hoàn toàn chiến tranh đặc biệt (đầu 1965):** Sau chuỗi chiến dịch Bình Giã, Ba Gia, Đồng Xoài — cả 3 trụ cột (ngụy quân, ấp chiến lược, đô thị) của địch đều bị lung lay tận gốc → Mỹ buộc phải chuyển sang chiến lược "Chiến tranh cục bộ".
+4. **Chiến thắng Ấp Bắc (2/1/1963):** Thắng lợi quân sự mang tính bước ngoặt, lần đầu tiên đánh bại chiến thuật trực thăng vận và thiết xa vận trên thực địa; khai sinh phong trào **"Thi đua Ấp Bắc, giết giặc lập công"** trên toàn chiến trường miền Nam.
+5. **Phá sản hoàn toàn chiến tranh đặc biệt (giữa 1965):** Sau chuỗi chiến dịch Bình Giã (12/1964), Ba Gia (5/1965), Đồng Xoài (6/1965) — cả 3 trụ cột (ngụy quân, ấp chiến lược, đô thị) của địch đều bị lung lay tận gốc → Mỹ buộc phải chuyển sang chiến lược "Chiến tranh cục bộ".
 
 ---
 
