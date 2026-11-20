@@ -10,23 +10,16 @@
 ---
 
 ## 1. Bối cảnh lịch sử
-> *Gợi ý định hướng nghiên cứu:*
-> - Sau thất bại của Chiến tranh cục bộ, Tổng thống Nixon lên nắm quyền đã đề ra học thuyết gì và áp dụng chiến lược nào ở miền Nam?
-> - Bản chất và âm mưu thâm độc của "Việt Nam hóa chiến tranh" và "Đông Dương hóa chiến tranh"? (Công thức: Rút quân Mỹ, dùng hỏa lực Mỹ + quân đội Sài Gòn làm lá chắn để "dùng người Việt đánh người Việt").
-> - Thủ đoạn ngoại giao chia rẽ phong trào cộng sản quốc tế của Mỹ?
-> - Sự kiện Chủ tịch Hồ Chí Minh qua đời (9/1969) và quyết tâm của toàn Đảng, toàn dân ta biến đau thương thành hành động cách mạng?
 
-**Nội dung bạn tự soạn:**
-
-Sau thất bại của “Chiến tranh cục bộ”, tháng 1-1969, Tổng thống Mỹ Richard Nixon lên nắm quyền và đề ra chiến lược toàn cầu mới mang tên "Học thuyết Nixon" với ba nguyên tắc trụ cột là "cùng chia sẻ", "sức mạnh của Mỹ" và "sẵn sàng thương lượng". Tại Việt Nam, học thuyết này được cụ thể hóa bằng chiến lược *Việt Nam hóa chiến tranh*. 
+Sau thất bại của “Chiến tranh cục bộ”, tháng 1-1969, Tổng thống Mỹ Richard Nixon lên nắm quyền. Tháng 7-1969, Nixon đề ra chiến lược toàn cầu mới mang tên "Học thuyết Nixon" với ba nguyên tắc trụ cột là "cùng chia sẻ", "sức mạnh của Mỹ" và "sẵn sàng thương lượng". Tại Việt Nam, học thuyết này được cụ thể hóa bằng chiến lược *Việt Nam hóa chiến tranh*. 
 
 Mục tiêu của chiến lược này là "dùng người Việt đánh người Việt", từng bước rút quân đội chiến đấu Mỹ về nước, giảm xương máu của lính Mỹ, trong khi vẫn tiếp tục hỗ trợ tối đa về hỏa lực, không quân, và kinh tế cho chính quyền Sài Gòn. Các biện pháp gồm củng cố ngụy quyền, xây dựng ngụy quân đông và hiện đại, ráo riết bình định, đánh phá miền Bắc để chặn chi viện. Chiến lược này mở rộng thành “Đông Dương hóa chiến tranh”. Điển hình là cuộc đảo chính ở Campuchia (3-1970), cuộc hành quân lấn chiếm Cánh Đồng Chum, và chiến dịch “Lam Sơn 719” (1971).
 
-Về quốc tế cộng sản, Mỹ sử dụng thủ đoạn ngoại giao hòng cắt giảm nguồn viện trợ chủ yếu của Việt Nam. Về phía Trung Quốc, Mỹ tìm mọi cách thỏa hiệp, tiêu biểu là chuyến thăm Trung Quốc của tổng thống Nixon vào năm 1972 và sự ra đời của Thông cáo Thượng Hải, bình thường hóa quan hệ Mỹ-Trung. Về Liên Xô, Mỹ tiến tới chính sách hòa hoãn, giảm căng thẳng, bổ trợ bởi các cuộc đàm phán như SALT I - Hạn chế Vũ khí Chiến lược lần thứ nhất được ký kết vào ngày 26-5-1972.
+Về quốc tế cộng sản, Mỹ sử dụng thủ đoạn ngoại giao hòng cắt giảm nguồn viện trợ chủ yếu của Việt Nam. Về phía Trung Quốc, Mỹ tìm mọi cách thỏa hiệp, tiêu biểu là chuyến thăm Trung Quốc của tổng thống Nixon vào năm 1972 và sự ra đời của Thông cáo Thượng Hải, mở đường cho quá trình bình thường hóa quan hệ Mỹ – Trung. Về Liên Xô, Mỹ tiến tới chính sách hòa hoãn, giảm căng thẳng, bổ trợ bởi các cuộc đàm phán như SALT I - Hạn chế Vũ khí Chiến lược lần thứ nhất được ký kết vào ngày 26-5-1972.
 
 Ngày 2-9-1969, Chủ tịch Hồ Chí Minh qua đời. Vĩnh biệt chúngta, Người đã để lại một bản Di chúc lịch sử, chứa đựng những tư tưởng lớn về những vấn đề căn bản và bức thiết của cách mạng Việt Nam. Với lòng tưởng nhớ và biết ơn sâu sắc vị lãnh tụ tối cao của Đảng và dân tộc, trong lễ truy điệu tại Ba Đình, đồng chí Lê Duẩn, Bí thư thứ nhất Ban Chấp hành Trung ương Đảng đã đọc Điếu văn truy điệu bày tỏ quyết tâm thực hiện đầy đủ những điều căn dặn trong Di chúc với những lời thề sắt son trước anh linh Người.
 
-*Nguồn tài liệu trích dẫn (Giáo trình trang mấy / Văn kiện nào):*  
+*Nguồn tài liệu trích dẫn:*  
 - Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, tr. 220 - 226 (bản PDF của Ban Tuyên giáo Trung ương)
 - Shanghai Communiqué - Thông cáo Thượng Hải 27-2-1972
 - SALT I - Đàm phán Hạn chế Vũ khí Chiến lược lần thứ nhất 26-5-1972
@@ -34,14 +27,8 @@ Ngày 2-9-1969, Chủ tịch Hồ Chí Minh qua đời. Vĩnh biệt chúngta, N
 ---
 
 ## 2. Chủ trương & Đường lối của Đảng
-> *Gợi ý định hướng nghiên cứu:*
-> - Nghị quyết Trung ương 18 (1/1970) và Trung ương 19 (2/1971) đã chỉ đạo kháng chiến như thế nào?
-> - Nghệ thuật chỉ đạo kết hợp chặt chẽ **3 mặt trận: Quân sự, Chính trị và Ngoại giao** ("vừa đánh vừa đàm")?
-> - Chủ trương củng cố liên minh đoàn kết chiến đấu 3 nước Đông Dương (Việt Nam - Lào - Campuchia)?
-> - Quyết tâm thực hiện Di chúc thiêng liêng của Bác Hồ: mục tiêu thứ nhất là "Đánh cho Mỹ cút"?
 
-**Nội dung bạn tự soạn:**
-Trước chiến lược “Việt Nam hóa chiến tranh” và sự ra đi của Chủ tịch Hồ Chí Minh, Đảng lãnh đạo toàn dân quyết tâm thực hiện Di chúc cùng lời căn dặn của Người: *“Đánh cho Mỹ cút, đánh cho Ngụy nhào”*, xác định mục tiêu trước hết là buộc Mỹ rút hết quân.
+Trước chiến lược “Việt Nam hóa chiến tranh” và sự ra đi của Chủ tịch Hồ Chí Minh, Đảng lãnh đạo toàn dân quyết tâm thực hiện Di chúc lịch sử của Người, đồng thời quán triệt chủ trương chiến lược hai bước nêu trong bài thơ chúc Tết Kỷ Dậu (1-1-1969): “Đánh cho Mỹ cút, đánh cho Ngụy nhào”, xác định mục tiêu trước hết là buộc Mỹ rút hết quân.
 
 Hội nghị Trung ương 18 (1-1970) (Nghị quyết số 196-NQ/TW) chỉ đạo kiên trì đẩy mạnh chiến lược tiến công toàn diện, lấy nông thôn làm hướng chính để đánh bại kế hoạch “bình định”, kết hợp tác chiến chính quy với chiến tranh nhân dân địa phương. Tiếp đó, Hội nghị Trung ương 19 (2-1971) (Nghị quyết số 214-NQ/TW) quán triệt thực hiện Di chúc Bác Hồ, huy động nỗ lực cao nhất trên hai miền đẩy mạnh kháng chiến, đồng thời khôi phục kinh tế miền Bắc nhằm củng cố hậu phương lớn và làm tròn nghĩa vụ quốc tế.
 
@@ -57,18 +44,12 @@ Trước việc Mỹ mở rộng chiến tranh sang Campuchia và Lào, Đảng 
 ---
 
 ## 3. Giá trị thực tiễn & Thắng lợi tiêu biểu
-> *Gợi ý định hướng nghiên cứu:*
-> - Thắng lợi của Chiến dịch Đường 9 - Nam Lào (1971) đánh bại thử nghiệm lớn nhất của "Việt Nam hóa chiến tranh"?
-> - Cuộc tiến công chiến lược năm 1972 làm thay đổi cục diện chiến trường miền Nam?
-> - **Chiến thắng 12 ngày đêm "Hà Nội - Điện Biên Phủ trên không" (12/1972):** Diễn biến và ý nghĩa đập tan cuộc tập kích B-52 của đế quốc Mỹ?
-> - **Ký kết Hiệp định Paris (27/1/1973):** Nội dung then chốt (Mỹ cam kết tôn trọng độc lập, chủ quyền; quân đội Mỹ rút hoàn toàn về nước) và ý nghĩa hoàn thành bước đi "Đánh cho Mỹ cút"?
 
-**Nội dung bạn tự soạn:**
 - *Chiến thắng Đường 9 – Nam Lào (1971):* Quân dân Việt Nam phối hợp với quân dân Lào chủ động đánh bại cuộc hành quân quy mô lớn “Lam Sơn 719” của Mỹ – Ngụy nhằm cắt đứt đường mòn Hồ Chí Minh (cùng việc đập tan cuộc hành quân “Toàn thắng 1-1971” ở Đông Bắc Campuchia). Thắng lợi này làm quân Ngụy Sài Gòn – “xương sống” của chiến lược “Việt Nam hóa chiến tranh” – suy yếu nghiêm trọng, mở ra khả năng thực tế đánh bại thử nghiệm lớn nhất của chiến lược này.
 
 - *Cuộc tiến công chiến lược năm 1972:* Mùa Xuân – Hè 1972, quân ta mở tiến công quy mô lớn trên các hướng Trị – Thiên, Tây Nguyên, Đông Nam Bộ, đồng bằng Khu V và đồng bằng sông Cửu Long, tiêu biểu là cuộc chiến đấu 81 ngày đêm tại Thành cổ Quảng Trị (28-6 – 16-9-1972). Ta phá vỡ ba tuyến phòng ngự mạnh nhất của địch tại Quảng Trị, Tây Nguyên và Đông Nam Bộ, giáng đòn nặng vào chủ lực ngụy và đánh bại một phần quan trọng chương trình “bình định”, làm thay đổi cục diện chiến trường và buộc Mỹ vội vã “Mỹ hóa” trở lại cuộc chiến tranh.
 
-- *Chiến thắng 12 ngày đêm “Hà Nội – Điện Biên Phủ trên không” (12/1972):* Nhằm ngăn chặn tiến công của ta và ép ta trên bàn đàm phán, từ ngày 18 đến 30-12-1972, Mỹ mở cuộc tập kích chiến lược bằng máy bay B-52 vào Hà Nội, Hải Phòng. Phát huy cao độ thế trận chiến tranh nhân dân, quân dân miền Bắc bắn rơi 84 máy bay (gồm 34 chiếc B-52 và 5 chiếc F-111A), bắt sống 43 giặc lái. Chiến thắng đã đập tan hoàn toàn cuộc chiến tranh phá hoại lần thứ hai, bảo vệ vững chắc hậu phương lớn, buộc Mỹ ngừng ném bom (15-1-1973) và quay lại bàn đàm phán Paris.
+- *Chiến thắng 12 ngày đêm “Hà Nội – Điện Biên Phủ trên không” (12/1972):* Nhằm ngăn chặn tiến công của ta và ép ta trên bàn đàm phán, từ ngày 18 đến 29-12-1972, Mỹ mở cuộc tập kích chiến lược bằng máy bay B-52 vào Hà Nội, Hải Phòng. Phát huy cao độ thế trận chiến tranh nhân dân, quân dân miền Bắc bắn rơi 84 máy bay (gồm 34 chiếc B-52 và 5 chiếc F-111A), bắt sống 43 giặc lái. Chiến thắng đã đập tan hoàn toàn cuộc chiến tranh phá hoại lần thứ hai, bảo vệ vững chắc hậu phương lớn, buộc Mỹ phải nối lại đàm phán tại Paris (từ ngày 8-1-1973) và tuyên bố ngừng toàn bộ hoạt động tiến công quân sự chống miền Bắc (15-1-1973).
 
 - *Ký kết Hiệp định Paris (27/1/1973):* Sau 4 năm 8 tháng 14 ngày đấu tranh ngoại giao, Hiệp định về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam được ký kết. Các điều khoản then chốt xác định: Hoa Kỳ và các nước khác tôn trọng độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ của Việt Nam (Điều 1); Hoa Kỳ chấm dứt dính líu quân sự, can thiệp vào nội bộ miền Nam (Điều 4) và rút hoàn toàn quân đội, cố vấn quân sự ra khỏi miền Nam trong thời hạn 60 ngày (Điều 5). Hiệp định đã đè bẹp ý chí xâm lược của đế quốc Mỹ, hoàn thành bước đi chiến lược “đánh cho Mỹ cút”, tạo cơ hội quyết định để quân dân ta tiến lên “đánh cho Ngụy nhào”.
 
@@ -80,7 +61,6 @@ Trước việc Mỹ mở rộng chiến tranh sang Campuchia và Lào, Đảng 
 ---
 
 ## 4. Chứng tích lịch sử tại Bảo tàng Chứng tích Chiến tranh (Khảo sát thực tế)
-*(Yêu cầu: Đến trực tiếp Bảo tàng tại 28 Võ Văn Tần, Q.3 để chụp ảnh thật. Lưu ảnh vào [images/](./images/))*
 
 ### Hiện vật / Tư liệu 1:
 - **Tên hiện vật:** Góc trưng bày hình ảnh nạn nhân chịu hậu quả chất độc da cam / Dioxin
@@ -97,9 +77,13 @@ Trước việc Mỹ mở rộng chiến tranh sang Campuchia và Lào, Đảng 
 ---
 
 ## 5. Kiến thức trọng tâm cần nhớ (Phục vụ ôn thi cuối kỳ)
+
 1. *Bối cảnh & Quyết tâm chiến lược hai bước (1969–1970):* Trước chiến lược “Việt Nam hóa chiến tranh” của Mỹ và sự ra đi của Chủ tịch Hồ Chí Minh (2/9/1969), toàn Đảng, toàn dân quyết tâm thực hiện Di chúc cùng chủ trương chiến lược: “Đánh cho Mỹ cút, đánh cho ngụy nhào”. Hội nghị Trung ương 18 (1/1970) chỉ đạo lấy nông thôn làm hướng tiến công chính để phá “bình định”, đẩy mạnh chiến tranh nhân dân địa phương và phát triển ba thứ quân.
+
 2. *Liên minh Đông Dương & Tiến công chiến lược 1972 (1970–1972):* Quân dân Việt – Lào – Campuchia phối hợp thắng lớn tại Cánh Đồng Chum (1970), đập tan “Lam Sơn 719” (Đường 9 – Nam Lào) và “Toàn thắng 1-1971” (1971). Đỉnh cao là cuộc Tiến công chiến lược Xuân – Hè 1972 (nổi bật 81 ngày đêm Thành cổ Quảng Trị), phá vỡ 3 tuyến phòng ngự mạnh nhất của địch ở Quảng Trị, Tây Nguyên, Đông Nam Bộ, làm suy sụp quân ngụy và buộc Mỹ phải “Mỹ hóa” trở lại cuộc chiến.
+
 3. *Hậu phương miền Bắc & Trận “Điện Biên Phủ trên không” (1969–1972):* Miền Bắc khôi phục kinh tế (1969–1972), giữ vững chi viện cho tiền tuyến. Khi Mỹ tiến hành chiến tranh phá hoại lần hai (từ 4-1972), quân dân miền Bắc lập nên trận “Điện Biên Phủ trên không” trong 12 ngày đêm (18 – 30-12-1972), bắn rơi 84 máy bay (34 chiếc B-52, 5 chiếc F-111A), bắt sống 43 giặc lái, buộc Mỹ ngừng ném bom (15-1-1973) và trở lại đàm phán.
+
 4. *Hiệp định Paris (27-1-1973) & Hội nghị Trung ương 21 (7-1973):* Thắng lợi quân sự – ngoại giao buộc Mỹ ký Hiệp định Paris (27-1-1973), cam kết tôn trọng độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ của Việt Nam (Điều 1) và rút hết quân viễn chinh — hoàn thành mục tiêu “đánh cho Mỹ cút”. Trước âm mưu phá hoại Hiệp định của Mỹ – Thiệu, Hội nghị Trung ương 21 (7-1973) khẳng định giữ vững con đường bạo lực cách mạng và chiến lược tiến công để tiến lên “đánh cho Ngụy nhào”.
 
 ---
