@@ -18,20 +18,22 @@ document.addEventListener("DOMContentLoaded", () => {
 function initNavigation() {
   const navLinks = document.querySelectorAll(".nav-link");
   const sectionViews = document.querySelectorAll(".section-view");
+  const header = document.querySelector(".site-header");
   const mobileBtn = document.getElementById("mobileMenuBtn");
   const mainNav = document.getElementById("mainNav");
 
   document.querySelectorAll("a[data-view]").forEach(link => {
     link.addEventListener("click", (e) => {
+      const targetView = document.getElementById(link.dataset.view);
+      if (!targetView) return;
       e.preventDefault();
-      const targetViewId = link.getAttribute("data-view");
 
       // Cập nhật class active cho menu
-      navLinks.forEach(navLink => navLink.classList.toggle("active", navLink.dataset.view === targetViewId));
+      navLinks.forEach(navLink => navLink.classList.toggle("active", navLink.dataset.view === targetView.id));
 
       // Hiển thị view tương ứng
       sectionViews.forEach(view => {
-        view.classList.toggle("active-view", view.id === targetViewId);
+        view.classList.toggle("active-view", view === targetView);
       });
 
       // Đóng mobile menu nếu đang mở
@@ -39,8 +41,9 @@ function initNavigation() {
         mainNav.classList.remove("menu-open");
       }
 
-      // Cuộn nhẹ lên đầu khu vực nội dung
-      window.scrollTo({ top: 380, behavior: "smooth" });
+      const headerHeight = header?.offsetHeight ?? 0;
+      const viewTop = targetView.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: viewTop - headerHeight - 16 });
     });
   });
 
@@ -84,6 +87,7 @@ function renderTeamSection() {
           <span>${member.name.charAt(0)}</span>
         </div>
         <h3 class="team-name">${member.name}</h3>
+        <p class="team-student-id">MSSV: ${member.studentId}</p>
         <p class="team-role">${member.role}</p>
         <p class="team-task">${member.task}</p>
       </article>

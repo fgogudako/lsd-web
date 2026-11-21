@@ -249,14 +249,14 @@ const summaryContent = {
 
 // Dữ liệu nhóm thực hiện đề tài
 const teamMembers = [
-  { name: "Trường", photo: "truong.jpeg", role: "Nhóm trưởng", task: "Điều phối tiến độ và tổng hợp báo cáo." },
-  { name: "Bảo", photo: "bao.jpg", role: "Nội dung giai đoạn 1", task: "Nghiên cứu giai đoạn 1954–1960 và phong trào Đồng Khởi." },
-  { name: "Phong", photo: "phong.jpg", role: "Nội dung giai đoạn 2", task: "Nghiên cứu giai đoạn 1961–1965 và chiến lược Chiến tranh đặc biệt." },
-  { name: "Văn An", photo: "van.jpg", role: "Nội dung giai đoạn 3", task: "Nghiên cứu giai đoạn 1965–1968 và Tết Mậu Thân." },
-  { name: "Xuân An", photo: "xan.jpg", role: "Nội dung giai đoạn 4", task: "Nghiên cứu giai đoạn 1969–1973 và Hiệp định Paris." },
-  { name: "Tấn", photo: "tan.jpg", role: "Nội dung giai đoạn 5", task: "Nghiên cứu giai đoạn 1973–1975 và Chiến dịch Hồ Chí Minh." },
-  { name: "Quang", photo: "quang.jpg", role: "Tổng kết và hiệu đính", task: "Biên soạn bài tổng kết và bộ câu hỏi ôn tập." },
-  { name: "Giang", photo: "giang.jpg", role: "Giao diện và dòng thời gian", task: "Xây dựng giao diện chung và slide thuyết trình tương tác." },
-  { name: "Quý", photo: "quy.jpg", role: "Kho tư liệu", task: "Xây dựng bộ lọc và giao diện xem chi tiết hiện vật trên các thiết bị." },
-  { name: "Minh", photo: "minh.jpg", role: "Đố vui và trang nhóm", task: "Lập trình phần trắc nghiệm và xây dựng trang nhóm tác giả, cảm nghĩ tập thể." }
+  { name: "Lê Nguyễn Nhật Trường", studentId: "23127136", photo: "truong.jpeg", role: "Nhóm trưởng", task: "Điều phối tiến độ và tổng hợp báo cáo." },
+  { name: "Đoàn Lê Gia Bảo", studentId: "23127025", photo: "bao.jpg", role: "Nội dung giai đoạn 1", task: "Nghiên cứu giai đoạn 1954–1960 và phong trào Đồng Khởi." },
+  { name: "Vương Khải Phong", studentId: "23127453", photo: "phong.jpg", role: "Nội dung giai đoạn 2", task: "Nghiên cứu giai đoạn 1961–1965 và chiến lược Chiến tranh đặc biệt." },
+  { name: "Nguyễn Văn An", studentId: "23127317", photo: "van.jpg", role: "Nội dung giai đoạn 3", task: "Nghiên cứu giai đoạn 1965–1968 và Tết Mậu Thân." },
+  { name: "Biện Xuân An", studentId: "23127020", photo: "xan.jpg", role: "Nội dung giai đoạn 4", task: "Nghiên cứu giai đoạn 1969–1973 và Hiệp định Paris." },
+  { name: "Mạch Quốc Tấn", studentId: "23127115", photo: "tan.jpg", role: "Nội dung giai đoạn 5", task: "Nghiên cứu giai đoạn 1973–1975 và Chiến dịch Hồ Chí Minh." },
+  { name: "Lê Hữu Minh Quang", studentId: "23127108", photo: "quang.jpg", role: "Tổng kết và hiệu đính", task: "Biên soạn bài tổng kết và bộ câu hỏi ôn tập." },
+  { name: "Hoàng Minh Giang", studentId: "23127043", photo: "giang.jpg", role: "Giao diện và dòng thời gian", task: "Xây dựng giao diện chung và slide thuyết trình tương tác." },
+  { name: "Văn Ngọc Quý", studentId: "23127114", photo: "quy.jpg", role: "Kho tư liệu", task: "Xây dựng bộ lọc và giao diện xem chi tiết hiện vật." },
+  { name: "Vũ Hoàng Minh", studentId: "23127427", photo: "minh.jpg", role: "Đố vui và trang nhóm", task: "Xây dựng phần trắc nghiệm và trang nhóm tác giả, cảm nghĩ." }
 ];

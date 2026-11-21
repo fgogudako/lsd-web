@@ -365,7 +365,7 @@ body {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 1rem;
 }
 
@@ -409,6 +409,28 @@ body {
   margin-bottom: 4px;
 }
 
+@media (min-width: 1200px) {
+  .team-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.5rem;
+    margin-inline: -1rem;
+  }
+
+  .team-card {
+    padding-inline: 0.375rem;
+  }
+
+  .team-name {
+    font-size: 1rem;
+  }
+}
+
+.team-student-id {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
 .team-role {
   font-size: 0.875rem;
   font-weight: 600;
@@ -420,6 +442,7 @@ body {
   font-size: 0.875rem;
   color: var(--text-secondary);
   line-height: 1.5;
+  text-wrap: balance;
 }
 
 .team-reflection {
@@ -456,66 +479,74 @@ body {
 .site-footer {
   background: #181514;
   color: #B5ACA4;
-  padding: 2.5rem 1.5rem 1.5rem;
+  padding: clamp(1.75rem, 3vw, 2.5rem) 1.5rem 1rem;
   border-top: 3px solid var(--primary-red);
   margin-top: auto;
 }
 
 .footer-container {
-  max-width: 1280px;
+  max-width: calc(1280px - 3rem);
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 1.5rem clamp(1.5rem, 4vw, 3rem);
+  padding-bottom: clamp(1.25rem, 3vw, 2rem);
   border-bottom: 1px solid #332D29;
+}
+
+.footer-info h4,
+.footer-links h5 {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
 }
 
 .footer-info h4 {
   color: #FFF;
   font-family: var(--font-serif);
   font-size: 1.15rem;
-  margin-bottom: 8px;
 }
 
 .footer-info p {
-  font-size: 0.88rem;
-  max-width: 500px;
-  line-height: 1.5;
+  font-size: 0.875rem;
+  max-width: 50ch;
+  line-height: 1.6;
 }
 
 .footer-links h5 {
   color: #E2D7CC;
   font-size: 0.95rem;
-  margin-bottom: 8px;
 }
 
 .footer-links ul {
   list-style: none;
+  display: grid;
+  gap: 0.375rem;
 }
 
 .footer-links li {
-  margin-bottom: 6px;
-}
-
-.footer-links a {
-  color: #9E948C;
-  text-decoration: none;
-  font-size: 0.85rem;
-  transition: var(--transition-normal);
-}
-
-.footer-links a:hover {
-  color: var(--gold-accent);
+  font-size: 0.875rem;
 }
 
 .footer-bottom {
-  max-width: 1280px;
-  margin: 1rem auto 0;
+  margin-top: 1rem;
   text-align: center;
   font-size: 0.8rem;
   color: #7A726C;
+}
+
+.footer-credits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1.25rem;
+  margin-bottom: 0.375rem;
+  color: #B5ACA4;
+  font-size: 0.875rem;
+}
+
+.footer-credits strong {
+  color: #E2D7CC;
+  font-weight: 600;
 }
 
 /* ==========================================================================
@@ -533,6 +564,12 @@ body {
   .museum-highlight-img {
     width: 100%;
     max-width: 380px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer-container {
+    grid-template-columns: 1fr;
   }
 }
 
