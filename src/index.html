@@ -8,7 +8,7 @@
   <!-- Phông chữ Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Xanh+Mono&display=swap" rel="stylesheet">
   
   <!-- Tách các file CSS chuyên biệt -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -35,7 +35,7 @@
 
       <nav class="main-nav" id="mainNav">
         <ul>
-          <li><a href="#timeline" class="nav-link active" data-view="viewTimeline">Dòng thời gian & Slide</a></li>
+          <li><a href="#timeline" class="nav-link active" data-view="viewTimeline">Dòng thời gian</a></li>
           <li><a href="#gallery" class="nav-link" data-view="viewGallery">Kho tư liệu Bảo tàng</a></li>
           <li><a href="#quiz" class="nav-link" data-view="viewQuiz">Đố vui ôn tập</a></li>
           <li><a href="#summary" class="nav-link" data-view="viewSummary">Tổng kết & Bài học</a></li>
@@ -69,150 +69,122 @@
   <main class="main-content">
 
     <!-- ==========================================
-         VIEW 1: SLIDE THUYẾT TRÌNH & TIMELINE Ở ĐÁY
+         VIEW 1: DÒNG THỜI GIAN 1954 – 1975 (tab mặc định)
+         Kiểu: assets/css/timeline.css (khoanh dưới .tl) · Logic: assets/js/timeline.js,
+         land3d.js · Dữ liệu: assets/js/timeline-data.js
          ========================================== -->
-    <section id="viewTimeline" class="section-view active-view">
-      
-      <div class="section-heading-box">
-        <span class="section-tag">TIẾN TRÌNH LỊCH SỬ & ĐƯỜNG LỐI</span>
-        <h2>Khám phá 5 giai đoạn lịch sử hào hùng</h2>
-        <p class="section-subtitle">Sử dụng thanh timeline ở dưới hoặc nút điều hướng để chuyển qua các giai đoạn từ 1954 đến 1975.</p>
+    <section id="viewTimeline" class="section-view active-view tl" aria-label="Dòng thời gian 1954 – 1975">
+
+    <!-- THANH MINI (di động) -->
+    <div class="minibar" aria-hidden="true">
+      <span class="mb-date" id="mbDate">21/7/1954</span>
+      <span class="mb-stage" id="mbStage">GĐ 1 · Đồng Khởi</span>
+      <span class="mb-track"><span class="mb-fill" id="mbFill"></span></span>
+    </div>
+
+    <!-- MỞ ĐẦU -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Học phần Lịch sử Đảng <i aria-hidden="true"></i> 1954 – 1975</p>
+        <h2 class="hero-title">Từ đường lối<br>đến thực tiễn</h2>
+        <p class="hero-lede">Sự lãnh đạo của Đảng trong kháng chiến chống Mỹ, cứu nước – 21 năm, 5 giai đoạn, kể lại bằng những mốc cốt lõi và chứng tích tại Bảo tàng Chứng tích Chiến tranh.</p>
+        <ol class="stage-index" id="heroStages" aria-label="Năm giai đoạn"></ol>
       </div>
 
-      <!-- Khung Slide Thuyết Trình -->
-      <div class="presentation-container">
-        
-        <!-- Header của Slide -->
-        <div class="slide-header-bar">
-          <div class="slide-stage-badge" id="slideStageBadge">
-            Giai đoạn 1: 1954 - 1960
-          </div>
-          <span class="slide-assignee-badge" id="slideAssignee">
-            Phụ trách nội dung: Bảo
-          </span>
-          <div class="slide-controls-top">
-            <button class="slide-btn" id="slidePrevBtn" title="Giai đoạn trước">◀ Trước</button>
-            <button class="slide-btn" id="slideNextBtn" title="Giai đoạn sau">Tiếp ▶</button>
+      <figure class="hero-board" aria-label="Sơ đồ minh họa dải đất hình chữ S bị chia cắt tại vĩ tuyến 17">
+        <div class="sheet-wrap sheet-wrap--light">
+          <div class="sheet-shadow" aria-hidden="true"><span data-torn="tblr" data-amp="9" data-seed="54"></span></div>
+          <div class="sheet sheet--light" data-torn="tblr" data-amp="9" data-seed="54">
+            <canvas class="land" id="heroLand" aria-hidden="true"></canvas>
+            <span class="sheet-cap">Sơ đồ minh họa</span>
           </div>
         </div>
+        <p class="tag tag--kraft tag--tl"><span data-torn="tb" data-amp="5">21 · 7 · 1954<br>Vĩ tuyến 17 – sông Bến Hải</span></p>
+        <p class="tag tag--note tag--br"><span data-torn="tb" data-amp="5">Một dải đất, hai miền.<br>Bao giờ nối liền?</span></p>
+        <span class="stamp stamp--hero" aria-hidden="true">Tổng tuyển cử: 7/1956</span>
+      </figure>
 
-        <!-- Thân Slide -->
-        <div class="slide-body">
-          
-          <div class="slide-title-area">
-            <h3 id="slideTitle">Xây dựng CNXH ở miền Bắc và giữ gìn lực lượng ở miền Nam (1954 - 1960)</h3>
-            <div class="slide-period-meta" id="slidePeriodMeta">★ Chủ đề: Giữ gìn lực lượng & Phong trào Đồng Khởi</div>
+      <a class="hero-cue" href="#story"><span>Cuộn để đi qua 21 năm</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <!-- DÒNG THỜI GIAN -->
+    <section class="story" id="story" aria-label="Dòng thời gian 5 giai đoạn">
+      <aside class="panel" aria-label="Bảng định vị thời gian và không gian">
+        <div class="panel-top">
+          <div class="cal" aria-hidden="true">
+            <span class="cal-rings"></span>
+            <div class="cal-stack" id="calStack"></div>
           </div>
-
-          <!-- Các Tab chuyển đổi nội dung bên trong Slide -->
-          <div class="stage-tabs-nav">
-            <button class="stage-tab-btn active" data-tab="context">1. Bối cảnh lịch sử</button>
-            <button class="stage-tab-btn" data-tab="guidelines">2. Đường lối của Đảng</button>
-            <button class="stage-tab-btn" data-tab="practical">3. Giá trị thực tiễn</button>
-            <button class="stage-tab-btn" data-tab="artifacts">4. Chứng tích Bảo tàng</button>
-            <button class="stage-tab-btn" data-tab="keynotes">5. Kiến thức cần nhớ</button>
-          </div>
-
-          <!-- Tab Pane 1: Bối cảnh -->
-          <div class="stage-tab-pane active-pane" id="tab-context">
-            <div class="stage-content-split">
-              <div>
-                <ul class="stage-list" id="stageContextList">
-                  <!-- Dữ liệu render từ JS -->
-                </ul>
-              </div>
-              <div class="artifact-preview-card">
-                <img src="assets/images/placeholders/stage1_guillotine.svg" alt="Hiện vật minh họa" class="artifact-preview-img">
-                <h4 class="artifact-preview-title">Minh chứng từ Bảo tàng</h4>
-                <p class="artifact-preview-desc">Các chứng tích tại Bảo tàng phản ánh chân thực bối cảnh ác liệt và sự hà khắc của chính quyền tay sai.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tab Pane 2: Đường lối của Đảng -->
-          <div class="stage-tab-pane" id="tab-guidelines">
-            <ul class="stage-list" id="stageGuidelinesList">
-              <!-- Dữ liệu render từ JS -->
-            </ul>
-          </div>
-
-          <!-- Tab Pane 3: Giá trị thực tiễn -->
-          <div class="stage-tab-pane" id="tab-practical">
-            <ul class="stage-list" id="stagePracticalList">
-              <!-- Dữ liệu render từ JS -->
-            </ul>
-          </div>
-
-          <!-- Tab Pane 4: Chứng tích liên quan từ Bảo tàng -->
-          <div class="stage-tab-pane" id="tab-artifacts">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;" id="stageArtifactsContainer">
-              <!-- Dữ liệu render từ JS -->
-            </div>
-          </div>
-
-          <!-- Tab Pane 5: Kiến thức trọng tâm -->
-          <div class="stage-tab-pane" id="tab-keynotes">
-            <div class="keynotes-box">
-              <div class="keynotes-title">📌 Điểm cốt lõi cần nắm vững</div>
-              <ol class="keynotes-list" id="stageKeynotesList">
-                <!-- Dữ liệu render từ JS -->
-              </ol>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- THANH INTERACTIVE TIMELINE Ở ĐÁY SLIDE -->
-        <div class="bottom-timeline-bar">
-          <div class="timeline-info-row">
-            <span id="timelineStageCounter">Giai đoạn 1 / 5</span>
-            <div class="timeline-key-hint">
-              <span>Điều hướng: </span>
-              <span class="key-badge">←</span>
-              <span class="key-badge">→</span>
-              <span>hoặc nhấn vào các mốc bên dưới</span>
-            </div>
-          </div>
-
-          <div class="timeline-track-wrapper">
-            <div class="timeline-track-line"></div>
-            <div class="timeline-progress-fill" id="timelineProgressFill"></div>
-
-            <div class="timeline-nodes">
-              <button class="timeline-node active" data-index="0" title="Giai đoạn 1954 - 1960">
-                <span class="node-dot">1</span>
-                <span class="node-label">1954 - 1960</span>
-                <span class="node-sub">Đồng Khởi</span>
-              </button>
-
-              <button class="timeline-node" data-index="1" title="Giai đoạn 1961 - 1965">
-                <span class="node-dot">2</span>
-                <span class="node-label">1961 - 1965</span>
-                <span class="node-sub">Chiến tranh ĐB</span>
-              </button>
-
-              <button class="timeline-node" data-index="2" title="Giai đoạn 1965 - 1968">
-                <span class="node-dot">3</span>
-                <span class="node-label">1965 - 1968</span>
-                <span class="node-sub">Mậu Thân 1968</span>
-              </button>
-
-              <button class="timeline-node" data-index="3" title="Giai đoạn 1969 - 1973">
-                <span class="node-dot">4</span>
-                <span class="node-label">1969 - 1973</span>
-                <span class="node-sub">HĐ Paris 1973</span>
-              </button>
-
-              <button class="timeline-node" data-index="4" title="Giai đoạn 1973 - 1975">
-                <span class="node-dot">5</span>
-                <span class="node-label">1973 - 1975</span>
-                <span class="node-sub">Toàn thắng 1975</span>
-              </button>
-            </div>
+          <p class="sr-only" id="calSR" aria-live="polite"></p>
+          <div class="panel-stage">
+            <span class="ps-count" id="psCount">GĐ 1/5 · 1954 – 1960</span>
+            <strong class="ps-title" id="psTitle">Giữ gìn lực lượng, tiến lên Đồng Khởi</strong>
+            <span class="ps-opp" id="psOpp"></span>
           </div>
         </div>
+        <div class="panel-map sheet-wrap sheet-wrap--light">
+          <div class="sheet-shadow" aria-hidden="true"><span data-torn="tblr" data-amp="7" data-seed="75"></span></div>
+          <div class="sheet sheet--light" data-torn="tblr" data-amp="7" data-seed="75">
+            <canvas class="land" id="panelLand" role="img" aria-label="Dải đất hình chữ S dựng bằng hạt 3D, đánh dấu địa điểm của mốc đang xem"></canvas>
+            <p class="panel-place" id="psPlace"></p>
+            <p class="panel-hint"><kbd>←</kbd><kbd>→</kbd> chuyển mốc · rê chuột để xoay</p>
+          </div>
+        </div>
+        <div class="ruler" id="ruler"></div>
+        <ul class="legend" aria-label="Chú giải">
+          <li data-type="ctx"><i></i>Bối cảnh</li>
+          <li data-type="line"><i></i>Đường lối</li>
+          <li data-type="prac"><i></i>Thực tiễn</li>
+        </ul>
+      </aside>
 
+      <div class="chapters" id="chapters"></div>
+    </section>
+
+    <!-- KẾT -->
+    <section class="finale dark-surface" id="finale" aria-labelledby="finTitle" data-torn="t" data-amp="16" data-seed="30">
+      <div class="finale-map">
+        <canvas class="land" id="finaleLand" aria-hidden="true"></canvas>
       </div>
+      <div class="finale-copy">
+        <p class="tag tag--kraft tag--inline"><span data-torn="tb" data-amp="5">30 · 4 · 1975 — 11 giờ 30</span></p>
+        <h2 class="fin-title" id="finTitle">Non sông<br>thu về một mối</h2>
+        <p class="fin-lede">Khe vĩ tuyến 17 khép lại sau 21 năm: kết thúc kháng chiến chống Mỹ, cứu nước, mở ra kỷ nguyên độc lập, thống nhất, cả nước đi lên chủ nghĩa xã hội.</p>
+        <dl class="fin-stats">
+          <div><dt>21</dt><dd>năm kháng chiến</dd></div>
+          <div><dt>5</dt><dd>giai đoạn lãnh đạo</dd></div>
+          <div><dt>3</dt><dd>chiến lược chiến tranh của Mỹ bị đánh bại</dd></div>
+        </dl>
+        <h3 class="fin-sub">Bốn nguyên nhân thắng lợi</h3>
+        <ol class="fin-reasons" id="finReasons"></ol>
+        <div class="fin-cta">
+          <a class="btn btn--solid" href="#quiz" data-open-view="viewQuiz">Ôn tập bằng đố vui</a>
+          <a class="btn btn--ghost" href="#summary" data-open-view="viewSummary">Tổng kết &amp; bài học</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHI TIẾT HIỆN VẬT (mở khi bấm vào ảnh) -->
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lbTitle">
+      <button class="lb-close" id="lbClose" type="button" aria-label="Đóng">×</button>
+      <div class="lb-media"><img id="lbImg" src="" alt=""></div>
+      <div class="lb-body">
+        <span class="lb-stage" id="lbStage"></span>
+        <h3 id="lbTitle"></h3>
+        <dl class="lb-meta">
+          <dt>Vị trí trưng bày</dt>
+          <dd id="lbWhere"></dd>
+        </dl>
+        <div class="lb-detail" id="lbDetail"></div>
+        <div class="lb-source" id="lbSource"></div>
+      </div>
+    </dialog>
+
+    <!-- CHI TIẾT MỐC (mở khi bấm "Xem chi tiết" trên thẻ mốc trọng tâm) -->
+    <dialog class="evd" id="evDetail" aria-labelledby="evdTitle">
+      <button class="lb-close" id="evdClose" type="button" aria-label="Đóng">×</button>
+      <div class="evd-body" id="evdBody"></div>
+    </dialog>
 
     </section>
 
@@ -384,10 +356,10 @@
       <div class="footer-links">
         <h5>Điều hướng nhanh</h5>
         <ul>
-          <li><a href="#timeline">Dòng thời gian 5 giai đoạn</a></li>
-          <li><a href="#gallery">Kho tư liệu Bảo tàng</a></li>
-          <li><a href="#quiz">Đố vui ôn tập tương tác</a></li>
-          <li><a href="#team">Bảng phân công nhiệm vụ</a></li>
+          <li><a href="#timeline" data-open-view="viewTimeline">Dòng thời gian 5 giai đoạn</a></li>
+          <li><a href="#gallery" data-open-view="viewGallery">Kho tư liệu Bảo tàng</a></li>
+          <li><a href="#quiz" data-open-view="viewQuiz">Đố vui ôn tập tương tác</a></li>
+          <li><a href="#team" data-open-view="viewTeam">Bảng phân công nhiệm vụ</a></li>
         </ul>
       </div>
       <div class="footer-links">
@@ -415,6 +387,8 @@
   <!-- Tách các file JavaScript theo Module -->
   <script src="assets/js/data.js"></script>
   <script src="assets/js/quiz-data.js"></script>
+  <script src="assets/js/timeline-data.js"></script>
+  <script src="assets/js/land3d.js"></script>
   <script src="assets/js/timeline.js"></script>
   <script src="assets/js/gallery.js"></script>
   <script src="assets/js/quiz.js"></script>

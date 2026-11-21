@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderSummarySection();
   renderTeamSection();
 
-  // Khởi động các module nghiệp vụ
-  if (typeof TimelineModule !== "undefined") TimelineModule.init();
+  // Khởi động các module nghiệp vụ (tab Dòng thời gian tự khởi chạy trong timeline.js)
   if (typeof GalleryModule !== "undefined") GalleryModule.init();
   if (typeof QuizModule !== "undefined") QuizModule.init();
 });
@@ -40,8 +39,18 @@ function initNavigation() {
         mainNav.classList.remove("menu-open");
       }
 
-      // Cuộn nhẹ lên đầu khu vực nội dung
-      window.scrollTo({ top: 380, behavior: "smooth" });
+      // Cuộn nhẹ lên đầu khu vực nội dung (tab Dòng thời gian ẩn banner nên cuộn về đầu trang)
+      window.scrollTo({ top: targetViewId === "viewTimeline" ? 0 : 380, behavior: "smooth" });
+    });
+  });
+
+  // Các liên kết khác mở tab (nút ở banner, chân trang, phần kết dòng thời gian): data-open-view="viewX"
+  document.querySelectorAll("[data-open-view]").forEach(a => {
+    a.addEventListener("click", (e) => {
+      const target = document.querySelector(`.nav-link[data-view="${a.dataset.openView}"]`);
+      if (!target) return;
+      e.preventDefault();
+      target.click();
     });
   });
 
@@ -51,6 +60,14 @@ function initNavigation() {
       mainNav.classList.toggle("menu-open");
     });
   }
+
+  // Mở đúng tab khi vào bằng đường dẫn có hash (vd: index.html#quiz), kể cả khi chỉ đổi hash
+  const openFromHash = () => {
+    const target = Array.from(navLinks).find(l => l.getAttribute("href") === location.hash);
+    if (target) target.click();
+  };
+  if (location.hash) openFromHash();
+  window.addEventListener("hashchange", openFromHash);
 }
 
 // Render dữ liệu phần Tổng kết & Bài học lịch sử (Quang phụ trách)

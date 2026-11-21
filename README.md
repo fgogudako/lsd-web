@@ -29,21 +29,24 @@ lsd-web/
 ├── README.md                           # Giới thiệu dự án & link thiết kế Figma
 │
 ├── src/                                # TOÀN BỘ MÃ NGUỒN WEBSITE (Vibecode phụ trách)
-│   ├── index.html                      # Giao diện chính của website
+│   ├── index.html                      # Giao diện chính: Dòng thời gian, Kho tư liệu, Đố vui, Tổng kết, Nhóm
 │   └── assets/                         # Tài nguyên web tĩnh
 │       ├── css/
 │       │   ├── style.css               # Giao diện tổng thể, bảng màu, typography, navbar
-│       │   ├── timeline.css            # Chế độ Slide thuyết trình & Interactive Timeline ở đáy
+│       │   ├── timeline.css            # Tab Dòng thời gian (khoanh dưới .tl): giấy xé viền, lịch bóc, dải đất 3D
 │       │   ├── gallery.css             # Kho tư liệu chứng tích Bảo tàng & Lightbox modal
 │       │   └── quiz.css                # Ứng dụng trắc nghiệm đố vui ôn tập
 │       ├── js/
-│       │   ├── data.js                 # Cơ sở dữ liệu học liệu 5 giai đoạn & nhóm
+│       │   ├── data.js                 # Cơ sở dữ liệu học liệu 5 giai đoạn & nhóm (Kho tư liệu dùng)
 │       │   ├── quiz-data.js            # Ngân hàng 12 câu hỏi trắc nghiệm ôn tập
-│       │   ├── timeline.js             # Xử lý slide, mốc timeline đáy, phím mũi tên ← →
+│       │   ├── timeline-data.js        # Dữ liệu cô đọng các mốc cho tab Dòng thời gian
+│       │   ├── timeline.js             # Dựng chương, tờ lịch bóc, thước năm, hoạt họa, phím ← →
+│       │   ├── land3d.js               # Dải đất chữ S dựng bằng hạt 3D trên canvas
 │       │   ├── gallery.js              # Lọc tư liệu theo giai đoạn, phóng to hiện vật
 │       │   ├── quiz.js                 # Xử lý làm quiz, tính điểm, hiện giải thích
 │       │   └── main.js                 # Quản trị điều hướng menu và màn hình
 │       └── images/
+│           ├── artifacts/              # Ảnh hiện vật thực tế (chép từ docs/) dùng trên web
 │           └── placeholders/           # 12 ảnh vector SVG placeholder chuẩn bị sẵn
 │
 └── docs/                               # TOÀN BỘ TÀI LIỆU & NỘI DUNG (Nhóm nội dung phụ trách)
