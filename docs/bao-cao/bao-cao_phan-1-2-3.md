@@ -6,49 +6,54 @@
 
 # PHẦN 1 MỞ ĐẦU
 
-## 1 Lý do chọn đề tài
+## 1 Lý do xây dựng website học liệu
 
-Cuộc kháng chiến chống Mỹ, cứu nước giai đoạn 1954 - 1975 là một thời kỳ có ý nghĩa đặc biệt trong lịch sử Việt Nam hiện đại. Trong hoàn cảnh đất nước bị chia cắt và phải đối diện với những chiến lược chiến tranh liên tiếp của Mỹ, Đảng đã lãnh đạo nhân dân đồng thời thực hiện hai nhiệm vụ chiến lược ở hai miền, từng bước làm thay đổi tương quan lực lượng và tiến tới giải phóng hoàn toàn miền Nam. Nghiên cứu thời kỳ này giúp sinh viên hiểu rõ hơn mối quan hệ giữa mục tiêu độc lập dân tộc, khát vọng thống nhất đất nước với quá trình lựa chọn đường lối, tổ chức lực lượng và chỉ đạo thực tiễn.
+Việc học tập môn Lịch sử Đảng Cộng sản Việt Nam không chỉ đòi hỏi ghi nhớ các mốc thời gian mà còn cần hiểu mối quan hệ giữa bối cảnh lịch sử, đường lối lãnh đạo và kết quả thực tiễn. Đối với giai đoạn kháng chiến chống Mỹ, cứu nước từ năm 1954 đến năm 1975, lượng kiến thức trải dài qua nhiều thời kỳ, gắn với những chuyển biến về nhiệm vụ chiến lược và phương pháp đấu tranh. Điều này đặt ra nhu cầu tổ chức kiến thức thành một hệ thống rõ ràng, thuận tiện cho việc tìm hiểu, đối chiếu và ôn tập.
 
-Tuy nhiên, nếu chỉ ghi nhớ tên sự kiện, niên đại và kết quả các chiến dịch, người học dễ tiếp cận lịch sử như những thông tin tách rời. Vấn đề quan trọng hơn là lý giải vì sao một chủ trương được đề ra trong hoàn cảnh cụ thể, được triển khai bằng những phương thức nào và tạo ra chuyển biến gì. Vì vậy, nhóm lựa chọn hướng tiếp cận “từ đường lối đến thực tiễn”, đặt chủ trương của Đảng trong mối liên hệ với điều kiện lịch sử, hoạt động của nhân dân và kết quả trên các mặt trận quân sự, chính trị, ngoại giao.
+Từ nhu cầu đó, nhóm lựa chọn xây dựng website học liệu với chủ đề “Từ đường lối đến thực tiễn”. Website là sản phẩm chính của đề tài, kết hợp nội dung lịch sử theo năm giai đoạn với dòng thời gian tương tác, tư liệu minh họa và câu hỏi trắc nghiệm. Thay vì tiếp cận các sự kiện như những thông tin riêng lẻ, người học có thể theo dõi tiến trình, tìm hiểu từng giai đoạn và tự kiểm tra kiến thức trên cùng một giao diện.
 
-Bảo tàng Chứng tích Chiến tranh cung cấp một không gian học tập bổ sung cho giáo trình thông qua hiện vật, ảnh tư liệu và nội dung trưng bày về chiến tranh cùng những hậu quả đối với con người. Những tư liệu về chính sách đàn áp, phương tiện chiến tranh, sự tàn phá tại miền Bắc và hoạt động ngoại giao giúp người học hình dung cụ thể hơn bối cảnh của các quyết sách lịch sử. Đồng thời, việc tiếp cận chứng tích nhắc nhở rằng phía sau mỗi thắng lợi là sự hy sinh và những tổn thất lâu dài mà nhân dân phải gánh chịu. Giá trị của việc học lịch sử vì thế không chỉ nằm ở nhận thức về thắng lợi, mà còn ở thái độ trân trọng hòa bình và trách nhiệm đối với cộng đồng.
+Việc liên hệ với chứng tích tại Bảo tàng Chứng tích Chiến tranh bổ sung góc nhìn trực quan cho học liệu. Những hiện vật, hình ảnh và nội dung trưng bày giúp kết nối kiến thức trong giáo trình với điều kiện chiến đấu, đời sống nhân dân và hậu quả của chiến tranh. Hướng tiếp cận này góp phần làm rõ ý nghĩa của các chủ trương lịch sử, đồng thời bồi dưỡng thái độ trân trọng hòa bình và trách nhiệm của thế hệ trẻ.
 
-Là sinh viên Trường Đại học Khoa học Tự nhiên, nhóm còn mong muốn kết hợp kiến thức học phần với khả năng ứng dụng công nghệ thông tin. Việc tổ chức học liệu thành các giai đoạn, lựa chọn tư liệu minh họa và xây dựng câu hỏi ôn tập tạo cơ sở nội dung cho website của nhóm. Qua đó, quá trình thực hiện đề tài vừa phục vụ nghiên cứu lịch sử, vừa rèn luyện kỹ năng tổng hợp tài liệu, diễn đạt kiến thức và hợp tác xây dựng một sản phẩm học tập chung. Đây là những lý do nhóm lựa chọn đề tài nêu trên.
+Là sinh viên Trường Đại học Khoa học Tự nhiên, nhóm mong muốn vận dụng khả năng ứng dụng công nghệ thông tin để tạo ra một công cụ hỗ trợ học tập phù hợp với học phần. Sản phẩm hướng tới việc trình bày kiến thức có chọn lọc, dễ theo dõi và có sự tương tác của người sử dụng. Giáo trình giữ vai trò nền tảng học thuật; website hỗ trợ hệ thống hóa, minh họa và ôn tập, không thay thế việc nghiên cứu tài liệu chính của môn học.
 
-## 2 Mục đích và nhiệm vụ nghiên cứu
+## 2 Mục tiêu và nhiệm vụ xây dựng sản phẩm
 
-Mục đích của đề tài là làm rõ vai trò lãnh đạo của Đảng trong cuộc kháng chiến chống Mỹ, cứu nước giai đoạn 1954 - 1975 thông qua sự phát triển của đường lối và kết quả thực hiện ở từng thời kỳ; đồng thời liên hệ với hệ thống chứng tích, tư liệu mà nhóm đã tập hợp để xây dựng học liệu số phục vụ sinh viên.
+**Mục tiêu tổng quát** là xây dựng một website học liệu tương tác về sự lãnh đạo của Đảng trong cuộc kháng chiến chống Mỹ, cứu nước giai đoạn 1954 - 1975, phục vụ việc tìm hiểu và ôn tập của sinh viên. Nội dung được tổ chức theo hướng kết nối đường lối với thực tiễn, kết hợp kiến thức từ giáo trình với tư liệu chứng tích lịch sử.
 
-Để thực hiện mục đích đó, nhóm tập trung vào năm nhiệm vụ:
+**Mục tiêu cụ thể** gồm ba phương diện. Về nội dung, website hệ thống hóa những kiến thức trọng tâm, làm rõ sự phát triển của đường lối qua từng giai đoạn. Về cách tiếp cận, sản phẩm tạo điều kiện để người học chủ động lựa chọn nội dung, quan sát tư liệu và kiểm tra mức độ ghi nhớ. Về giáo dục, học liệu hướng tới việc bồi dưỡng nhận thức lịch sử, lòng biết ơn và ý thức trách nhiệm đối với cộng đồng, đất nước.
 
-1. Hệ thống hóa bối cảnh, chủ trương và những chuyển biến tiêu biểu trong năm giai đoạn: 1954 - 1960, 1961 - 1965, 1965 - 1968, 1969 - 1973 và 1973 - 1975.
-2. Phân tích sự nhất quán về mục tiêu độc lập dân tộc, thống nhất đất nước cùng sự linh hoạt trong phương pháp đấu tranh và chỉ đạo chiến lược.
-3. Liên hệ nội dung lịch sử với hiện vật, ảnh tư liệu và nội dung trưng bày tại Bảo tàng Chứng tích Chiến tranh để làm rõ bối cảnh, đặc điểm của cuộc kháng chiến và giá trị của hòa bình.
-4. Tổng hợp nguyên nhân thắng lợi, ý nghĩa lịch sử và những bài học có thể liên hệ với trách nhiệm của sinh viên trong giai đoạn hiện nay.
-5. Chuẩn bị nội dung có cấu trúc cho website, bao gồm học liệu theo giai đoạn, tư liệu minh họa và câu hỏi ôn tập có đáp án, giải thích.
+Để thực hiện các mục tiêu trên, nhóm xác định những nhiệm vụ sau:
 
-## 3 Đối tượng và phạm vi nghiên cứu
+1. Hệ thống hóa nội dung theo năm giai đoạn: 1954 - 1960, 1961 - 1965, 1965 - 1968, 1969 - 1973 và 1973 - 1975; mỗi giai đoạn làm rõ bối cảnh, chủ trương của Đảng, kết quả thực tiễn và kiến thức cần ghi nhớ.
+2. Tổ chức nội dung dưới dạng trình chiếu kết hợp dòng thời gian tương tác, cho phép người học chuyển giữa các giai đoạn và theo dõi tiến trình lịch sử.
+3. Xây dựng khu vực tư liệu chứng tích, gắn hình ảnh và phần giới thiệu với giai đoạn liên quan; hỗ trợ lựa chọn tư liệu theo thời kỳ và xem thông tin chi tiết.
+4. Xây dựng phần trắc nghiệm ôn tập với phản hồi đúng, sai, giải thích đáp án và kết quả làm bài để hỗ trợ người học tự kiểm tra kiến thức.
+5. Tổng hợp vai trò lãnh đạo của Đảng, nguyên nhân thắng lợi, ý nghĩa lịch sử và bài học kinh nghiệm để giúp người học liên kết kiến thức giữa các giai đoạn.
+6. Tổ chức giao diện và điều hướng thống nhất giữa các khu vực, bảo đảm mối liên hệ giữa hoạt động đọc học liệu, xem tư liệu và ôn tập.
 
-**Đối tượng nghiên cứu** là sự lãnh đạo của Đảng đối với cuộc kháng chiến chống Mỹ, cứu nước, tập trung vào việc xác định nhiệm vụ chiến lược, lựa chọn phương pháp cách mạng, xây dựng lực lượng và chỉ đạo phối hợp các mặt trận. Những sự kiện quân sự, chính trị, ngoại giao được xem xét trong quan hệ với đường lối và quá trình tổ chức thực hiện, không chỉ trình bày như một biên niên chiến tranh.
+## 3 Đối tượng sử dụng và phạm vi sản phẩm
 
-**Về thời gian**, đề tài tập trung từ sau Hiệp định Giơ-ne-vơ năm 1954 đến thắng lợi của cuộc Tổng tiến công và nổi dậy mùa Xuân năm 1975. Việc chia thành năm giai đoạn phục vụ tổ chức học liệu và làm rõ những thay đổi chủ yếu của cục diện chiến tranh. Các mốc phân kỳ có tính liên hệ, kế tiếp nhau; không có nghĩa mọi chuyển biến diễn ra đồng loạt tại ranh giới giữa hai giai đoạn.
+**Đối tượng sử dụng chủ yếu** là sinh viên học môn Lịch sử Đảng Cộng sản Việt Nam, đặc biệt những người cần hệ thống hóa kiến thức về giai đoạn 1954 - 1975. Website cũng được định hướng làm phương tiện minh họa khi thảo luận hoặc trình bày nội dung học tập theo nhóm.
 
-**Về không gian**, nội dung lịch sử được xem xét trên phạm vi cả nước, gắn hậu phương miền Bắc với tiền tuyến miền Nam và liên hệ sự phối hợp chiến đấu ở Đông Dương khi cần thiết. Trọng tâm tư liệu trực quan là Bảo tàng Chứng tích Chiến tranh tại Thành phố Hồ Chí Minh. Tư liệu về Dinh Độc Lập trong học liệu giai đoạn 1973 - 1975 được sử dụng như nguồn bổ sung về sự kiện ngày 30/4/1975, không đồng nhất với hệ thống hiện vật của Bảo tàng Chứng tích Chiến tranh.
+**Về nội dung**, học liệu tập trung vào sự lãnh đạo của Đảng trong kháng chiến chống Mỹ, cứu nước, gắn nhiệm vụ xây dựng miền Bắc với đấu tranh giải phóng miền Nam. Các sự kiện được lựa chọn nhằm làm rõ mối quan hệ giữa bối cảnh, đường lối và thực tiễn, không đặt mục tiêu tái hiện toàn bộ diễn biến chiến tranh. Việc phân chia thành năm giai đoạn phục vụ tổ chức kiến thức và điều hướng trên website.
 
-**Về nguồn tài liệu**, đề tài sử dụng *Giáo trình Lịch sử Đảng Cộng sản Việt Nam* do Bộ Giáo dục và Đào tạo tổ chức biên soạn, Nhà xuất bản Chính trị quốc gia Sự thật xuất bản năm 2021 làm tài liệu nghiên cứu chính. Trọng tâm là Chương 2, phần lãnh đạo xây dựng chủ nghĩa xã hội ở miền Bắc và kháng chiến chống Mỹ, cứu nước; nội dung thống nhất đất nước về mặt nhà nước được đối chiếu thêm ở đầu Chương 3. [1, tr. 180 - 235 và 238 - 241].
+**Về nguồn tài liệu**, sản phẩm sử dụng *Giáo trình Lịch sử Đảng Cộng sản Việt Nam* do Bộ Giáo dục và Đào tạo tổ chức biên soạn, Nhà xuất bản Chính trị quốc gia Sự thật xuất bản năm 2021 làm cơ sở học thuật chính. Trọng tâm là phần lãnh đạo xây dựng chủ nghĩa xã hội ở miền Bắc và kháng chiến chống Mỹ, cứu nước trong Chương 2. Tư liệu từ Bảo tàng Chứng tích Chiến tranh được sử dụng để liên hệ, minh họa cho nội dung lịch sử. [1, tr. 180 - 235].
 
-**Về tư liệu thực tiễn**, đề tài khai thác hiện vật, ảnh tư liệu và nội dung giới thiệu của Bảo tàng Chứng tích Chiến tranh, kết hợp với những ghi nhận khảo sát của các thành viên. Các tư liệu này bổ sung góc nhìn trực quan về chiến tranh, hỗ trợ việc liên hệ kiến thức trong giáo trình với những vấn đề lịch sử cụ thể.
+**Về chức năng**, website tập trung vào ba hoạt động: tìm hiểu kiến thức qua trình chiếu và dòng thời gian; xem tư liệu chứng tích theo giai đoạn; tự ôn tập bằng trắc nghiệm có giải thích. Phần tổng kết và bài học hỗ trợ khái quát nội dung, còn phần giới thiệu nhóm cung cấp thông tin về tập thể thực hiện sản phẩm.
 
-## 4 Phương pháp nghiên cứu
+**Về giá trị sử dụng**, sản phẩm được định hướng hỗ trợ tự học và trình bày kiến thức trong phạm vi học phần. Kết quả trắc nghiệm phản ánh mức độ trả lời đúng đối với bộ câu hỏi của website, không thay thế đánh giá chính thức của giảng viên.
 
-**Phương pháp lịch sử** được sử dụng để trình bày các sự kiện và sự phát triển của đường lối theo trình tự thời gian, đặt mỗi chủ trương trong hoàn cảnh cụ thể và làm rõ sự chuyển biến của cuộc kháng chiến qua từng giai đoạn.
+## 4 Phương pháp thực hiện
 
-**Phương pháp logic** được vận dụng để làm rõ quan hệ giữa mục tiêu, chủ trương, tổ chức thực hiện và kết quả. Trọng tâm là lý giải vì sao Đảng vừa kiên định mục tiêu chiến lược, vừa điều chỉnh phương thức đấu tranh khi Mỹ thay đổi chiến lược chiến tranh; đồng thời làm rõ quan hệ giữa sức mạnh hậu phương, hoạt động của các lực lượng tại chỗ và những đòn tiến công chủ lực.
+**Nghiên cứu và chọn lọc nội dung** được tiến hành trên cơ sở giáo trình, kết hợp phương pháp lịch sử và phương pháp logic. Các sự kiện được đặt theo trình tự thời gian và trong hoàn cảnh cụ thể; đồng thời làm rõ quan hệ giữa mục tiêu, chủ trương, tổ chức thực hiện và kết quả. Đây là cơ sở để lựa chọn kiến thức phù hợp với chủ đề của website.
 
-**Phương pháp phân tích và tổng hợp** được vận dụng để xác định các luận điểm, sự kiện trọng tâm trong giáo trình và hệ thống hóa nội dung theo mạch: bối cảnh lịch sử — chủ trương của Đảng — kết quả thực tiễn — liên hệ chứng tích. Trên cơ sở đó, đề tài làm rõ những đặc điểm xuyên suốt, nguyên nhân thắng lợi, ý nghĩa lịch sử và bài học kinh nghiệm.
+**Biên soạn học liệu số** được thực hiện bằng cách phân tích, tổng hợp và chuyển nội dung nghiên cứu thành những đơn vị kiến thức ngắn gọn. Các giai đoạn sử dụng chung một cấu trúc trình bày để thuận tiện theo dõi và so sánh. Nội dung tổng kết kết nối các giai đoạn, trong khi câu hỏi ôn tập tập trung vào những luận điểm và sự kiện trọng tâm.
 
-**Phương pháp khai thác tư liệu trực quan kết hợp khảo sát thực tế** được sử dụng để liên hệ kiến thức trong giáo trình với hiện vật, ảnh tư liệu và nội dung trưng bày. Tư liệu được xem xét trong bối cảnh lịch sử và theo nguồn gốc, nội dung phản ánh, qua đó bổ sung nhận thức về điều kiện chiến đấu, đời sống nhân dân và hậu quả của chiến tranh.
+**Khai thác tư liệu trực quan** kết hợp hiện vật, ảnh tư liệu, nội dung giới thiệu của bảo tàng và ghi nhận khảo sát của các thành viên. Tư liệu được xem xét theo nguồn gốc, bối cảnh và nội dung phản ánh trước khi liên hệ với kiến thức lịch sử. Cách thực hiện này giúp hình ảnh giữ vai trò bổ trợ cho nhận thức, thay vì chỉ làm yếu tố trang trí.
+
+**Tổ chức trải nghiệm học tập trên website** dựa trên mối liên hệ giữa đọc, quan sát và tự kiểm tra. Dòng thời gian hỗ trợ định vị giai đoạn; khu vực trình chiếu trình bày kiến thức; kho tư liệu bổ sung hình ảnh và thông tin; phần trắc nghiệm đưa ra phản hồi cùng giải thích. Các khu vực được kết nối bằng hệ thống điều hướng để người học chủ động lựa chọn nội dung phù hợp với nhu cầu.
+
+**Rà soát sản phẩm** tập trung vào sự nhất quán giữa nội dung lịch sử, chú thích tư liệu, câu hỏi và đáp án, cùng cách hiển thị và điều hướng giữa các khu vực. Tiêu chí xem xét là mức độ rõ ràng của học liệu, khả năng thực hiện các thao tác cơ bản và sự phù hợp với mục tiêu hỗ trợ học tập của môn học.
 
 # PHẦN 2 NỘI DUNG NGHIÊN CỨU QUA NĂM GIAI ĐOẠN LỊCH SỬ
 
