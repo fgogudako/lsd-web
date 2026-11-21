@@ -18,21 +18,22 @@ document.addEventListener("DOMContentLoaded", () => {
 function initNavigation() {
   const navLinks = document.querySelectorAll(".nav-link");
   const sectionViews = document.querySelectorAll(".section-view");
+  const header = document.querySelector(".site-header");
   const mobileBtn = document.getElementById("mobileMenuBtn");
   const mainNav = document.getElementById("mainNav");
 
-  navLinks.forEach(link => {
+  document.querySelectorAll("a[data-view]").forEach(link => {
     link.addEventListener("click", (e) => {
+      const targetView = document.getElementById(link.dataset.view);
+      if (!targetView) return;
       e.preventDefault();
-      const targetViewId = link.getAttribute("data-view");
 
       // Cập nhật class active cho menu
-      navLinks.forEach(l => l.classList.remove("active"));
-      link.classList.add("active");
+      navLinks.forEach(navLink => navLink.classList.toggle("active", navLink.dataset.view === targetView.id));
 
       // Hiển thị view tương ứng
       sectionViews.forEach(view => {
-        view.classList.toggle("active-view", view.id === targetViewId);
+        view.classList.toggle("active-view", view === targetView);
       });
 
       // Đóng mobile menu nếu đang mở
@@ -40,8 +41,9 @@ function initNavigation() {
         mainNav.classList.remove("menu-open");
       }
 
-      // Cuộn nhẹ lên đầu khu vực nội dung
-      window.scrollTo({ top: 380, behavior: "smooth" });
+      const headerHeight = header?.offsetHeight ?? 0;
+      const viewTop = targetView.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: viewTop - headerHeight - 16 });
     });
   });
 
@@ -80,13 +82,26 @@ function renderTeamSection() {
   const teamGridEl = document.getElementById("teamGrid");
   if (teamGridEl && typeof teamMembers !== "undefined") {
     teamGridEl.innerHTML = teamMembers.map(member => `
-      <div class="team-card">
-        <div class="team-avatar">${member.name.charAt(0)}</div>
-        <h4 class="team-name">${member.name}</h4>
-        <span class="team-badge">${member.badge}</span>
-        <div class="team-role">${member.role}</div>
+      <article class="team-card">
+        <div class="team-avatar" aria-hidden="true">
+          <span>${member.name.charAt(0)}</span>
+        </div>
+        <h3 class="team-name">${member.name}</h3>
+        <p class="team-student-id">MSSV: ${member.studentId}</p>
+        <p class="team-role">${member.role}</p>
         <p class="team-task">${member.task}</p>
-      </div>
+      </article>
     `).join("");
+
+    teamGridEl.querySelectorAll(".team-avatar").forEach((avatar, index) => {
+      const { photo } = teamMembers[index];
+      if (!photo) return;
+
+      const image = new Image();
+      image.alt = "";
+      image.decoding = "async";
+      image.addEventListener("load", () => avatar.replaceChildren(image), { once: true });
+      image.src = `assets/images/team/${photo}`;
+    });
   }
 }

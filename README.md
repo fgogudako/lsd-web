@@ -38,7 +38,7 @@ lsd-web/
 │       │   └── quiz.css                # Ứng dụng trắc nghiệm đố vui ôn tập
 │       ├── js/
 │       │   ├── data.js                 # Cơ sở dữ liệu học liệu 5 giai đoạn & nhóm
-│       │   ├── quiz-data.js            # Ngân hàng 12 câu hỏi trắc nghiệm ôn tập
+│       │   ├── quiz-data.js            # Ngân hàng câu hỏi trắc nghiệm dùng trên web
 │       │   ├── timeline.js             # Xử lý slide, mốc timeline đáy, phím mũi tên ← →
 │       │   ├── gallery.js              # Lọc tư liệu theo giai đoạn, phóng to hiện vật
 │       │   ├── quiz.js                 # Xử lý làm quiz, tính điểm, hiện giải thích
