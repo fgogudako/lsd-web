@@ -215,6 +215,28 @@ body {
   gap: 6px;
 }
 
+/* Nút ở banner mở tab Dòng thời gian */
+.timeline-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: var(--gold-accent);
+  color: #1F1408;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.timeline-cta:hover {
+  transform: translateY(-2px);
+  background: #E2B53A;
+}
+
 /* ==========================================================================
    MAIN VIEW CONTAINER & SECTIONS
    ========================================================================== */
