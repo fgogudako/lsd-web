@@ -21,14 +21,13 @@ function initNavigation() {
   const mobileBtn = document.getElementById("mobileMenuBtn");
   const mainNav = document.getElementById("mainNav");
 
-  navLinks.forEach(link => {
+  document.querySelectorAll("a[data-view]").forEach(link => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
       const targetViewId = link.getAttribute("data-view");
 
       // Cập nhật class active cho menu
-      navLinks.forEach(l => l.classList.remove("active"));
-      link.classList.add("active");
+      navLinks.forEach(navLink => navLink.classList.toggle("active", navLink.dataset.view === targetViewId));
 
       // Hiển thị view tương ứng
       sectionViews.forEach(view => {
@@ -80,13 +79,25 @@ function renderTeamSection() {
   const teamGridEl = document.getElementById("teamGrid");
   if (teamGridEl && typeof teamMembers !== "undefined") {
     teamGridEl.innerHTML = teamMembers.map(member => `
-      <div class="team-card">
-        <div class="team-avatar">${member.name.charAt(0)}</div>
-        <h4 class="team-name">${member.name}</h4>
-        <span class="team-badge">${member.badge}</span>
-        <div class="team-role">${member.role}</div>
+      <article class="team-card">
+        <div class="team-avatar" aria-hidden="true">
+          <span>${member.name.charAt(0)}</span>
+        </div>
+        <h3 class="team-name">${member.name}</h3>
+        <p class="team-role">${member.role}</p>
         <p class="team-task">${member.task}</p>
-      </div>
+      </article>
     `).join("");
+
+    teamGridEl.querySelectorAll(".team-avatar").forEach((avatar, index) => {
+      const { photo } = teamMembers[index];
+      if (!photo) return;
+
+      const image = new Image();
+      image.alt = "";
+      image.decoding = "async";
+      image.addEventListener("load", () => avatar.replaceChildren(image), { once: true });
+      image.src = `assets/images/team/${photo}`;
+    });
   }
 }

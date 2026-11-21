@@ -249,14 +249,14 @@ const summaryContent = {
 
 // Dữ liệu nhóm thực hiện đề tài
 const teamMembers = [
-  { name: "Trường", role: "Nhóm trưởng, tổng hợp & báo cáo", task: "Điều phối tiến độ chung, hoàn thiện bài báo cáo nộp trường", badge: "Lead" },
-  { name: "Bảo", role: "Nội dung Giai đoạn 1", task: "Nghiên cứu giai đoạn 1954 - 1960 & Chứng tích thời kỳ Đồng Khởi", badge: "Content" },
-  { name: "Phong", role: "Nội dung Giai đoạn 2", task: "Nghiên cứu giai đoạn 1961 - 1965 & Chiến tranh đặc biệt", badge: "Content" },
-  { name: "Văn An", role: "Nội dung Giai đoạn 3", task: "Nghiên cứu giai đoạn 1965 - 1968 & Tết Mậu Thân", badge: "Content" },
-  { name: "Xuân An", role: "Nội dung Giai đoạn 4", task: "Nghiên cứu giai đoạn 1969 - 1973 & Hiệp định Paris", badge: "Content" },
-  { name: "Tấn", role: "Nội dung Giai đoạn 5", task: "Nghiên cứu giai đoạn 1973 - 1975 & Chiến dịch Hồ Chí Minh", badge: "Content" },
-  { name: "Quang", role: "Tổng kết & Đánh giá nội dung", task: "Biên soạn bài học tổng kết, thiết kế bộ câu hỏi đố vui ôn tập", badge: "Academic" },
-  { name: "Giang", role: "Vibecode - UI & Slide Timeline", task: "Thiết kế kiến trúc giao diện, slide tương tác và timeline", badge: "Developer" },
-  { name: "Quý", role: "Vibecode - Gallery Chứng tích", task: "Xây dựng kho tư liệu, modal xem chi tiết hiện vật và responsive", badge: "Developer" },
-  { name: "Minh", role: "Vibecode - Quiz App & Team page", task: "Lập trình ứng dụng đố vui ôn tập tương tác, trang cảm nghĩ nhóm", badge: "Developer" }
+  { name: "Trường", photo: "truong.jpeg", role: "Nhóm trưởng", task: "Điều phối tiến độ và tổng hợp báo cáo." },
+  { name: "Bảo", photo: "bao.jpg", role: "Nội dung giai đoạn 1", task: "Nghiên cứu giai đoạn 1954–1960 và phong trào Đồng Khởi." },
+  { name: "Phong", photo: "phong.jpg", role: "Nội dung giai đoạn 2", task: "Nghiên cứu giai đoạn 1961–1965 và chiến lược Chiến tranh đặc biệt." },
+  { name: "Văn An", photo: "van.jpg", role: "Nội dung giai đoạn 3", task: "Nghiên cứu giai đoạn 1965–1968 và Tết Mậu Thân." },
+  { name: "Xuân An", photo: "xan.jpg", role: "Nội dung giai đoạn 4", task: "Nghiên cứu giai đoạn 1969–1973 và Hiệp định Paris." },
+  { name: "Tấn", photo: "tan.jpg", role: "Nội dung giai đoạn 5", task: "Nghiên cứu giai đoạn 1973–1975 và Chiến dịch Hồ Chí Minh." },
+  { name: "Quang", photo: "quang.jpg", role: "Tổng kết và hiệu đính", task: "Biên soạn bài tổng kết và bộ câu hỏi ôn tập." },
+  { name: "Giang", photo: "giang.jpg", role: "Giao diện và dòng thời gian", task: "Xây dựng giao diện chung và slide thuyết trình tương tác." },
+  { name: "Quý", photo: "quy.jpg", role: "Kho tư liệu", task: "Xây dựng bộ lọc và giao diện xem chi tiết hiện vật trên các thiết bị." },
+  { name: "Minh", photo: "minh.jpg", role: "Đố vui và trang nhóm", task: "Lập trình phần trắc nghiệm và xây dựng trang nhóm tác giả, cảm nghĩ tập thể." }
 ];

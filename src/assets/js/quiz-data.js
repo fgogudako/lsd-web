@@ -1,161 +1,252 @@
-// Dữ liệu ngân hàng câu hỏi đố vui ôn tập Lịch sử Đảng (1954 - 1975)
-// Biên soạn bởi Quang - Phục vụ chức năng Interactive Quiz trên web
+// Ngu?n: docs/tong-ket-va-on-tap/cau-hoi-quiz.json (Quang).
+// Nh?ng d??i d?ng JavaScript ?? quiz ch?y khi m? tr?c ti?p index.html.
 
 const quizData = [
   {
-    id: 1,
-    stage: "1954 - 1960",
-    question: "Nghị quyết nào của Trung ương Đảng (khóa II) đã xác định con đường cơ bản của cách mạng miền Nam là dùng bạo lực cách mạng?",
-    options: [
-      "Hội nghị Trung ương 6 (7/1954)",
-      "Hội nghị Trung ương 15 (1/1959)",
-      "Hội nghị Trung ương 8 (8/1955)",
-      "Đại hội đại biểu toàn quốc lần III (9/1960)"
+    "id": 1,
+    "stage": "1954-1960",
+    "question": "Nghị quyết Hội nghị Trung ương 15 (khóa II, tháng 1/1959) xác định con đường cơ bản của cách mạng miền Nam là gì?",
+    "options": [
+      "Chỉ đấu tranh nghị trường và chờ tổng tuyển cử",
+      "Dùng bạo lực cách mạng, kết hợp đấu tranh chính trị với đấu tranh vũ trang",
+      "Tạm ngừng đấu tranh để tập trung xây dựng kinh tế",
+      "Chỉ tiến hành đấu tranh ngoại giao"
     ],
-    answer: 1,
-    explanation: "Nghị quyết Hội nghị Trung ương 15 (tháng 1/1959) đã chỉ rõ con đường bạo lực cách mạng, khởi nghĩa vũ trang kết hợp đấu tranh chính trị, dẫn đến cao trào Đồng Khởi."
+    "answer": 1,
+    "explanation": "Nghị quyết Trung ương 15 xác định con đường cơ bản của cách mạng miền Nam là khởi nghĩa giành chính quyền về tay nhân dân, lấy sức mạnh quần chúng làm cơ sở và kết hợp đấu tranh chính trị với đấu tranh vũ trang."
   },
   {
-    id: 2,
-    stage: "1954 - 1960",
-    question: "Theo đường lối Đại hội III của Đảng (9/1960), cách mạng xã hội chủ nghĩa ở miền Bắc giữ vai trò gì?",
-    options: [
+    "id": 2,
+    "stage": "1954-1960",
+    "question": "Đại hội III của Đảng (1960) xác định cách mạng miền Bắc giữ vai trò nào đối với cách mạng cả nước?",
+    "options": [
       "Quyết định trực tiếp",
-      "Hỗ trợ tiền phương",
+      "Chỉ có ý nghĩa hỗ trợ về ngoại giao",
       "Quyết định nhất",
-      "Tiên phong tạm thời"
+      "Tạm thời thay thế nhiệm vụ cách mạng miền Nam"
     ],
-    answer: 2,
-    explanation: "Đại hội III khẳng định miền Bắc là hậu phương chiến lược chung, giữ vai trò quyết định nhất đối với sự phát triển của toàn bộ cách mạng Việt Nam."
+    "answer": 2,
+    "explanation": "Đại hội III xác định cách mạng xã hội chủ nghĩa ở miền Bắc giữ vai trò quyết định nhất đối với sự phát triển của cách mạng cả nước; cách mạng miền Nam giữ vai trò quyết định trực tiếp."
   },
   {
-    id: 3,
-    stage: "1961 - 1965",
-    question: "Yếu tố được coi là 'xương sống' trong chiến lược 'Chiến tranh đặc biệt' của Mỹ ở miền Nam là gì?",
-    options: [
-      "Hàng rào điện tử McNamara",
-      "Quốc sách lập 'Ấp chiến lược'",
-      "Các căn cứ quân sự liên hợp duyên hải",
-      "Chiến dịch rải chất độc da cam"
+    "id": 3,
+    "stage": "1961-1965",
+    "question": "Ba mũi giáp công được vận dụng trong chiến tranh nhân dân ở miền Nam gồm những hình thức nào?",
+    "options": [
+      "Quân sự, kinh tế, văn hóa",
+      "Quân sự, ngoại giao, kinh tế",
+      "Chính trị, ngoại giao, binh vận",
+      "Quân sự, chính trị, binh vận"
     ],
-    answer: 1,
-    explanation: "Ấp chiến lược là quốc sách hàng đầu của Mỹ - Diệm nhằm dồn dân, gom quân và cô lập lực lượng cách mạng khỏi quần chúng nhân dân."
+    "answer": 3,
+    "explanation": "Ba mũi giáp công là phối hợp đấu tranh quân sự, đấu tranh chính trị và binh vận; cách đánh này phát huy sức mạnh tổng hợp trên các địa bàn chiến lược."
   },
   {
-    id: 4,
-    stage: "1961 - 1965",
-    question: "Chiến thắng quân sự nào đầu năm 1963 đã mở đầu cho sự sụp đổ của chiến thuật 'trực thăng vận' và 'thiết xa vận'?",
-    options: [
-      "Chiến thắng Ấp Bắc",
-      "Chiến thắng Bình Giã",
-      "Chiến thắng Ba Gia",
-      "Chiến thắng Đồng Xoài"
+    "id": 4,
+    "stage": "1961-1965",
+    "question": "Chiến thắng Ấp Bắc ngày 2/1/1963 có ý nghĩa nổi bật nào?",
+    "options": [
+      "Chứng minh quân dân miền Nam có thể đánh bại chiến thuật trực thăng vận và thiết xa vận",
+      "Buộc Mỹ ký Hiệp định Paris",
+      "Mở đầu Chiến dịch Hồ Chí Minh",
+      "Kết thúc chiến lược Việt Nam hóa chiến tranh"
     ],
-    answer: 0,
-    explanation: "Chiến thắng Ấp Bắc (2/1/1963) là mốc son chứng minh quân và dân ta hoàn toàn có thể khắc chế các phương tiện vũ khí cơ động tối tân của đối phương."
+    "answer": 0,
+    "explanation": "Chiến thắng Ấp Bắc cho thấy lực lượng cách mạng có thể đánh bại các chiến thuật cơ động bằng trực thăng và xe bọc thép của đối phương, cổ vũ phong trào thi đua chiến đấu."
   },
   {
-    id: 5,
-    stage: "1965 - 1968",
-    question: "Đặc điểm nhận diện rõ nhất của chiến lược 'Chiến tranh cục bộ' so với giai đoạn trước là gì?",
-    options: [
-      "Chỉ tiến hành trên không phận miền Bắc",
-      "Đưa trực tiếp quân đội viễn chinh Mỹ ồ ạt vào tham chiến trên bộ",
-      "Rút hết cố vấn quân sự Mỹ về nước",
-      "Chỉ sử dụng vũ khí công nghệ cao tầm xa"
+    "id": 5,
+    "stage": "1965-1968",
+    "question": "Đặc điểm nổi bật của chiến lược 'Chiến tranh cục bộ' của Mỹ ở miền Nam là gì?",
+    "options": [
+      "Chỉ sử dụng quân đội Sài Gòn, không có quân Mỹ tham chiến",
+      "Rút toàn bộ quân Mỹ và chấm dứt viện trợ",
+      "Đưa quân viễn chinh Mỹ và quân đồng minh trực tiếp tham chiến với quy mô lớn",
+      "Chỉ tiến hành chiến tranh bằng không quân ở miền Bắc"
     ],
-    answer: 1,
-    explanation: "Trong 'Chiến tranh cục bộ' (1965 - 1968), quân viễn chinh Mỹ và đồng minh trực tiếp nhảy vào tham chiến quy mô lớn tại chiến trường miền Nam."
+    "answer": 2,
+    "explanation": "Khác với 'Chiến tranh đặc biệt', trong 'Chiến tranh cục bộ', quân viễn chinh Mỹ và quân đồng minh trực tiếp tham chiến trên chiến trường miền Nam, bên cạnh quân đội Sài Gòn."
   },
   {
-    id: 6,
-    stage: "1965 - 1968",
-    question: "Sự kiện nào buộc chính quyền Mỹ phải tuyên bố ngừng ném bom miền Bắc và chấp thuận ngồi vào bàn đàm phán Paris?",
-    options: [
-      "Chiến thắng Núi Thành (1965)",
-      "Trận Vạn Tường (1965)",
-      "Cuộc Tổng tiến công và nổi dậy Tết Mậu Thân 1968",
-      "Chiến dịch Đường 9 - Khe Sanh"
+    "id": 6,
+    "stage": "1965-1968",
+    "question": "Một kết quả chính trị quan trọng của cuộc Tổng tiến công và nổi dậy Tết Mậu Thân 1968 là gì?",
+    "options": [
+      "Mỹ rút hết quân khỏi Việt Nam ngay trong năm 1968",
+      "Mỹ phải tuyên bố hạn chế ném bom miền Bắc và chấp nhận đàm phán với Việt Nam",
+      "Chính quyền Sài Gòn ký Hiệp định Paris",
+      "Miền Nam được giải phóng hoàn toàn"
     ],
-    answer: 2,
-    explanation: "Đòn tiến công Tết Mậu Thân 1968 giáng đòn quyết định vào ý chí xâm lược của đối phương, làm phá sản hoàn toàn chiến lược Chiến tranh cục bộ."
+    "answer": 1,
+    "explanation": "Tết Mậu Thân tạo bước ngoặt, làm lung lay ý chí xâm lược của Mỹ; Mỹ tuyên bố hạn chế ném bom miền Bắc và chấp nhận đàm phán tại Paris."
   },
   {
-    id: 7,
-    stage: "1969 - 1973",
-    question: "Bản chất của chiến lược 'Việt Nam hóa chiến tranh' của Mỹ là gì?",
-    options: [
-      "Tăng cường tối đa quân viễn chinh Mỹ",
-      "Dùng người Việt đánh người Việt, giảm thiểu thương vong lính Mỹ",
-      "Đưa chiến tranh hạt nhân vào thử nghiệm",
-      "Chuyển toàn bộ quyền lực cho Liên Hợp Quốc"
+    "id": 7,
+    "stage": "1969-1973",
+    "question": "Thực chất của chiến lược 'Việt Nam hóa chiến tranh' là gì?",
+    "options": [
+      "Trao quyền tự quyết cho nhân dân Việt Nam và chấm dứt chiến tranh",
+      "Rút dần quân Mỹ, tăng cường quân đội Sài Gòn và dùng hỏa lực Mỹ hỗ trợ",
+      "Đưa toàn bộ quân đội Mỹ trở lại chiến trường miền Nam",
+      "Chỉ sử dụng lực lượng ngoại giao để giải quyết chiến tranh"
     ],
-    answer: 1,
-    explanation: "Học thuyết Nixon rút dần quân bộ chiến Mỹ về nước nhưng cung cấp tiền bạc và hỏa lực tối tân để quân đội Sài Gòn làm lá chắn thay lính Mỹ."
+    "answer": 1,
+    "explanation": "Mỹ rút dần quân chiến đấu, đồng thời tăng cường quân đội Sài Gòn và tiếp tục hỗ trợ bằng hỏa lực, hậu cần nhằm thực hiện chủ trương 'dùng người Việt đánh người Việt'."
   },
   {
-    id: 8,
-    stage: "1969 - 1973",
-    question: "Chiến thắng 'Hà Nội - Điện Biên Phủ trên không' đã đập tan cuộc tập kích chiến lược bằng loại máy bay nào của Mỹ?",
-    options: [
-      "Tiêm kích F-4 Phantom",
-      "Trực thăng AH-1 Cobra",
-      "Pháo đài bay chiến lược B-52",
-      "Cường kích A-37 Dragonfly"
+    "id": 8,
+    "stage": "1969-1973",
+    "question": "Trong kháng chiến giai đoạn 1969-1973, Đảng chủ trương phối hợp chặt chẽ những mặt trận nào?",
+    "options": [
+      "Quân sự, kinh tế và văn hóa",
+      "Quân sự, giáo dục và khoa học",
+      "Chính trị, kinh tế và xây dựng",
+      "Quân sự, chính trị và ngoại giao"
     ],
-    answer: 2,
-    explanation: "12 ngày đêm cuối năm 1972, lực lượng phòng không - không quân ta đã đánh bại chiến dịch ném bom rải thảm bằng pháo đài bay B-52 trên bầu trời miền Bắc."
+    "answer": 3,
+    "explanation": "Đảng chỉ đạo phối hợp đấu tranh quân sự, chính trị và ngoại giao, thực hiện phương châm vừa đánh vừa đàm."
   },
   {
-    id: 9,
-    stage: "1969 - 1973",
-    question: "Hiệp định Paris được ký kết ngày 27/01/1973 đã hoàn thành mục tiêu chiến lược nào của cách mạng Việt Nam?",
-    options: [
-      "Đánh cho Mỹ cút",
-      "Đánh cho ngụy nhào",
-      "Giải phóng hoàn toàn biên giới Tây Nam",
-      "Hoàn thành hiện đại hóa quân đội"
+    "id": 9,
+    "stage": "1969-1973",
+    "question": "Hiệp định Paris về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam được ký kết vào ngày nào?",
+    "options": [
+      "27/01/1973",
+      "20/07/1954",
+      "30/04/1975",
+      "02/09/1945"
     ],
-    answer: 0,
-    explanation: "Hiệp định Paris buộc quân đội Mỹ phải rút hoàn toàn khỏi lãnh thổ Việt Nam, thực hiện trọn vẹn lời căn dặn bước đầu 'Đánh cho Mỹ cút'."
+    "answer": 0,
+    "explanation": "Hiệp định Paris được ký chính thức ngày 27/01/1973; theo hiệp định, quân đội Mỹ và quân đồng minh của Mỹ phải rút khỏi Việt Nam."
   },
   {
-    id: 10,
-    stage: "1973 - 1975",
-    question: "Hội nghị Ban Chấp hành Trung ương nào đã khẳng định con đường cách mạng miền Nam sau năm 1973 vẫn là bạo lực cách mạng?",
-    options: [
-      "Hội nghị Trung ương 19",
-      "Hội nghị Trung ương 21 (7/1973)",
-      "Hội nghị Trung ương 23",
-      "Đại hội Đảng toàn quốc lần thứ IV"
+    "id": 10,
+    "stage": "1969-1973",
+    "question": "Chiến thắng 'Hà Nội - Điện Biên Phủ trên không' diễn ra trong bao nhiêu ngày đêm vào tháng 12/1972?",
+    "options": [
+      "10 ngày đêm",
+      "12 ngày đêm",
+      "15 ngày đêm",
+      "20 ngày đêm"
     ],
-    answer: 1,
-    explanation: "Nghị quyết Hội nghị Trung ương 21 (tháng 7/1973) nêu rõ trong mọi tình huống con đường cách mạng miền Nam vẫn là con đường bạo lực cách mạng phản công và tiến công."
+    "answer": 1,
+    "explanation": "Chiến thắng lịch sử diễn ra trong 12 ngày đêm (từ 18/12 đến 30/12/1972), đánh bại cuộc tập kích chiến lược bằng pháo đài bay B-52 của đế quốc Mỹ, buộc Mỹ phải ký kết Hiệp định Paris."
   },
   {
-    id: 11,
-    stage: "1973 - 1975",
-    question: "Chiến thắng nào vào tháng 1/1975 được coi là 'đòn trinh sát chiến lược', khẳng định khả năng giải phóng hoàn toàn miền Nam?",
-    options: [
-      "Chiến thắng Đường 14 - Phước Long",
+    "id": 11,
+    "stage": "1973-1975",
+    "question": "Nghị quyết Trung ương 21 (7/1973) khẳng định con đường cách mạng miền Nam là gì?",
+    "options": [
+      "Chỉ đấu tranh nghị trường",
+      "Chờ sự can thiệp quân sự của các nước khác",
+      "Tiếp tục con đường bạo lực cách mạng, kết hợp đấu tranh chính trị và quân sự",
+      "Ngừng đấu tranh để củng cố chính quyền Sài Gòn"
+    ],
+    "answer": 2,
+    "explanation": "Nghị quyết Trung ương 21 khẳng định trong bất kỳ tình hình nào, con đường cách mạng miền Nam vẫn là con đường bạo lực cách mạng, chủ động tiến công và phản công."
+  },
+  {
+    "id": 12,
+    "stage": "1973-1975",
+    "question": "Kế hoạch chiến lược được Bộ Chính trị đề ra cuối năm 1974 - đầu năm 1975 chủ trương giải phóng miền Nam trong thời gian nào?",
+    "options": [
+      "Chỉ trong năm 1976, không thay đổi",
+      "Hai năm 1975 - 1976, đồng thời tranh thủ giải phóng ngay trong năm 1975 nếu thời cơ đến",
+      "Trong mười năm tiếp theo",
+      "Trước khi Hiệp định Paris được ký"
+    ],
+    "answer": 1,
+    "explanation": "Bộ Chính trị đề ra kế hoạch giải phóng miền Nam trong hai năm 1975 - 1976, đồng thời nhấn mạnh nếu thời cơ đến vào đầu hoặc cuối năm 1975 thì lập tức giải phóng miền Nam trong năm 1975."
+  },
+  {
+    "id": 13,
+    "stage": "1973-1975",
+    "question": "Thắng lợi Phước Long đầu năm 1975 cung cấp căn cứ thực tiễn quan trọng nào cho Bộ Chính trị?",
+    "options": [
+      "Mỹ đã rút khỏi Việt Nam trước Hiệp định Paris",
+      "Chiến tranh đã kết thúc và không cần mở các chiến dịch tiếp theo",
+      "Chiến lược 'Chiến tranh đặc biệt' vẫn đang được Mỹ triển khai",
+      "Khả năng Mỹ can thiệp trở lại bị hạn chế, còn quân đội Sài Gòn suy yếu"
+    ],
+    "answer": 3,
+    "explanation": "Thắng lợi Phước Long cho thấy quân đội Sài Gòn suy yếu và Mỹ không có khả năng can thiệp quân sự trở lại như trước, giúp Bộ Chính trị đánh giá thời cơ chiến lược."
+  },
+  {
+    "id": 14,
+    "stage": "1973-1975",
+    "question": "Trình tự các chiến dịch lớn trong Cuộc Tổng tiến công và nổi dậy mùa Xuân 1975 là gì?",
+    "options": [
+      "Tây Nguyên, Huế - Đà Nẵng, Hồ Chí Minh",
+      "Huế - Đà Nẵng, Hồ Chí Minh, Tây Nguyên",
+      "Hồ Chí Minh, Tây Nguyên, Huế - Đà Nẵng",
+      "Tây Nguyên, Hồ Chí Minh, Huế - Đà Nẵng"
+    ],
+    "answer": 0,
+    "explanation": "Cuộc Tổng tiến công diễn ra qua các chiến dịch Tây Nguyên, Huế - Đà Nẵng và Chiến dịch Hồ Chí Minh, với tốc độ phát triển nhanh và liên tục."
+  },
+  {
+    "id": 15,
+    "stage": "1973-1975",
+    "question": "Chiến thắng quân sự nào đầu năm 1975 được coi là 'đòn trinh sát chiến lược', chứng minh quân đội Sài Gòn suy yếu rõ rệt và Mỹ khó có khả năng can thiệp trở lại?",
+    "options": [
+      "Chiến thắng Phước Long (Đường 14)",
       "Chiến thắng Buôn Ma Thuột",
-      "Chiến thắng Pleiku",
+      "Chiến thắng Nông Sơn - Trung Phước",
       "Chiến thắng Xuân Lộc"
     ],
-    answer: 0,
-    explanation: "Chiến thắng Phước Long đã thăm dò được sự bất lực can thiệp lại của Mỹ và sự tan rã của đối phương, tạo tiền đề để Bộ Chính trị chớp thời cơ giải phóng trong năm 1975."
+    "answer": 0,
+    "explanation": "Chiến thắng Đường 14 - Phước Long (06/01/1975) đã mở toang cánh cửa phía Bắc Sài Gòn, củng cố thêm cơ sở thực tiễn để Bộ Chính trị hạ quyết tâm giải phóng hoàn toàn miền Nam trong năm 1975."
   },
   {
-    id: 12,
-    stage: "1973 - 1975",
-    question: "Chiến dịch quyết định cuối cùng mang tên ai đã kết thúc toàn thắng cuộc kháng chiến chống Mỹ cứu nước ngày 30/4/1975?",
-    options: [
-      "Chiến dịch Điện Biên Phủ",
-      "Chiến dịch Tây Nguyên",
-      "Chiến dịch Huế - Đà Nẵng",
-      "Chiến dịch Hồ Chí Minh"
+    "id": 16,
+    "stage": "1973-1975",
+    "question": "Trận đánh then chốt nào mở màn cho Chiến dịch Tây Nguyên thắng lợi, tạo ra sự sụp đổ dây chuyền của địch vào tháng 3/1975?",
+    "options": [
+      "Trận Pleiku",
+      "Trận Kon Tum",
+      "Trận Buôn Ma Thuột",
+      "Trận Cheo Reo"
     ],
-    answer: 3,
-    explanation: "Chiến dịch Hồ Chí Minh lịch sử diễn ra từ 26/4 đến trưa 30/4/1975 với khí thế thần tốc đã giải phóng Sài Gòn - Gia Định, thống nhất đất nước trọn vẹn."
+    "answer": 2,
+    "explanation": "Đòn tiến công bất ngờ, hiểm hóc giải phóng thị xã Buôn Ma Thuột (10/03/1975) đã đánh trúng 'tử huyệt' của hệ thống phòng thủ địch ở Tây Nguyên, buộc địch tháo chạy hỗn loạn."
+  },
+  {
+    "id": 17,
+    "stage": "1973-1975",
+    "question": "Ai là tác giả của bức điện mật lịch sử: 'Thần tốc, thần tốc hơn nữa, táo bạo, táo bạo hơn nữa, tranh thủ từng phút, từng giờ, xốc tới mặt trận, giải phóng miền Nam...' ngày 07/04/1975?",
+    "options": [
+      "Đồng chí Lê Duẩn",
+      "Đại tướng Võ Nguyên Giáp",
+      "Đại tướng Văn Tiến Dũng",
+      "Đồng chí Nguyễn Văn Linh"
+    ],
+    "answer": 1,
+    "explanation": "Đại tướng Võ Nguyên Giáp - Bí thư Quân ủy Trung ương kiêm Bộ trưởng Bộ Quốc phòng đã ký bức điện khẩn lịch sử truyền đi mệnh lệnh chiến đấu hừng hực cho toàn quân tiến vào giải phóng Sài Gòn."
+  },
+  {
+    "id": 18,
+    "stage": "Tổng kết",
+    "question": "Yếu tố nào sau đây là một trong bốn nguyên nhân thắng lợi của cuộc kháng chiến chống Mỹ, cứu nước?",
+    "options": [
+      "Sự suy yếu của phong trào giải phóng dân tộc trên thế giới",
+      "Việc không cần xây dựng hậu phương trong nước",
+      "Hậu phương miền Bắc xã hội chủ nghĩa chi viện sức người, sức của cho tiền tuyến",
+      "Sự chấm dứt hoàn toàn mọi xung đột quốc tế"
+    ],
+    "answer": 2,
+    "explanation": "Miền Bắc vừa xây dựng, bảo vệ hậu phương xã hội chủ nghĩa vừa chi viện liên tục cho tiền tuyến miền Nam; đây là một nguyên nhân quan trọng của thắng lợi."
+  },
+  {
+    "id": 19,
+    "stage": "Tổng kết",
+    "question": "Ý nghĩa lịch sử cơ bản của thắng lợi năm 1975 đối với Việt Nam là gì?",
+    "options": [
+      "Chỉ chấm dứt chiến tranh ở miền Bắc",
+      "Mở đầu thời kỳ đất nước bị chia cắt",
+      "Hoàn thành công cuộc công nghiệp hóa cả nước",
+      "Giải phóng miền Nam, thống nhất đất nước và mở ra kỷ nguyên cả nước đi lên chủ nghĩa xã hội"
+    ],
+    "answer": 3,
+    "explanation": "Thắng lợi năm 1975 kết thúc kháng chiến chống Mỹ, giải phóng miền Nam, thống nhất đất nước và mở ra kỷ nguyên độc lập, thống nhất, cả nước đi lên chủ nghĩa xã hội."
   }
 ];

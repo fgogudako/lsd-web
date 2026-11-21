@@ -252,7 +252,7 @@
       <div class="section-heading-box">
         <span class="section-tag">ÔN TẬP TƯƠNG TÁC</span>
         <h2>Trắc nghiệm kiến thức Lịch sử Đảng (1954 - 1975)</h2>
-        <p class="section-subtitle">Thử tài ghi nhớ các nghị quyết mang tính bước ngoặt và chiến thắng tiêu biểu qua 12 câu đố vui có giải thích chi tiết.</p>
+        <p class="section-subtitle">Ôn lại các nghị quyết và sự kiện lịch sử. Chọn một đáp án cho mỗi câu để xem lời giải thích.</p>
       </div>
 
       <div class="quiz-container">
@@ -260,7 +260,7 @@
         <!-- Tiến độ Quiz -->
         <div class="quiz-progress-bar-wrapper">
           <div class="quiz-status-row">
-            <span id="quizQuestionCounter">Câu 1 / 12</span>
+            <span id="quizQuestionCounter"></span>
             <span class="quiz-score-badge" id="quizScoreDisplay">Điểm: 0</span>
           </div>
           <div class="quiz-progress-track">
@@ -271,7 +271,7 @@
         <!-- Thẻ câu hỏi -->
         <div class="quiz-card" id="quizQuestionCard">
           <span class="quiz-stage-indicator" id="quizStageIndicator">Thời kỳ: 1954 - 1960</span>
-          <h3 class="quiz-question-text" id="quizQuestionText">Câu hỏi đang tải...</h3>
+          <h3 class="quiz-question-text" id="quizQuestionText" tabindex="-1">Câu hỏi đang tải...</h3>
 
           <div class="quiz-options-list" id="quizOptionsList">
             <!-- 4 đáp án render từ JS -->
@@ -279,22 +279,21 @@
 
           <!-- Hộp giải thích hiển thị sau khi chọn -->
           <div class="quiz-explanation-box" id="quizExplanationBox">
-            <div class="explanation-title">💡 Giải thích lịch sử:</div>
-            <p class="explanation-content" id="quizExplanationText">Nội dung giải thích...</p>
+            <div class="explanation-title" id="quizAnswerFeedback"></div>
+            <p class="explanation-content" id="quizExplanationText"></p>
           </div>
 
           <div class="quiz-action-bar">
-            <button class="quiz-next-btn" id="quizNextBtn">Câu tiếp theo ➔</button>
+            <button class="quiz-next-btn" id="quizNextBtn" aria-describedby="quizAnswerFeedback quizExplanationText">Câu tiếp theo ➔</button>
           </div>
         </div>
 
         <!-- Màn hình kết quả khi hoàn thành -->
         <div class="quiz-result-screen" id="quizResultScreen">
           <div class="quiz-result-trophy" id="resultTrophy">🏆</div>
-          <h3 class="result-title">Hoàn thành bài ôn tập!</h3>
-          <div class="result-score-highlight" id="resultScoreHighlight">0 / 12</div>
+          <h3 class="result-title" id="quizResultTitle" tabindex="-1" aria-describedby="resultScoreHighlight resultFeedback">Hoàn thành bài ôn tập!</h3>
+          <div class="result-score-highlight" id="resultScoreHighlight"></div>
           <p class="result-feedback" id="resultFeedback">Phản hồi kết quả...</p>
-          <button class="quiz-restart-btn" id="quizRestartBtn">🔄 Làm lại bài kiểm tra</button>
         </div>
 
       </div>
@@ -330,21 +329,24 @@
     <!-- ==========================================
          VIEW 5: VỀ CHÚNG TÔI / NHÓM THỰC HIỆN
          ========================================== -->
-    <section id="viewTeam" class="section-view">
+    <section id="viewTeam" class="section-view" aria-labelledby="teamTitle">
       
       <div class="section-heading-box">
-        <span class="section-tag">ĐỘI NGŨ THỰC HIỆN</span>
-        <h2>Nhóm Sinh viên môn Lịch sử Đảng</h2>
-        <p class="section-subtitle">Bảng phân công nhiệm vụ và sự đóng góp của các thành viên trong đề tài.</p>
+        <h2 id="teamTitle">Nhóm tác giả</h2>
+        <p class="section-subtitle">Nhóm sinh viên thực hiện đề tài học phần Lịch sử Đảng Cộng sản Việt Nam tại Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM.</p>
       </div>
 
-      <div style="text-align: center; margin-bottom: 2rem;">
-        <img src="assets/images/placeholders/team_photo.svg" alt="Ảnh tập thể nhóm" style="max-width: 720px; width: 100%; border-radius: 12px; border: 2px solid var(--gold-accent); box-shadow: var(--shadow-md);">
-      </div>
+      <img class="team-group-photo" src="assets/images/team/nhom.jpg" alt="Ảnh tập thể nhóm tác giả" width="2568" height="1926" loading="lazy" decoding="async">
 
       <div class="team-grid" id="teamGrid">
         <!-- Render từ JS -->
       </div>
+
+      <section class="team-reflection" aria-labelledby="teamReflectionTitle">
+        <h3 id="teamReflectionTitle">Cảm nghĩ tập thể</h3>
+        <p>Khi học về các mốc lịch sử trên ghế nhà trường, chúng mình chưa hình dung hết sự tàn khốc của chiến tranh. Chỉ khi đối chiếu tư liệu tại Bảo tàng Chứng tích Chiến tranh với các mốc lịch sử trong giáo trình, chúng mình mới cảm nhận rõ hơn những gì người dân đã trải qua. Qua những bức ảnh và câu chuyện, chúng mình hiểu rằng di chứng chiến tranh vẫn ảnh hưởng đến cuộc sống của nhiều người hôm nay. Điều đó giúp chúng mình thêm trân trọng và ý thức hơn về việc gìn giữ hòa bình.</p>
+        <p>Mỗi thành viên tìm hiểu một phần của đề tài. Khi kết nối các phần nội dung để xây dựng dòng thời gian, kho tư liệu và bộ câu hỏi ôn tập, chúng mình hiểu rõ hơn vì sao Đảng đề ra từng chủ trương trong hoàn cảnh lịch sử cụ thể. Chúng mình hy vọng website sẽ giúp các bạn dễ dàng ôn lại từng giai đoạn và có thêm câu hỏi để tự tìm hiểu khi đọc giáo trình hoặc xem tư liệu bảo tàng.</p>
+      </section>
 
     </section>
 
@@ -386,7 +388,7 @@
         <ul>
           <li><a href="#timeline">Dòng thời gian 5 giai đoạn</a></li>
           <li><a href="#gallery">Kho tư liệu Bảo tàng</a></li>
-          <li><a href="#quiz">Đố vui ôn tập tương tác</a></li>
+          <li><a href="#quiz" data-view="viewQuiz">Đố vui ôn tập tương tác</a></li>
           <li><a href="#team">Bảng phân công nhiệm vụ</a></li>
         </ul>
       </div>
