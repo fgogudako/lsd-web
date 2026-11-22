@@ -1,4 +1,4 @@
-# Lịch sử Đảng 1954–1975 | Từ đường lối đến thực tiễn
+# Lịch sử Đảng Cộng sản Việt Nam 1954–1975 | Từ đường lối đến thực tiễn
 
 Học liệu web tương tác về lịch sử kháng chiến chống Mỹ, cứu nước (1954–1975), kết nối sự kiện lịch sử với tư liệu bảo tàng.
 
@@ -6,9 +6,9 @@ Học liệu web tương tác về lịch sử kháng chiến chống Mỹ, cứ
 [![Giấy phép MIT](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-663399?logo=css&logoColor=white)
-![JavaScript thuần](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=black)
 
-**Nhóm 03 · Lớp 23C02** · Học phần Lịch sử Đảng Cộng sản Việt Nam, Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM · GVHD ThS. Trần Thị Châu
+**Nhóm 03 · Lớp 23C02** · Học phần Lịch sử Đảng Cộng sản Việt Nam, Trường Đại học Khoa học tự nhiên, ĐHQG-HCM · GVHD: ThS. Trần Thị Châu
 
 [Mở website](https://nhom03-lsd-23c02.vercel.app/) · [Báo cáo PDF](docs/bao-cao/bao-cao-nhom-3.pdf)
 
@@ -83,27 +83,6 @@ lsd-web/
 │   └── report/                    # Mã LaTeX và ảnh minh họa báo cáo
 └── LICENSE                        # Giấy phép MIT
 ```
-
-| Nội dung cần sửa | Tệp liên quan |
-| --- | --- |
-| Mốc lịch sử và địa điểm | [timeline-data.js](src/assets/js/timeline-data.js), [timeline.js](src/assets/js/timeline.js) |
-| Kho tư liệu, tổng kết và thành viên | [data.js](src/assets/js/data.js) |
-| Câu hỏi và lời giải | [Ngân hàng JSON](docs/tong-ket-va-on-tap/cau-hoi-quiz.json), [quiz-data.js](src/assets/js/quiz-data.js) |
-| Thanh điều hướng và khởi tạo trang | [main.js](src/assets/js/main.js) |
-| Nội dung báo cáo | [Bản Markdown](docs/bao-cao/bao-cao-hoan-chinh.md), [mã nguồn LaTeX](docs/report/) |
-
-## Đóng góp
-
-1. Tạo nhánh từ nhánh đích của Pull Request. Ví dụ khi nhánh đích là `main`:
-
-   ```bash
-   git switch main
-   git pull --ff-only
-   git switch -c docs/cap-nhat-hoc-lieu
-   ```
-
-2. Khi sửa tư liệu hoặc câu hỏi, cập nhật cả bản trong `docs/` và dữ liệu tương ứng trong `src/`. Mở website và kiểm tra luồng vừa thay đổi trên màn hình máy tính và điện thoại.
-3. Commit, đẩy nhánh lên GitHub và [mở Pull Request](https://github.com/fgogudako/lsd-web/compare). Ghi rõ nội dung thay đổi, cách kiểm tra và kèm ảnh nếu sửa giao diện.
 
 ## Contributors
 
