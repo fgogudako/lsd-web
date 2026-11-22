@@ -58,7 +58,7 @@ window.TL_DATA = {
         {
           id: "geneva", date: "1954-07-21", label: "21/7/1954", type: "ctx", key: true,
           detail: "Chiến thắng Điện Biên Phủ (7/5/1954) buộc Pháp phải ký Hiệp định Giơ-ne-vơ, công nhận độc lập, chủ quyền, thống nhất và toàn vẹn lãnh thổ của Việt Nam, Lào, Campuchia. Việt Nam tạm thời chia làm hai vùng tập kết quân sự ở hai bên vĩ tuyến 17 (sông Bến Hải), chờ tổng tuyển cử tự do thống nhất đất nước vào tháng 7/1956 – đây chỉ là ranh giới quân sự, không phải biên giới quốc gia.\n\nMiền Bắc hoàn toàn giải phóng, bước vào hàn gắn vết thương chiến tranh, khôi phục kinh tế và cải tạo xã hội chủ nghĩa. Ở miền Nam, Mỹ từng bước thay chân Pháp, dựng lên chính quyền Ngô Đình Diệm, biến miền Nam thành thuộc địa kiểu mới; chính quyền Diệm tuyên bố không thực hiện tổng tuyển cử năm 1956.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 89 – 93", "Hiệp định Giơ-ne-vơ về đình chỉ chiến sự ở Việt Nam, 21/7/1954"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 89 – 93", "Hiệp định Giơ-ne-vơ về đình chỉ chiến sự ở Việt Nam, 21/7/1954"],
           title: "Hiệp định Giơ-ne-vơ",
           text: "Tạm chia hai miền tại vĩ tuyến 17 – ranh giới quân sự tạm thời, hẹn tổng tuyển cử thống nhất vào 7/1956.",
           place: "v17"
@@ -73,7 +73,7 @@ window.TL_DATA = {
           id: "nq15", date: "1959-01", label: "1/1959", type: "line", key: true,
           detail: "Nghị quyết xác định nhiệm vụ cơ bản của cách mạng miền Nam là giải phóng miền Nam khỏi ách thống trị của đế quốc và phong kiến, thực hiện độc lập dân tộc và người cày có ruộng. Con đường cơ bản là khởi nghĩa giành chính quyền về tay nhân dân, dựa vào lực lượng chính trị của quần chúng là chủ yếu, kết hợp với lực lượng vũ trang.\n\nPhương pháp: sử dụng bạo lực cách mạng của quần chúng, kết hợp đấu tranh chính trị với đấu tranh vũ trang tùy tình hình cụ thể.\n\nLưu ý trình tự: chính sách đàn áp diễn ra liên tục từ 1955; Hội nghị Trung ương 15 họp từ tháng 1/1959, còn Luật 10/59 ban hành sau đó (6/5/1959) – Luật 10/59 không phải nguyên nhân trực tiếp của Nghị quyết 15.",
           meaning: "Đáp ứng đúng yêu cầu bức thiết của thực tiễn, tháo gỡ sự ức chế trong cán bộ, nhân dân miền Nam, mở đường cho cách mạng miền Nam tiến lên.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 89 – 93", "Chi tiết “lực lượng chính trị của quần chúng là chủ yếu” theo góp ý review – cần đối chiếu văn kiện gốc"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 89 – 93", "Chi tiết “lực lượng chính trị của quần chúng là chủ yếu” theo góp ý review – cần đối chiếu văn kiện gốc"],
           title: "Nghị quyết Trung ương 15",
           text: "Bước ngoặt: con đường cơ bản là khởi nghĩa giành chính quyền về tay nhân dân bằng bạo lực cách mạng – lực lượng chính trị quần chúng là chủ yếu, kết hợp lực lượng vũ trang.",
           place: "hanoi"
@@ -88,7 +88,7 @@ window.TL_DATA = {
           id: "dongkhoi", date: "1960-01-17", label: "17/1/1960", type: "prac", key: true,
           detail: "Tiếp thu tinh thần Nghị quyết 15, nhân dân nhiều nơi nổi dậy phá thế kìm kẹp từ giữa năm 1959 (Tà Lốc, Tà Léc – Bình Định; Bắc Ái – Ninh Thuận; Trà Bồng – Quảng Ngãi; Gò Quảng Cung – Đồng Tháp). Tiêu biểu nhất là Bến Tre: ngày 17/1/1960, đồng khởi bùng nổ ở Mỏ Cày do bà Nguyễn Thị Định lãnh đạo, lan ra Minh Tân, Giồng Trôm, Châu Thành, Ba Tri, Thạnh Phú, rồi mở rộng ra đồng bằng sông Cửu Long, Tây Nguyên và một số nơi ở Trung Bộ.\n\nĐến cuối năm 1960, nhân dân giành quyền tự quản ở 1.383/2.627 xã; bộ máy kìm kẹp của Mỹ – Diệm ở nhiều vùng nông thôn bị phá vỡ hoặc suy yếu nghiêm trọng. “Đội quân tóc dài” – lực lượng phụ nữ – làm nòng cốt biểu tình, đấu tranh chính trị trực diện và binh vận.",
           meaning: "Bước nhảy vọt của cách mạng miền Nam: chuyển từ thế giữ gìn lực lượng sang thế tiến công, làm thất bại về cơ bản chính sách “Chiến tranh đơn phương” của Mỹ – Diệm, tạo tiền đề đối phó “Chiến tranh đặc biệt” từ năm 1961.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 89 – 93"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 89 – 93"],
           title: "Đồng Khởi Bến Tre",
           text: "Bùng nổ ở Mỏ Cày do bà Nguyễn Thị Định lãnh đạo, lan khắp Nam Bộ, Tây Nguyên, Trung Bộ – “Đội quân tóc dài” làm nòng cốt.",
           place: "bentre", from: "nq15",
@@ -98,7 +98,7 @@ window.TL_DATA = {
           id: "daihoi3", date: "1960-09-05", label: "5 – 10/9/1960", type: "line", key: true,
           detail: "Đại hội họp tại Hà Nội (5 – 10/9/1960), hoàn chỉnh đường lối chiến lược chung của cách mạng cả nước: hai chiến lược khác nhau ở hai miền nhưng cùng một mục tiêu – cách mạng xã hội chủ nghĩa ở miền Bắc và cách mạng dân tộc dân chủ nhân dân ở miền Nam.\n\nMiền Bắc là hậu phương lớn, giữ vai trò quyết định nhất đối với sự nghiệp cách mạng cả nước; miền Nam là tiền tuyến lớn, giữ vai trò quyết định trực tiếp trong việc đánh đổ Mỹ – Diệm, thống nhất đất nước. Hai cuộc cách mạng thuộc một cuộc cách mạng chung, quan hệ mật thiết, tác động qua lại. Đại hội bầu đồng chí Lê Duẩn làm Bí thư thứ nhất.",
           meaning: "Thể hiện năng lực xác định mục tiêu chiến lược và xử lý đúng đắn mối quan hệ giữa hai miền – nền tảng cho sự lãnh đạo của Đảng suốt cuộc kháng chiến.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 89 – 93"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 89 – 93"],
           title: "Đại hội đại biểu toàn quốc lần thứ III",
           text: "Hai chiến lược, một mục tiêu: miền Bắc giữ vai trò quyết định nhất, miền Nam giữ vai trò quyết định trực tiếp.",
           place: "hanoi"
@@ -147,7 +147,7 @@ window.TL_DATA = {
         {
           id: "bct6162", date: "1961-01", label: "1/1961 & 2/1962", type: "line", key: true,
           detail: "Trong hai hội nghị tháng 1/1961 và 2/1962, Bộ Chính trị phân tích tình hình sau Đồng Khởi và ra chỉ thị về “Phương hướng và nhiệm vụ công tác trước mắt của cách mạng miền Nam”: giữ vững thế tiến công chiến lược, đưa đấu tranh vũ trang phát triển song song với đấu tranh chính trị – chuyển từ khởi nghĩa từng phần sang chiến tranh cách mạng.\n\nTiến công địch trên ba vùng chiến lược: rừng núi (đấu tranh vũ trang là chủ yếu), nông thôn đồng bằng (kết hợp vũ trang và chính trị), đô thị (đấu tranh chính trị là chủ yếu) – bằng ba mũi giáp công: quân sự, chính trị, binh vận.\n\nĐể tăng cường lãnh đạo trực tiếp, ngày 15/2/1961 các lực lượng vũ trang miền Nam thống nhất thành Quân Giải phóng miền Nam Việt Nam; tháng 10/1961 Trung ương Cục miền Nam được thành lập do đồng chí Nguyễn Văn Linh làm Bí thư.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 201 – 202"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 201 – 202"],
           title: "Hội nghị Bộ Chính trị",
           text: "Giữ vững thế tiến công, chuyển từ khởi nghĩa từng phần sang chiến tranh cách mạng.",
           place: "hanoi",
@@ -170,7 +170,7 @@ window.TL_DATA = {
           id: "apbac", date: "1963-01-02", label: "2/1/1963", type: "prac", key: true,
           detail: "Thắng lợi quân sự vang dội đầu tiên của quân và dân miền Nam, diễn ra tại Mỹ Tho. Trận đánh thể hiện sức mạnh tổng hợp của đấu tranh vũ trang kết hợp đấu tranh chính trị và binh vận, bác bỏ trên thực tế hiệu quả của “trực thăng vận” và “thiết xa vận” – những chiến thuật mà địch đặt nhiều kỳ vọng.\n\nSau trận này, phong trào “Thi đua Ấp Bắc, giết giặc lập công” lan rộng trên toàn chiến trường miền Nam.",
           meaning: "Lần đầu tiên đánh bại chiến thuật trực thăng vận và thiết xa vận trên thực địa – mốc mang tính bước ngoặt của giai đoạn 1961 – 1965.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 202 – 205"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 202 – 205"],
           title: "Chiến thắng Ấp Bắc",
           text: "Đánh bại “trực thăng vận”, “thiết xa vận” trên thực địa; dấy lên phong trào “Thi đua Ấp Bắc, giết giặc lập công”.",
           place: "apbac", from: "bct6162"
@@ -185,7 +185,7 @@ window.TL_DATA = {
         {
           id: "tw9", date: "1963-12", label: "12/1963", type: "line", key: true,
           detail: "Tháng 12/1963, Trung ương Đảng họp Hội nghị lần thứ 9, xác định những vấn đề quan trọng về đường lối cách mạng miền Nam.\n\nNghị quyết khẳng định đấu tranh vũ trang “đóng vai trò quyết định trực tiếp” thắng lợi trên chiến trường – văn kiện thể hiện rõ nhất quyết tâm đánh thắng đế quốc Mỹ trong giai đoạn này.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 203 – 205"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 203 – 205"],
           title: "Hội nghị Trung ương 9",
           text: "Khẳng định quyết tâm đánh Mỹ; đấu tranh vũ trang đóng vai trò quyết định trực tiếp.",
           place: "hanoi"
@@ -194,7 +194,7 @@ window.TL_DATA = {
           id: "binhgia", date: "1964-12-02", label: "12/1964 → 6/1965", type: "prac", key: true,
           detail: "Được sự chi viện tích cực từ miền Bắc, quân và dân miền Nam tiến hành hàng loạt chiến dịch: Bình Giã (12/1964), Ba Gia (5/1965), Đồng Xoài (6/1965), khẳng định vững chắc phương châm tác chiến “2 chân, 3 mũi, 3 vùng”.\n\nCả ba trụ cột của “Chiến tranh đặc biệt” – quân đội và chính quyền Sài Gòn, hệ thống ấp chiến lược, sự ổn định ở đô thị – đều bị lung lay tận gốc.",
           meaning: "Đến giữa năm 1965, “Chiến tranh đặc biệt” phá sản hoàn toàn, buộc Mỹ chuyển sang chiến lược “Chiến tranh cục bộ”.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 203 – 204"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 203 – 204"],
           title: "Bình Giã · Ba Gia · Đồng Xoài",
           text: "Chuỗi chiến dịch làm “Chiến tranh đặc biệt” phá sản hoàn toàn, buộc Mỹ chuyển sang chiến lược mới.",
           place: "binhgia", from: "tw9"
@@ -238,7 +238,7 @@ window.TL_DATA = {
         {
           id: "tw1112", date: "1965-03", label: "3/1965 & 12/1965", type: "line", key: true,
           detail: "Hội nghị Trung ương 11 (3/1965) và Trung ương 12 (12/1965) phát triển đường lối kháng chiến chống Mỹ, cứu nước khi cả hai miền đều trong tình trạng chiến tranh: chống Mỹ, cứu nước là nhiệm vụ thiêng liêng của cả dân tộc; kiên quyết đánh bại cuộc chiến tranh xâm lược trong mọi tình huống.\n\nMiền Nam là tiền tuyến lớn, miền Bắc là hậu phương lớn; kết hợp đấu tranh quân sự với đấu tranh chính trị, phát huy chiến tranh nhân dân trên cả nước. Mục tiêu không phải tiêu diệt toàn bộ quân Mỹ bằng một trận quyết chiến, mà làm thất bại chính sách xâm lược và ý chí tiếp tục chiến tranh của Mỹ.\n\nLời kêu gọi ngày 17/7/1966 của Chủ tịch Hồ Chí Minh với chân lý “Không có gì quý hơn độc lập, tự do” củng cố ý chí của nhân dân cả nước trước sự leo thang của Mỹ.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 205 – 207"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 205 – 207"],
           title: "Hội nghị Trung ương 11 & 12",
           text: "Chống Mỹ, cứu nước là nhiệm vụ thiêng liêng của cả dân tộc: miền Nam là tiền tuyến lớn, miền Bắc là hậu phương lớn.",
           place: "hanoi"
@@ -247,7 +247,7 @@ window.TL_DATA = {
           id: "vantuong", date: "1965-08-18", label: "26/5 & 18/8/1965", type: "prac", key: true,
           detail: "Trận Núi Thành (đêm 25 rạng 26/5/1965) và trận Vạn Tường (18/8/1965) chứng minh quân và dân ta có thể chủ động đánh, đánh thắng những đơn vị Mỹ trực tiếp tham chiến.",
           meaning: "Góp phần củng cố quyết tâm chiến đấu và tìm ra cách đánh phù hợp trước ưu thế hỏa lực của đối phương.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 205 – 207"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 205 – 207"],
           title: "Núi Thành – Vạn Tường",
           text: "Chứng minh có thể đánh thắng quân Mỹ; mở đầu cao trào “Tìm Mỹ mà đánh, lùng ngụy mà diệt”.",
           place: "vantuong", from: "tw1112"
@@ -261,7 +261,7 @@ window.TL_DATA = {
         {
           id: "tw14", date: "1968-01", label: "1/1968", type: "line", key: true,
           detail: "Sau hai mùa khô 1965 – 1966 và 1966 – 1967, Bộ Chính trị và Hội nghị Trung ương 14 (1/1968) quyết định mở cuộc Tổng tiến công và nổi dậy vào dịp Tết Mậu Thân, tập trung đánh vào các đô thị và cơ quan đầu não của đối phương.\n\nChủ trương nhằm tạo chuyển biến lớn về cục diện chiến tranh, kết hợp tác động quân sự, chính trị với mặt trận ngoại giao.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2"],
           title: "Nghị quyết Trung ương 14",
           text: "Mở cuộc Tổng tiến công và nổi dậy Tết Mậu Thân, đánh vào đô thị và cơ quan đầu não của đối phương.",
           place: "hanoi"
@@ -270,7 +270,7 @@ window.TL_DATA = {
           id: "mauthan", date: "1968-01-31", label: "Đêm 30 rạng 31/1/1968", type: "prac", key: true,
           detail: "Đêm 30 rạng 31/1/1968, lực lượng cách mạng đồng loạt tiến công nhiều đô thị, căn cứ và cơ quan trọng yếu ở miền Nam. Tại Sài Gòn, các mục tiêu gồm Tòa Đại sứ Mỹ, Dinh Độc Lập, Đài Phát thanh và Bộ Tổng tham mưu quân đội Sài Gòn. Cuộc tiến công gây chấn động dư luận Mỹ và thế giới.\n\nNgày 31/3/1968, Tổng thống Johnson tuyên bố hạn chế ném bom miền Bắc và sẵn sàng đàm phán; đàm phán Việt Nam Dân chủ Cộng hòa – Hoa Kỳ bắt đầu tại Paris ngày 13/5/1968; từ ngày 1/11/1968, Mỹ ngừng toàn bộ ném bom miền Bắc, kết thúc chiến tranh phá hoại lần thứ nhất.",
           meaning: "Bước ngoặt quan trọng về chiến lược và ngoại giao, góp phần buộc Mỹ xuống thang chiến tranh. Tuy nhiên, mục tiêu tổng khởi nghĩa, làm tan rã bộ máy chính quyền Sài Gòn chưa đạt được như dự kiến; lực lượng và cơ sở cách mạng chịu tổn thất nặng.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2"],
           title: "Tổng tiến công và nổi dậy Tết Mậu Thân",
           text: "Đồng loạt tiến công các đô thị; chấn động dư luận Mỹ và thế giới, làm lung lay “Chiến tranh cục bộ”.",
           place: "saigon", from: "tw14",
@@ -302,14 +302,17 @@ window.TL_DATA = {
           }
         },
         {
-          img: "assets/images/artifacts/gd3-a37b.jpg",
+          img: "assets/images/artifacts/gd3-a37.jpg",
           title: "Máy bay cường kích A-37B",
-          where: "Bộ sưu tập Máy bay",
+          where: "Khu trưng bày không quân ngoài trời",
           text: "Dòng A-37 tham chiến ở miền Nam từ 8/1967 – minh họa ưu thế hỏa lực không quân trong “Chiến tranh cục bộ”.",
           detail: "A-37B là máy bay cường kích phản lực hạng nhẹ; dòng A-37 được đưa tới miền Nam tham chiến từ tháng 8/1967.\n\nHiện vật minh họa phương tiện và hỏa lực không quân trong bối cảnh “Chiến tranh cục bộ”.",
           source: {
-            site: "Website Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
+            author: "Balon Greyjoy",
+            site: "Wikimedia Commons",
+            url: "https://commons.wikimedia.org/wiki/File:20190923_A-37_War_Remnants_Museum-5.jpg",
+            license: "CC0 1.0",
+            licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/"
           }
         }
       ],
@@ -333,17 +336,17 @@ window.TL_DATA = {
         {
           id: "bacho", date: "1969-09-02", label: "2/9/1969", type: "ctx", key: true,
           detail: "Ngày 2/9/1969, Chủ tịch Hồ Chí Minh qua đời, để lại bản Di chúc lịch sử chứa đựng những tư tưởng lớn về các vấn đề căn bản và bức thiết của cách mạng Việt Nam.\n\nTrong lễ truy điệu tại Ba Đình, đồng chí Lê Duẩn, Bí thư thứ nhất Ban Chấp hành Trung ương Đảng, đọc Điếu văn, bày tỏ quyết tâm thực hiện đầy đủ những điều căn dặn trong Di chúc. Toàn Đảng, toàn dân quán triệt chủ trương chiến lược hai bước nêu trong thơ chúc Tết Kỷ Dậu (1/1/1969): “Đánh cho Mỹ cút, đánh cho ngụy nhào”.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 220 – 226"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 220 – 226"],
           title: "Chủ tịch Hồ Chí Minh qua đời",
           text: "Người để lại bản Di chúc lịch sử; toàn Đảng, toàn dân biến đau thương thành hành động cách mạng.",
           place: "hanoi"
         },
         {
-          id: "tw1819", date: "1970-01", label: "TW 18 (1/1970) · TW 19 (2/1971)", type: "line", key: true,
+          id: "tw1819", date: "1970-01", label: "Trung ương 18 (1/1970) · Trung ương 19 (2/1971)", type: "line", key: true,
           detail: "Hội nghị Trung ương 18 (1/1970) chỉ đạo kiên trì đẩy mạnh chiến lược tiến công toàn diện, lấy nông thôn làm hướng chính để đánh bại kế hoạch “bình định”, kết hợp tác chiến chính quy với chiến tranh nhân dân địa phương.\n\nHội nghị Trung ương 19 (2/1971) quán triệt thực hiện Di chúc Bác Hồ, huy động nỗ lực cao nhất trên hai miền đẩy mạnh kháng chiến, đồng thời khôi phục kinh tế miền Bắc để củng cố hậu phương lớn và làm tròn nghĩa vụ quốc tế.\n\nĐảng kết hợp ba mặt trận quân sự, chính trị và ngoại giao theo phương châm “vừa đánh, vừa đàm”.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 220 – 228", "Nghị quyết 196-NQ/TW (10/3/1970)", "Nghị quyết 214-NQ/TW (1/3/1971)"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 220 – 228", "Nghị quyết 196-NQ/TW (10/3/1970)", "Nghị quyết 214-NQ/TW (1/3/1971)"],
           title: "Nghị quyết Trung ương 18 & 19",
-          text: "TW 18: tiến công toàn diện, lấy nông thôn làm hướng chính để phá “bình định”. TW 19: dồn sức hai miền, khôi phục kinh tế miền Bắc. Phối hợp ba mặt trận, “vừa đánh, vừa đàm”.",
+          text: "Hội nghị Trung ương 18: tiến công toàn diện, lấy nông thôn làm hướng chính để phá “bình định”. Hội nghị Trung ương 19: dồn sức hai miền, khôi phục kinh tế miền Bắc. Phối hợp ba mặt trận, “vừa đánh, vừa đàm”.",
           place: "hanoi",
           module: { type: "fronts", items: ["Quân sự", "Chính trị", "Ngoại giao"], center: "Vừa đánh, vừa đàm" }
         },
@@ -357,7 +360,7 @@ window.TL_DATA = {
           id: "duong9", date: "1971-02", label: "2 – 3/1971", type: "prac", key: true,
           detail: "Quân dân Việt Nam phối hợp với quân dân Lào chủ động đánh bại cuộc hành quân quy mô lớn “Lam Sơn 719” nhằm cắt đứt đường mòn Hồ Chí Minh, cùng với việc đập tan cuộc hành quân “Toàn thắng 1-71” ở Đông Bắc Campuchia.",
           meaning: "Làm quân đội Sài Gòn – “xương sống” của “Việt Nam hóa chiến tranh” – suy yếu nghiêm trọng, mở ra khả năng thực tế đánh bại chiến lược này.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 220 – 228"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 220 – 228"],
           title: "Chiến thắng Đường 9 – Nam Lào",
           text: "Cùng quân dân Lào đập tan cuộc hành quân “Lam Sơn 719” (và “Toàn thắng 1-71” ở Đông Bắc Campuchia), làm suy yếu nghiêm trọng quân đội Sài Gòn – “xương sống” của “Việt Nam hóa chiến tranh”.",
           place: "duong9", from: "dongduong"
@@ -366,7 +369,7 @@ window.TL_DATA = {
           id: "tc1972", date: "1972-03-30", label: "Xuân – Hè 1972", type: "prac", key: true,
           detail: "Mùa Xuân – Hè 1972, quân ta tiến công quy mô lớn trên các hướng Trị – Thiên, Tây Nguyên, Đông Nam Bộ, đồng bằng Khu V và đồng bằng sông Cửu Long, tiêu biểu là 81 ngày đêm chiến đấu tại Thành cổ Quảng Trị (28/6 – 16/9/1972).",
           meaning: "Phá vỡ ba tuyến phòng ngự mạnh nhất ở Quảng Trị, Tây Nguyên, Đông Nam Bộ, giáng đòn nặng vào chủ lực quân đội Sài Gòn, đánh bại một phần quan trọng chương trình “bình định”, buộc Mỹ “Mỹ hóa” trở lại cuộc chiến.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 220 – 228"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 220 – 228"],
           title: "Cuộc tiến công chiến lược 1972",
           text: "Phá vỡ ba tuyến phòng ngự mạnh nhất ở Quảng Trị, Tây Nguyên, Đông Nam Bộ, buộc Mỹ phải “Mỹ hóa” trở lại cuộc chiến.",
           place: "quangtri", from: "tw1819",
@@ -376,7 +379,7 @@ window.TL_DATA = {
           id: "dbpk", date: "1972-12-18", label: "18 – 29/12/1972", type: "prac", key: true,
           detail: "Nhằm ngăn chặn tiến công của ta và ép ta trên bàn đàm phán, từ ngày 18 đến 29/12/1972 Mỹ mở cuộc tập kích chiến lược bằng máy bay B-52 vào Hà Nội, Hải Phòng.\n\nPhát huy cao độ thế trận chiến tranh nhân dân, quân dân miền Bắc bắn rơi 84 máy bay (gồm 34 chiếc B-52 và 5 chiếc F-111A), bắt sống 43 giặc lái.",
           meaning: "Đập tan cuộc chiến tranh phá hoại lần thứ hai, bảo vệ vững chắc hậu phương lớn, buộc Mỹ nối lại đàm phán tại Paris (8/1/1973) và ngừng toàn bộ hoạt động tiến công quân sự chống miền Bắc (15/1/1973).",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 220 – 228"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 220 – 228"],
           title: "“Hà Nội – Điện Biên Phủ trên không”",
           text: "12 ngày đêm đánh bại tập kích chiến lược bằng B-52 vào Hà Nội, Hải Phòng; buộc Mỹ trở lại đàm phán (8/1/1973) và ngừng mọi hoạt động tiến công miền Bắc (15/1/1973).",
           place: "hanoi",
@@ -386,7 +389,7 @@ window.TL_DATA = {
           id: "paris", date: "1973-01-27", label: "27/1/1973", type: "prac", key: true,
           detail: "Sau 4 năm 8 tháng 14 ngày đấu tranh ngoại giao, Hiệp định về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam được ký kết ngày 27/1/1973.\n\nCác điều khoản then chốt: Hoa Kỳ và các nước khác tôn trọng độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ của Việt Nam (Điều 1); Hoa Kỳ chấm dứt dính líu quân sự, can thiệp vào nội bộ miền Nam (Điều 4); rút hoàn toàn quân đội, cố vấn quân sự ra khỏi miền Nam trong thời hạn 60 ngày (Điều 5).",
           meaning: "Đè bẹp ý chí xâm lược của Mỹ, hoàn thành bước đi chiến lược “Đánh cho Mỹ cút”, tạo cơ hội quyết định để tiến lên “Đánh cho ngụy nhào”.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 220 – 228", "Hiệp định về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam (27/1/1973), Điều 1, 4, 5"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 220 – 228", "Hiệp định về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam (27/1/1973), Điều 1, 4, 5"],
           title: "Hiệp định Paris",
           text: "Mỹ cam kết tôn trọng độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ Việt Nam (Điều 1), rút hết quân trong 60 ngày (Điều 5) – hoàn thành “Đánh cho Mỹ cút”.",
           place: "paris", from: "tw1819",
@@ -396,10 +399,10 @@ window.TL_DATA = {
       artifacts: [
         {
           img: "assets/images/artifacts/gd4-da-cam.jpg",
-          title: "Hậu quả chất độc da cam / dioxin",
+          title: "Hậu quả chất độc da cam",
           where: "Lầu 1 – Phòng 7 “Hậu quả chất độc da cam trong chiến tranh xâm lược của Mỹ ở Việt Nam”",
           text: "Những cánh rừng trơ trụi sau khi bị rải chất độc hóa học – di chứng kéo dài nhiều thế hệ lên môi trường và con người.",
-          detail: "Ảnh tư liệu trong không gian trưng bày “Hậu quả chất độc da cam”: những cánh rừng trơ trụi, chỉ còn thân cây chết khô sau khi bị rải chất độc hóa học.\n\nPhòng trưng bày cho thấy hậu quả của chất da cam/dioxin lên môi trường và sức khỏe con người qua nhiều thế hệ, ở cả hai phía của cuộc chiến – đồng thời kể về sự hỗ trợ của gia đình, xã hội và cộng đồng quốc tế dành cho các nạn nhân, những con người vẫn nỗ lực vươn lên như bao người khác.",
+          detail: "Ảnh tư liệu trong không gian trưng bày “Hậu quả chất độc da cam”: những cánh rừng trơ trụi, chỉ còn thân cây chết khô sau khi bị rải chất độc hóa học.\n\nPhòng trưng bày cho thấy hậu quả của chất độc da cam lên môi trường và sức khỏe con người qua nhiều thế hệ, ở cả hai phía của cuộc chiến – đồng thời kể về sự hỗ trợ của gia đình, xã hội và cộng đồng quốc tế dành cho các nạn nhân, những con người vẫn nỗ lực vươn lên như bao người khác.",
           source: null
         },
         {
@@ -438,7 +441,7 @@ window.TL_DATA = {
           id: "tw21", date: "1973-07", label: "7/1973", type: "line", key: true,
           detail: "Sau Hiệp định Paris, trong cán bộ và nhân dân từng xuất hiện tâm lý ngập ngừng, ảo tưởng về khả năng hòa bình, thiếu cảnh giác trước các đòn lấn chiếm của địch. Tháng 7/1973, Hội nghị Trung ương lần thứ 21 (khóa III) khẳng định: “Con đường cách mạng của nhân dân miền Nam là con đường bạo lực cách mạng”.\n\nBất luận trong tình huống nào cũng phải nắm vững thời cơ, giữ vững đường lối chiến lược tiến công; kiên quyết phản công và tiến công địch, giữ vững và mở rộng vùng giải phóng, chuẩn bị tiến lên giải phóng hoàn toàn miền Nam.",
           meaning: "Quyết sách bản lề, giải tỏa băn khoăn tư tưởng, thống nhất ý chí toàn Đảng, toàn quân trên các chiến trường.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 229 – 235", "Nghị quyết 227-NQ/TW (13/10/1973)", "Văn kiện Đảng toàn tập, Tập 34"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 229 – 235", "Nghị quyết 227-NQ/TW (13/10/1973)", "Văn kiện Đảng toàn tập, Tập 34"],
           title: "Nghị quyết Trung ương 21",
           text: "“Con đường cách mạng của nhân dân miền Nam là con đường bạo lực cách mạng”; nắm vững thời cơ, giữ vững chiến lược tiến công.",
           place: "hanoi"
@@ -458,7 +461,7 @@ window.TL_DATA = {
         {
           id: "bct7475", date: "1974-09-30", label: "9/1974 → 1/1975", type: "line", key: true,
           detail: "Hội nghị Bộ Chính trị mở rộng họp hai đợt (30/9 – 8/10/1974 và 8/12/1974 – 7/1/1975) nhận định: “Chưa bao giờ ta có điều kiện đầy đủ về quân sự, chính trị, có thời cơ chiến lược to lớn như hiện nay”.\n\nKế hoạch hai năm: năm 1975 tranh thủ thời cơ, bất ngờ mở các đòn tiến công lớn và rộng khắp; năm 1976 tổng công kích – tổng khởi nghĩa, giải phóng hoàn toàn miền Nam. Kèm phương án dự phòng: “Nếu thời cơ đến vào đầu hoặc cuối năm 1975 thì lập tức giải phóng miền Nam ngay trong năm 1975”.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 229 – 235", "Văn kiện Đảng toàn tập, Tập 35"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 229 – 235", "Văn kiện Đảng toàn tập, Tập 35"],
           title: "Hội nghị Bộ Chính trị",
           text: "Kế hoạch giải phóng miền Nam trong hai năm 1975 – 1976; “nếu thời cơ đến vào đầu hoặc cuối năm 1975 thì lập tức giải phóng miền Nam ngay trong năm 1975”.",
           place: "hanoi"
@@ -467,7 +470,7 @@ window.TL_DATA = {
           id: "phuoclong", date: "1975-01-06", label: "13/12/1974 → 6/1/1975", type: "prac", key: true,
           detail: "Chiến dịch Đường 14 – Phước Long (13/12/1974 – 6/1/1975) do Quân đoàn 4 cùng lực lượng vũ trang địa phương thực hiện, tiêu diệt chi khu Đồng Xoài, giải phóng thị xã và toàn tỉnh Phước Long – tỉnh đầu tiên ở miền Nam được giải phóng hoàn toàn, cách Sài Gòn hơn 100 km.",
           meaning: "Đòn “trinh sát chiến lược”: chứng minh quân đội Sài Gòn mất khả năng tái chiếm, còn Mỹ không thể can thiệp quân sự trở lại – cơ sở để Bộ Chính trị hạ quyết tâm.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 231 – 234"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 231 – 234"],
           title: "Giải phóng Phước Long",
           text: "Tỉnh đầu tiên ở miền Nam được giải phóng hoàn toàn; đòn “trinh sát chiến lược” cho thấy Mỹ không thể quay lại can thiệp.",
           place: "phuoclong", from: "tw21", liberate: "phuoclong"
@@ -476,7 +479,7 @@ window.TL_DATA = {
           id: "taynguyen", date: "1975-03-10", label: "4/3 – 24/3/1975", type: "prac", key: true,
           detail: "Ta nghi binh rầm rộ ở Pleiku và Kon Tum, buộc đối phương dồn chủ lực lên phía Bắc Tây Nguyên. Rạng sáng 10/3/1975, quân ta bất ngờ hiệp đồng binh chủng đánh thẳng vào thị xã Buôn Ma Thuột, giải phóng hoàn toàn sau hơn 30 giờ chiến đấu.\n\nNguyễn Văn Thiệu ra lệnh rút bỏ Tây Nguyên để co cụm giữ duyên hải; cuộc rút chạy trên Đường số 7 biến thành thảm họa, Quân đoàn 2 quân đội Sài Gòn tan rã. Tây Nguyên hoàn toàn giải phóng (24/3/1975).",
           meaning: "Đòn điểm huyệt mở màn Tổng tiến công và nổi dậy mùa Xuân 1975 – nghệ thuật nghi binh tạo bất ngờ tuyệt đối về chiến lược.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 231 – 234"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 231 – 234"],
           title: "Chiến dịch Tây Nguyên",
           text: "Nghi binh ở Pleiku – Kon Tum, bất ngờ đánh Buôn Ma Thuột (10/3); địch rút chạy hỗn loạn, Tây Nguyên hoàn toàn giải phóng.",
           place: "bmt", from: "bct7475", liberate: "taynguyen"
@@ -485,7 +488,7 @@ window.TL_DATA = {
           id: "rutngan", date: "1975-03-18", label: "8/1 → 14/4/1975", type: "line", key: true,
           detail: "8/1/1975: thông qua kế hoạch 2 năm (1975 – 1976), dự kiến phương án 1 năm nếu có thời cơ. 18/3: quyết định giải phóng miền Nam ngay trong năm 1975. 25/3: giải phóng miền Nam trước mùa mưa (trước tháng 5/1975). 7/4: Đại tướng Võ Nguyên Giáp phát bức điện “Thần tốc, thần tốc hơn nữa…”. 14/4: đặt tên chiến dịch giải phóng Sài Gòn là “Chiến dịch Hồ Chí Minh”.\n\nBộ Chính trị đồng thời chỉ thị về việc tiếp quản Sài Gòn – Gia Định: bảo toàn tính mạng, tài sản của hơn 3 triệu đồng bào nội đô; nghiêm cấm pháo kích bừa bãi vào khu dân cư; bảo vệ nguyên vẹn nhà máy điện, nước, bệnh viện, trường học, cầu cống.",
           meaning: "Nghệ thuật tạo thời cơ, đón thời cơ và chớp thời cơ: từ kế hoạch 2 năm rút xuống còn 55 ngày đêm.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 229 – 235", "Văn kiện Đảng toàn tập, Tập 36 (quyết nghị 18/3 và 25/3/1975)"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 229 – 235", "Văn kiện Đảng toàn tập, Tập 36 (quyết nghị 18/3 và 25/3/1975)"],
           title: "Bộ Chính trị rút ngắn kế hoạch",
           text: "Chớp thời cơ liên tục, từ kế hoạch hai năm rút xuống còn 55 ngày đêm.",
           place: "hanoi",
@@ -510,7 +513,7 @@ window.TL_DATA = {
           id: "hcm", date: "1975-04-30", label: "26/4 – 30/4/1975", type: "prac", key: true,
           detail: "Sau khi chọc thủng “cánh cửa thép” Xuân Lộc (9 – 21/4), 17 giờ ngày 26/4 năm cánh quân (hơn 280.000 quân) đồng loạt tiến công: Quân đoàn 1 hướng Bắc, Quân đoàn 3 hướng Tây Bắc, Đoàn 232 hướng Tây và Tây Nam, Quân đoàn 4 hướng Đông, Quân đoàn 2 hướng Đông Nam. Chiều 28/4, Phi đội Quyết Thắng dùng 5 máy bay A-37 thu được ném bom sân bay Tân Sơn Nhất.\n\n10 giờ 45 ngày 30/4, xe tăng 843 húc nghiêng cổng phụ, xe tăng 390 húc tung cổng chính Dinh Độc Lập; 11 giờ 30, Đại đội trưởng Bùi Quang Thận cắm cờ Mặt trận Dân tộc Giải phóng trên nóc Dinh. Tổng thống Dương Văn Minh đầu hàng không điều kiện. Đến ngày 2/5/1975, các tỉnh đồng bằng sông Cửu Long và các đảo, quần đảo ở Biển Đông, trong đó có quần đảo Trường Sa, được hoàn toàn giải phóng.",
           meaning: "Kết thúc thắng lợi 21 năm kháng chiến chống Mỹ, cứu nước – non sông thu về một mối.",
-          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ GD&ĐT, 2021), Chương 2, tr. 231 – 234", "Văn Tiến Dũng, Đại thắng mùa Xuân, NXB Quân đội nhân dân, 1977"],
+          refs: ["Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, 2021), Chương 2, trang 231 – 234", "Văn Tiến Dũng, Đại thắng mùa Xuân, Nhà xuất bản Quân đội nhân dân, 1977"],
           title: "Chiến dịch Hồ Chí Minh",
           text: "17 giờ 26/4, năm cánh quân đồng loạt tiến công Sài Gòn. Trưa 30/4, xe tăng 390 húc đổ cổng chính Dinh Độc Lập, cờ Mặt trận tung bay trên nóc Dinh; Dương Văn Minh đầu hàng không điều kiện. Đến 2/5/1975, các tỉnh còn lại và quần đảo Trường Sa được giải phóng.",
           place: "saigon", from: "rutngan", liberate: "all",
@@ -558,7 +561,7 @@ window.TL_DATA = {
           }
         }
       ],
-      takeaway: "Bạo lực cách mạng (NQ 21) + chớp thời cơ (2 năm → 55 ngày đêm) → 30/4/1975 non sông thu về một mối."
+      takeaway: "Bạo lực cách mạng (Nghị quyết Trung ương 21) + chớp thời cơ (2 năm → 55 ngày đêm) → 30/4/1975 non sông thu về một mối."
     }
   ],
 

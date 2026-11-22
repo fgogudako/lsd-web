@@ -14,7 +14,11 @@
   const reducedMQ = window.matchMedia("(prefers-reduced-motion: reduce)");
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
-  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  // Thoát ký tự HTML; đồng thời giữ tên "Hồ Chí Minh" trên cùng một dòng (dấu cách không ngắt)
+  const esc = (s) =>
+    String(s)
+      .replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]))
+      .replace(/Hồ Chí Minh/g, "Hồ\u00a0Chí\u00a0Minh");
   const fmt = (n) => Number(n).toLocaleString("vi-VN");
   const pad = (n) => String(n).padStart(2, "0");
 
@@ -233,9 +237,8 @@
       <figcaption>
         <span class="art-kicker">Hình ảnh tư liệu</span>
         <strong>${esc(a.title)}</strong>
-        ${a.where ? `<span class="art-where">${esc(a.where)}</span>` : ""}
         <span class="art-text">${esc(a.text)}</span>
-        ${a.pending ? "" : `<button class="art-more" type="button" data-art="${si}-${ai}">Xem chi tiết &amp; nguồn ảnh →</button>`}
+        ${a.pending ? "" : `<button class="art-more" type="button" data-art="${si}-${ai}">Xem chi tiết →</button>`}
       </figcaption>
     </figure>`;
   }
@@ -371,11 +374,11 @@
 
     if (ev.stage !== activeStage) {
       activeStage = ev.stage;
-      $("#psCount").textContent = `GĐ ${ev.stage + 1}/5 · ${st.years}`;
+      $("#psCount").textContent = `Giai đoạn ${ev.stage + 1}/5 · ${st.years}`;
       $("#psTitle").textContent = st.title;
       $("#psOpp").textContent = "Đối phương: " + st.opp.name.replace(/[“”]/g, "");
       $$(".ruler-seg").forEach((b, i) => b.classList.toggle("is-on", i === ev.stage));
-      $("#mbStage").textContent = `GĐ ${ev.stage + 1} · ${st.short}`;
+      $("#mbStage").textContent = `Giai đoạn ${ev.stage + 1} · ${st.short}`;
     }
     const place = ev.place ? PLACES[ev.place] : null;
     $("#psPlace").innerHTML = place ? `${ICON.pin}<span>${esc(place.name)}</span>` : "";
@@ -604,27 +607,10 @@
       .split(/\n\s*\n/)
       .map((p) => `<p>${esc(p.trim())}</p>`)
       .join("");
-    $("#lbSource").innerHTML = renderSource(a.source);
-    $("#lbSource").classList.toggle("is-missing", !a.source);
     if (typeof lb.showModal === "function") lb.showModal();
     else lb.setAttribute("open", "");
     $(".lb-body", lb).scrollTop = 0;
   });
-
-  // Dòng nguồn ảnh: "Ảnh: Tác giả · Nơi đăng (liên kết) · Giấy phép (liên kết) · thay đổi"
-  function renderSource(s) {
-    if (!s) {
-      return `<span class="lb-source-label">Nguồn ảnh</span><p>Chưa có thông tin nguồn ảnh – nhóm nội dung đang bổ sung.</p>`;
-    }
-    const link = (text, url) =>
-      url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(text)}</a>` : esc(text);
-    const parts = [];
-    if (s.author) parts.push(`Ảnh: ${esc(s.author)}`);
-    if (s.site) parts.push(link(s.site, s.url));
-    if (s.license) parts.push(link(s.license, s.licenseUrl));
-    if (s.changes) parts.push(esc(s.changes));
-    return `<span class="lb-source-label">Nguồn ảnh</span><p>${parts.join(" · ")}</p>`;
-  }
   $("#lbClose").addEventListener("click", () => lb.close());
   lb.addEventListener("click", (e) => { if (e.target === lb) lb.close(); });
 
