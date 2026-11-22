@@ -5,56 +5,11 @@
    Mọi quy tắc nằm trong #viewSummary để không ảnh hưởng tab khác.
    ========================================================================== */
 
-/* Font của thiết kế mới (trùng với gallery.css thì trình duyệt dùng lại bản đã tải). */
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap");
-
-/* ---------- Token – đồng bộ với timeline.css (.tl) và gallery.css ---------- */
-#viewSummary {
-  --paper: #f3f0e8;
-  --paper-2: #e9e4da;
-  --ink: #1c2420;
-  --ink-2: #464c47;
-  --ink-3: #868980;
-  --rule: #d9d4c9;
-  --rule-strong: #363d39;
-  --red: #a8382c;
-  --amber: #d9a441;
-
-  --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
-  --font-body: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-
-  --ease: cubic-bezier(0.16, 1, 0.3, 1);
-  --fast: 160ms;
-
-  font-family: var(--font-body);
-  color: var(--ink);
-  /* Nền giấy tràn hết bề ngang dù khung .main-content có giới hạn rộng */
-  border-image: linear-gradient(var(--paper) 0 0) fill 0 / 0 / 1.5rem 100vmax 4rem;
-}
-
 #viewSummary .s-wrap {
   padding: clamp(56px, 6vw, 88px) 0 104px;
 }
 
 /* ---------- Đầu trang ---------- */
-#viewSummary .s-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin: 0;
-  font: 700 12px/1.4 var(--font-body);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--red);
-}
-
-#viewSummary .s-dash {
-  display: inline-block;
-  width: 36px;
-  height: 1.5px;
-  background: currentColor;
-}
-
 #viewSummary .s-title {
   margin: 18px 0 0;
   max-width: 36ch;

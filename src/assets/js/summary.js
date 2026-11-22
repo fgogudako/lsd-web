@@ -79,7 +79,7 @@ const SummaryModule = (() => {
       <div class="s-wrap">
         <header class="s-head">
           <div>
-            <p class="s-eyebrow">Tổng kết &amp; bài học <span class="s-dash" aria-hidden="true"></span> 1954 – 1975</p>
+            <p class="eyebrow">Tổng kết &amp; bài học <i aria-hidden="true"></i> 1954 – 1975</p>
             <h2 class="s-title" id="summaryTitle">${esc(c.title)}</h2>
           </div>
         </header>

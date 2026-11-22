@@ -3,15 +3,35 @@
    Phản hồi tức thì, giải thích học thuật, bảng điểm tổng kết
    ========================================================================== */
 
-.quiz-container {
+#viewQuiz {
   max-width: 820px;
-  margin: 0 auto;
-  background: var(--bg-card);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+  margin-inline: auto;
+  padding-block: clamp(1.75rem, 4vw, 3.5rem) 1rem;
+}
+
+.quiz-intro {
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.quiz-intro h2 {
+  margin-top: 0.875rem;
+  font: 700 clamp(2rem, 4.5vw, 3.5rem)/1.15 var(--font-serif);
+  text-wrap: balance;
+}
+
+.quiz-intro p:last-child {
+  max-width: 56ch;
+  margin-top: 1rem;
+  padding-inline-start: 1rem;
+  border-inline-start: 3px solid var(--amber);
+  color: var(--ink-2);
+}
+
+.quiz-container {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--amber);
   padding: clamp(1rem, 4vw, 2.2rem);
-  position: relative;
 }
 
 /* Thanh tiến độ câu hỏi */
@@ -24,26 +44,24 @@
   justify-content: space-between;
   font-size: 0.88rem;
   font-weight: 700;
-  color: var(--text-muted);
+  color: var(--ink-2);
   margin-bottom: 8px;
 }
 
 .quiz-score-badge {
-  color: var(--gold-accent);
+  color: var(--red);
 }
 
 .quiz-progress-track {
   width: 100%;
   height: 8px;
-  background: #EFECE6;
-  border-radius: 4px;
+  background: var(--paper-2);
   overflow: hidden;
 }
 
 .quiz-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--gold-accent), var(--primary-red));
-  border-radius: 4px;
+  background: linear-gradient(90deg, var(--amber), var(--red));
   transition: width 0.3s ease;
   width: 0%;
 }
@@ -55,19 +73,17 @@
 
 .quiz-stage-indicator {
   display: inline-block;
-  background: var(--primary-red-light);
-  color: var(--primary-red);
-  padding: 3px 12px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  font-weight: 700;
+  background: var(--note);
+  color: var(--red);
+  padding: 0.25rem 0.6rem;
+  font: 400 0.875rem/1.4 var(--font-type);
   margin-bottom: 12px;
 }
 
 .quiz-question-text {
   font-family: var(--font-serif);
   font-size: 1.35rem;
-  color: var(--dark-charcoal);
+  color: var(--ink);
   line-height: 1.45;
   margin-bottom: 1.5rem;
 }
@@ -81,50 +97,41 @@
 }
 
 .quiz-option-btn {
-  background: var(--bg-card);
-  border: 2px solid var(--border-light);
-  border-radius: var(--radius-md);
+  background: var(--card);
+  border: 1px solid var(--rule);
   padding: 14px 18px;
   text-align: left;
-  font-size: 0.98rem;
-  font-weight: 500;
-  color: var(--text-primary);
+  font: 500 0.97rem/1.5 var(--font-body);
+  color: var(--ink);
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 14px;
-  transition: var(--transition-normal);
-}
-
-.quiz-option-btn:focus-visible,
-.quiz-next-btn:focus-visible {
-  outline: 2px solid var(--primary-red);
-  outline-offset: 3px;
+  transition: background-color var(--fast), border-color var(--fast), color var(--fast);
 }
 
 .option-letter {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
-  background: #F0ECE6;
-  color: var(--text-secondary);
+  background: var(--note);
+  color: var(--ink-2);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   font-size: 0.9rem;
   flex-shrink: 0;
-  transition: var(--transition-normal);
+  transition: background-color var(--fast), border-color var(--fast), color var(--fast);
 }
 
 .quiz-option-btn:hover:not(:disabled) {
-  border-color: var(--gold-accent);
-  background: #FFFDF8;
+  border-color: var(--amber);
+  background: var(--note);
 }
 
 .quiz-option-btn:hover:not(:disabled) .option-letter {
-  background: var(--gold-accent);
-  color: #FFF;
+  background: var(--amber);
+  color: var(--ink);
 }
 
 /* Trạng thái đáp án Đúng / Sai */
@@ -157,10 +164,9 @@
 /* Hộp giải thích chi tiết */
 .quiz-explanation-box {
   display: none;
-  background: #FDF9F0;
-  border: 1px solid #E8DCBE;
-  border-left: 4px solid var(--gold-accent);
-  border-radius: var(--radius-sm);
+  background: var(--note);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--amber);
   padding: 1.2rem;
   margin-bottom: 1.5rem;
   animation: fadeIn 0.3s ease;
@@ -173,13 +179,13 @@
 .explanation-title {
   font-weight: 700;
   font-size: 0.92rem;
-  color: #7A5B0B;
+  color: var(--ink);
   margin-bottom: 4px;
 }
 
 .explanation-content {
   font-size: 0.92rem;
-  color: #4A3E2A;
+  color: var(--ink-2);
   line-height: 1.5;
 }
 
@@ -190,23 +196,20 @@
 }
 
 .quiz-next-btn {
-  background: var(--primary-red);
-  color: #FFFFFF;
+  background: var(--ink);
+  color: var(--paper);
   border: none;
   padding: 10px 24px;
-  border-radius: var(--radius-sm);
-  font-weight: 700;
-  font-size: 0.95rem;
+  font: 700 0.95rem/1.4 var(--font-body);
   cursor: pointer;
   display: none;
   align-items: center;
   gap: 8px;
-  transition: var(--transition-normal);
+  transition: background-color var(--fast), border-color var(--fast), color var(--fast);
 }
 
 .quiz-next-btn:hover {
-  background: var(--primary-red-hover);
-  box-shadow: 0 4px 12px rgba(139, 30, 30, 0.3);
+  background: var(--rule-strong);
 }
 
 /* Màn hình tổng kết điểm (Result Screen) */
@@ -225,20 +228,20 @@
 .result-title {
   font-family: var(--font-serif);
   font-size: 1.8rem;
-  color: var(--primary-red);
+  color: var(--red);
   margin-bottom: 8px;
 }
 
 .result-score-highlight {
   font-size: 2.2rem;
   font-weight: 800;
-  color: var(--gold-accent);
+  color: var(--red);
   margin-bottom: 12px;
 }
 
 .result-feedback {
   font-size: 1.05rem;
-  color: var(--text-secondary);
+  color: var(--ink-2);
   max-width: 500px;
   margin: 0 auto;
   line-height: 1.6;

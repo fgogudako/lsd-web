@@ -115,7 +115,7 @@ const GalleryModule = (() => {
       <div class="g-wrap">
         <header class="g-head">
           <div>
-            <p class="g-eyebrow">Bảo tàng số <span class="g-dash" aria-hidden="true"></span> Kho tư liệu</p>
+            <p class="eyebrow">Bảo tàng số <i aria-hidden="true"></i> Kho tư liệu</p>
             <h2 class="g-title" id="galleryTitle">Chứng tích kể chuyện</h2>
           </div>
           <p class="g-lede">Hiện vật và ảnh tư liệu về kháng chiến chống Mỹ, cứu nước (1954 – 1975), phần lớn tại Bảo tàng Chứng tích Chiến tranh, xếp theo năm giai đoạn. <span class="g-lede-hint">Chọn ảnh để xem mô tả đầy đủ và nguồn.</span></p>

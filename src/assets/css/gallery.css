@@ -4,40 +4,14 @@
    Mọi quy tắc nằm trong #viewGallery / #galleryLightbox để không ảnh hưởng tab khác.
    ========================================================================== */
 
-/* Font của thiết kế mới (index.html trên main chưa nạp). Trùng với <link> của tab
-   Dòng thời gian thì trình duyệt dùng lại bản đã tải. */
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Xanh+Mono&display=swap");
-
-/* ---------- Token – đồng bộ với timeline.css (.tl) ---------- */
 #viewGallery,
 #galleryLightbox {
-  --paper: #f3f0e8;
-  --paper-2: #e9e4da;
-  --card: #f7f5ef;
   --photo-paper: #f6f2e8;
-  --ink: #1c2420;
-  --ink-2: #464c47;
-  --ink-3: #868980;
-  --rule: #d9d4c9;
-  --rule-strong: #363d39;
-  --red: #a8382c;
-  --amber: #d9a441;
-  --amber-ink: #b07d1e; /* giữ đồng bộ timeline.css; gallery không dùng cho chữ vì chỉ đạt ~3,2:1 */
-  --placeholder: #d9d4c9;
-  --placeholder-2: #efede4;
   --ph-line: rgba(255, 255, 255, 0.45);
   --ph-frame: rgba(255, 255, 255, 0.5);
   --night: #0e1310;
   --scrim: rgba(14, 19, 16, 0.85);
-  --shadow-paper: drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.55)) drop-shadow(0 6px 9px rgba(28, 36, 32, 0.16));
   --shadow-dialog: 0 24px 64px rgba(0, 0, 0, 0.35);
-
-  --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
-  --font-body: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-type: "Xanh Mono", "Courier New", ui-monospace, monospace;
-
-  --ease: cubic-bezier(0.16, 1, 0.3, 1);
-  --fast: 160ms;
   --base: 240ms;
 
   font-family: var(--font-body);
@@ -48,12 +22,6 @@
 html.g-lock { overflow: hidden; }
 
 /* ---------- Khung trang ---------- */
-/* Nền giấy tràn hết bề ngang dù khung .main-content có giới hạn rộng
-   (border-image vẽ ra ngoài mà không tạo thanh cuộn ngang). */
-#viewGallery {
-  border-image: linear-gradient(var(--paper) 0 0) fill 0 / 0 / 1.5rem 100vmax 4rem;
-}
-
 #viewGallery .g-wrap {
   padding: clamp(56px, 6vw, 88px) 0 104px;
 }
@@ -65,24 +33,6 @@ html.g-lock { overflow: hidden; }
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   align-items: end;
   gap: 28px clamp(28px, 5vw, 80px);
-}
-
-#viewGallery .g-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin: 0;
-  font: 700 12px/1.4 var(--font-body);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--red);
-}
-
-#viewGallery .g-dash {
-  display: inline-block;
-  width: 36px;
-  height: 1.5px;
-  background: currentColor;
 }
 
 #viewGallery .g-title {
