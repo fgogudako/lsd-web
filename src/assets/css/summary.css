@@ -5,6 +5,33 @@
    Mọi quy tắc nằm trong #viewSummary để không ảnh hưởng tab khác.
    ========================================================================== */
 
+/* Font của thiết kế mới (trùng với gallery.css thì trình duyệt dùng lại bản đã tải). */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+/* ---------- Token – đồng bộ với timeline.css (.tl) và gallery.css ---------- */
+#viewSummary {
+  --paper: #f3f0e8;
+  --paper-2: #e9e4da;
+  --ink: #1c2420;
+  --ink-2: #464c47;
+  --ink-3: #868980;
+  --rule: #d9d4c9;
+  --rule-strong: #363d39;
+  --red: #a8382c;
+  --amber: #d9a441;
+
+  --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
+  --font-body: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --fast: 160ms;
+
+  font-family: var(--font-body);
+  color: var(--ink);
+  /* Nền giấy tràn hết bề ngang dù khung .main-content có giới hạn rộng */
+  border-image: linear-gradient(var(--paper) 0 0) fill 0 / 0 / 1.5rem 100vmax 4rem;
+}
+
 #viewSummary .s-wrap {
   padding: clamp(56px, 6vw, 88px) 0 104px;
 }
@@ -12,11 +39,10 @@
 /* ---------- Đầu trang ---------- */
 #viewSummary .s-title {
   margin: 18px 0 0;
-  max-width: 36ch;
-  font: 700 clamp(32px, 3.6vw, 50px)/1.18 var(--font-serif);
+  max-width: none;
+  font: 700 clamp(30px, 3.2vw, 48px)/1.2 var(--font-serif);
   letter-spacing: -0.015em;
   color: var(--ink);
-  text-wrap: balance;
 }
 
 /* ---------- Thân bài: mục lục + nội dung ---------- */
@@ -64,7 +90,7 @@
 }
 
 /* Nội dung */
-#viewSummary .s-doc { min-width: 0; max-width: 720px; }
+#viewSummary .s-doc { min-width: 0; max-width: none; }
 
 #viewSummary .s-sec {
   padding-top: 28px;
@@ -196,13 +222,13 @@
     width: 1px;
     height: 1px;
     overflow: hidden;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     white-space: nowrap;
   }
   #viewSummary .s-toc a { padding-inline: 18px; }
   #viewSummary .s-toc-n { font-size: 15px; }
   #viewSummary .s-wrap { padding: 28px 0 72px; }
-  #viewSummary .s-title { font-size: 34px; }
+  #viewSummary .s-title { font-size: 40px; }
   #viewSummary .s-sec + .s-sec { margin-top: 56px; }
   #viewSummary .s-sec > p,
   #viewSummary .s-li-body p { font-size: 16px; line-height: 1.75; }
