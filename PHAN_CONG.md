@@ -24,7 +24,7 @@
 
 Mỗi thành viên phụ trách một giai đoạn lịch sử phải hoàn thành **phiếu thu thập nội dung markdown** và **kho ảnh chụp chứng tích thực tế** tại thư mục được chỉ định:
 
-#### 1. Giai đoạn 1 (1954 - 1960): Xây dựng CNXH ở miền Bắc & Đấu tranh giữ gìn lực lượng ở miền Nam
+#### 1. Giai đoạn 1 (1954 - 1960): Xây dựng CNXH ở miền Bắc & Đánh bại chiến lược "Chiến tranh đơn phương" ở miền Nam
 * **Người phụ trách:** **Bảo**
 * **Thư mục làm việc:** [docs/giai-doan-1_1954-1960/](./docs/giai-doan-1_1954-1960/)
 * **Nhiệm vụ cụ thể:**

@@ -46,13 +46,13 @@ window.TL_DATA = {
       id: "gd-1",
       years: "1954 – 1960",
       short: "Đồng Khởi",
-      title: "Giữ gìn lực lượng, tiến lên Đồng Khởi",
-      lede: "Sau Hiệp định Giơ-ne-vơ, đất nước tạm chia cắt. Miền Bắc đi lên chủ nghĩa xã hội; miền Nam từ giữ gìn lực lượng tiến lên Đồng Khởi.",
+      title: "Đánh bại “Chiến tranh đơn phương”, tiến lên Đồng Khởi",
+      lede: "Sau Hiệp định Giơ-ne-vơ, đất nước tạm chia cắt. Miền Bắc đi lên chủ nghĩa xã hội; miền Nam kiên cường đấu tranh giữ gìn lực lượng, đánh bại chiến lược “Chiến tranh đơn phương” của Mỹ – Diệm, tiến lên Đồng Khởi.",
       owner: "Bảo",
       opp: {
-        name: "Thực dân kiểu mới",
+        name: "“Chiến tranh đơn phương”",
         parts: ["Chính quyền Ngô Đình Diệm", "Viện trợ & cố vấn Mỹ"],
-        note: "Biến miền Nam thành thuộc địa kiểu mới, căn cứ quân sự của Mỹ; khủng bố người yêu nước."
+        note: "Chiến lược “Chiến tranh đơn phương” (1954 – 1960): Mỹ dựng chính quyền Ngô Đình Diệm, viện trợ quân sự, ban hành Luật 10/59 lê máy chém khắp miền Nam nhằm biến miền Nam thành thuộc địa kiểu mới và căn cứ quân sự."
       },
       events: [
         {
