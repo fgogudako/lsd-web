@@ -101,22 +101,10 @@ body {
 }
 
 .brand-badge {
+  display: block;
   width: 44px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: #da251d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 44px;
   flex-shrink: 0;
-}
-
-.brand-badge::before {
-  content: "";
-  width: 48%;
-  aspect-ratio: 1;
-  background: #ff0;
-  clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 92%, 50% 70%, 21% 92%, 32% 57%, 2% 35%, 39% 35%);
 }
 
 .brand-text h1 {
@@ -208,15 +196,6 @@ body {
 .hero-desc {
   color: var(--ink-2);
   font-size: 0.9rem;
-}
-
-.hero-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem 1.5rem;
-  margin-top: 0.75rem;
-  color: var(--ink-2);
-  font: 400 0.875rem/1.5 var(--font-type);
 }
 
 /* ==========================================================================
