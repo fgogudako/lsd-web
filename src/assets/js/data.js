@@ -576,31 +576,82 @@ const historicalStages = [
 ];
 
 // Dữ liệu tổng kết toàn diện (Quang phụ trách)
+// Tổng kết (tab "Tổng kết & Bài học"): nguyên văn từ docs/tong-ket-va-on-tap/tong-ket.md (Quang).
+// Câu hỏi ôn tập (phần 05) do summary.js dựng, lấy số câu thật từ quizData.
 const summaryContent = {
-  title: "Tổng kết: Bản lĩnh lãnh đạo của Đảng và Thắng lợi vĩ đại 1954 - 1975",
-  editor: "Quang",
-  keyTakeaways: [
+  title: "Tổng kết cuộc kháng chiến chống Mỹ, cứu nước (1954 – 1975)",
+  sections: [
     {
-      heading: "Đường lối chiến lược độc lập, tự chủ và sáng tạo",
-      body: "Đảng ta đã giương cao đồng thời hai ngọn cờ: Độc lập dân tộc và Chủ nghĩa xã hội, phát huy sức mạnh hậu phương miền Bắc vững mạnh với tiền tuyến miền Nam anh dũng."
+      id: "vai-tro",
+      title: "Đánh giá vai trò lãnh đạo của Đảng",
+      paragraphs: [
+        "Trong cuộc kháng chiến chống Mỹ, cứu nước (1954 - 1975), Đảng Cộng sản Việt Nam là lực lượng lãnh đạo, đề ra đường lối và tổ chức nhân dân cả nước thực hiện mục tiêu độc lập dân tộc, thống nhất đất nước. Vai trò đó thể hiện trước hết ở năng lực xác định mục tiêu chiến lược và xử lý đúng đắn mối quan hệ giữa hai miền. Đại hội III của Đảng (1960) xác định cách mạng xã hội chủ nghĩa ở miền Bắc giữ vai trò quyết định nhất đối với sự phát triển của cách mạng cả nước; cách mạng dân tộc dân chủ nhân dân ở miền Nam giữ vai trò quyết định trực tiếp đối với sự nghiệp giải phóng miền Nam. Hai nhiệm vụ chiến lược được tiến hành đồng thời, gắn bó và hỗ trợ lẫn nhau.",
+        "Đường lối của Đảng được hình thành và phát triển trên cơ sở phân tích tình hình cụ thể, giữ vững tính độc lập, tự chủ, đồng thời có bước đi và phương thức đấu tranh phù hợp. Trước chính sách đàn áp ở miền Nam, Nghị quyết Trung ương 15 (1959) mở đường cho cách mạng miền Nam sử dụng bạo lực cách mạng, kết hợp đấu tranh chính trị với đấu tranh vũ trang. Khi Mỹ trực tiếp đưa quân vào chiến tranh, Đảng chủ trương phát huy chiến tranh nhân dân, phối hợp đấu tranh quân sự, chính trị và binh vận; kết hợp các mặt trận, các địa bàn và sức mạnh của hậu phương miền Bắc với tiền tuyến miền Nam. Trong giai đoạn 1969 - 1973, Đảng kết hợp đấu tranh quân sự, chính trị và ngoại giao, vừa đánh vừa đàm, buộc Mỹ ký Hiệp định Paris và rút quân.",
+        "Đặc biệt, sự lãnh đạo chiến lược còn thể hiện ở khả năng đánh giá tương quan lực lượng, xây dựng thế và lực, kiên quyết nhưng linh hoạt trong chỉ đạo. Sau Hiệp định Paris, Nghị quyết Trung ương 21 (1973) khẳng định con đường cách mạng miền Nam vẫn là bạo lực cách mạng. Bộ Chính trị đề ra kế hoạch giải phóng miền Nam trong hai năm 1975 - 1976, đồng thời chủ trương tranh thủ thời cơ nếu xuất hiện. Thắng lợi Phước Long và sự phát triển nhanh chóng của cuộc Tổng tiến công mùa Xuân 1975 đã giúp Đảng kịp thời điều chỉnh quyết tâm, tập trung lực lượng và chỉ đạo chiến dịch Hồ Chí Minh, kết thúc chiến tranh.",
+        "Nhìn chung, vai trò lãnh đạo của Đảng là nhân tố quyết định hàng đầu đối với thắng lợi. Đảng đã quy tụ sức mạnh toàn dân tộc, phát huy hậu phương miền Bắc, tranh thủ sự ủng hộ quốc tế và tổ chức các lực lượng thành một thế trận thống nhất. Thắng lợi được tạo nên bởi sự lãnh đạo và sức chiến đấu của toàn dân, toàn quân; không tách rời những hy sinh to lớn của nhân dân Việt Nam."
+      ]
     },
     {
-      heading: "Sức mạnh đại đoàn kết toàn dân tộc",
-      body: "Quy tụ mọi tầng lớp nhân dân, kết hợp sức mạnh quân sự, chính trị và ngoại giao tạo nên thế trận chiến tranh nhân dân rộng khắp, đánh bại mọi chiến lược của đối phương."
+      id: "nguyen-nhan",
+      title: "Bốn nguyên nhân thắng lợi",
+      items: [
+        {
+          title: "Sự lãnh đạo đúng đắn của Đảng Cộng sản Việt Nam",
+          body: "Đảng xác định mục tiêu độc lập dân tộc và thống nhất đất nước, đề ra đường lối kháng chiến phù hợp với từng giai đoạn, xử lý mối quan hệ giữa đấu tranh quân sự, chính trị và ngoại giao. Năng lực tổ chức, đoàn kết lực lượng và nắm bắt thời cơ chiến lược là nhân tố hàng đầu đưa cuộc kháng chiến đến thắng lợi."
+        },
+        {
+          title: "Lòng yêu nước, ý chí chiến đấu và sức mạnh đại đoàn kết toàn dân tộc",
+          body: "Nhân dân hai miền đã kiên cường chiến đấu, lao động và chi viện cho tiền tuyến; các lực lượng vũ trang phối hợp với đấu tranh chính trị của quần chúng. Sự đoàn kết giữa các tầng lớp, dân tộc, tôn giáo và các lực lượng yêu nước tạo nên sức mạnh rộng khắp của chiến tranh nhân dân."
+        },
+        {
+          title: "Hậu phương miền Bắc xã hội chủ nghĩa vững chắc",
+          body: "Miền Bắc vừa xây dựng chủ nghĩa xã hội, vừa chống chiến tranh phá hoại, bảo vệ hậu phương và liên tục chi viện sức người, sức của cho miền Nam qua các tuyến chiến lược, trong đó có đường Trường Sơn. Sự chi viện ấy góp phần duy trì thế chiến lược và tăng cường lực lượng cho tiền tuyến."
+        },
+        {
+          title: "Sự đoàn kết và ủng hộ quốc tế",
+          body: "Nhân dân Việt Nam nhận được sự giúp đỡ quan trọng của nhân dân Lào, Campuchia, sự hỗ trợ của Liên Xô, Trung Quốc và các nước xã hội chủ nghĩa, cùng sự đồng tình, ủng hộ của phong trào giải phóng dân tộc, phong trào hòa bình và nhân dân tiến bộ trên thế giới, trong đó có nhân dân Mỹ. Đây là nguồn cổ vũ và hỗ trợ quý báu; thắng lợi trước hết bắt nguồn từ đường lối đúng đắn và sức mạnh của nhân dân Việt Nam."
+        }
+      ]
     },
     {
-      heading: "Ý nghĩa lịch sử trường tồn",
-      body: "Chấm dứt hơn một thế kỷ thống trị của chủ nghĩa thực dân, mở ra kỷ nguyên độc lập thống nhất và cả nước vững bước tiến lên Chủ nghĩa xã hội."
+      id: "y-nghia",
+      title: "Ý nghĩa lịch sử",
+      paragraphs: [
+        "Đối với Việt Nam, thắng lợi năm 1975 kết thúc cuộc kháng chiến chống Mỹ, cứu nước kéo dài 21 năm, chấm dứt ách thống trị của chủ nghĩa thực dân mới ở miền Nam và hoàn thành cách mạng dân tộc dân chủ nhân dân trong cả nước. Đất nước được thống nhất, mở ra kỷ nguyên độc lập, thống nhất và cả nước đi lên chủ nghĩa xã hội. Thắng lợi này cũng khẳng định ý chí kiên cường, khát vọng hòa bình và quyền tự quyết của nhân dân Việt Nam.",
+        "Đối với thế giới, thắng lợi của Việt Nam là sự kiện có tầm vóc quốc tế, có ảnh hưởng sâu sắc đến cục diện và phong trào giải phóng dân tộc. Cuộc kháng chiến trở thành nguồn cổ vũ đối với các dân tộc đang đấu tranh vì độc lập, đồng thời cho thấy một dân tộc có quyết tâm và đường lối phù hợp có thể chống lại một cuộc chiến tranh xâm lược có ưu thế lớn về vật chất. Thắng lợi cũng góp phần thúc đẩy phong trào hòa bình và phản chiến trên thế giới."
+      ]
     },
     {
-      heading: "Bài học kinh nghiệm quý báu cho hiện tại",
-      body: "Kiên định mục tiêu độc lập dân tộc gắn liền với CNXH; củng cố niềm tin của nhân dân; kết hợp hài hòa sức mạnh dân tộc với thời đại trong sự nghiệp Đổi mới."
+      id: "bai-hoc",
+      title: "Năm bài học kinh nghiệm",
+      items: [
+        {
+          title: "Kiên định mục tiêu độc lập dân tộc gắn liền với thống nhất đất nước",
+          body: "Xác định rõ mục tiêu lâu dài giúp giữ vững ý chí và định hướng hành động trước khó khăn, biến động. Với sinh viên, bài học này gợi nhắc trách nhiệm học tập, sống có lý tưởng và đóng góp thiết thực cho cộng đồng, đất nước."
+        },
+        {
+          title: "Phát huy sức mạnh đại đoàn kết toàn dân tộc",
+          body: "Tôn trọng sự khác biệt, củng cố đồng thuận và đặt lợi ích chung lên trên lợi ích cục bộ là điều kiện để tập hợp nguồn lực xã hội. Trong môi trường học tập, sinh viên có thể thực hành bài học ấy qua hợp tác, lắng nghe và cùng chịu trách nhiệm trong các hoạt động chung."
+        },
+        {
+          title: "Kết hợp nhiều hình thức, mặt trận và nguồn lực một cách linh hoạt",
+          body: "Kinh nghiệm phối hợp quân sự, chính trị, ngoại giao và kết hợp sức mạnh trong nước với sự ủng hộ quốc tế cho thấy cần lựa chọn phương thức phù hợp với mục tiêu và hoàn cảnh. Ngày nay, giải quyết vấn đề cần phối hợp kiến thức liên ngành, đối thoại và hợp tác trong nước, quốc tế."
+        },
+        {
+          title: "Xây dựng tổ chức lãnh đạo có năng lực, gắn bó với nhân dân và biết tự đổi mới",
+          body: "Đường lối đúng cần đi cùng năng lực tổ chức, thực tiễn và tinh thần trách nhiệm. Bài học này đặt ra yêu cầu về sự liêm chính, kỷ luật, năng lực chuyên môn và thái độ phục vụ trong các tổ chức; với sinh viên là chủ động rèn luyện đạo đức, chuyên môn và tinh thần phụng sự."
+        },
+        {
+          title: "Chủ động chuẩn bị lực lượng, nắm chắc tình hình và kịp thời tận dụng thời cơ",
+          body: "Thời cơ chỉ có thể chuyển thành kết quả khi đã có sự chuẩn bị lâu dài và đánh giá sát thực tế. Trong học tập và nghiên cứu, sinh viên cần trang bị kiến thức, kỹ năng khoa học - công nghệ, năng lực số và tư duy phản biện để sẵn sàng giải quyết những yêu cầu mới."
+        }
+      ]
+    },
+    {
+      id: "on-tap",
+      title: "Câu hỏi ôn tập"
     }
-  ],
-  museumReflection: {
-    title: "Góc nhìn từ Bảo tàng Chứng tích Chiến tranh",
-    body: "Từng mảnh bom đạn, máy chém, xác phi cơ và hình ảnh nạn nhân chất độc da cam tại số 28 Võ Văn Tần không chỉ là bằng chứng về tội ác chiến tranh tàn khốc, mà còn là minh chứng sống động cho cái giá đắt của hòa bình và ý chí quật cường của một dân tộc dưới sự soi đường của Đảng quang vinh."
-  }
+  ]
 };
 
 // Dữ liệu nhóm thực hiện đề tài

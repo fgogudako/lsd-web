@@ -1,15 +1,15 @@
 /**
  * MAIN.JS - ĐIỀU PHỐI ỨNG DỤNG HỌC LIỆU LỊCH SỬ ĐẢNG
- * Khởi chạy các module, quản lý điều hướng thanh menu và render trang tổng kết / nhóm
+ * Khởi chạy các module, quản lý điều hướng thanh menu và render trang nhóm
  */
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
-  renderSummarySection();
   renderTeamSection();
 
   // Khởi động các module nghiệp vụ (tab Dòng thời gian tự khởi chạy trong timeline.js)
   if (typeof GalleryModule !== "undefined") GalleryModule.init();
+  if (typeof SummaryModule !== "undefined") SummaryModule.init();
   if (typeof QuizModule !== "undefined") QuizModule.init();
 });
 
@@ -75,28 +75,6 @@ function initNavigation() {
   };
   if (location.hash) openFromHash();
   window.addEventListener("hashchange", openFromHash);
-}
-
-// Render dữ liệu phần Tổng kết & Bài học lịch sử (Quang phụ trách)
-function renderSummarySection() {
-  const summaryGridEl = document.getElementById("summaryGrid");
-  const museumRefEl = document.getElementById("museumReflectionText");
-
-  if (summaryGridEl && typeof summaryContent !== "undefined") {
-    summaryGridEl.innerHTML = summaryContent.keyTakeaways.map(item => `
-      <div class="summary-card">
-        <h3><span>★</span> ${item.heading}</h3>
-        <p>${item.body}</p>
-      </div>
-    `).join("");
-  }
-
-  if (museumRefEl && typeof summaryContent !== "undefined") {
-    museumRefEl.innerHTML = `
-      <h3>🏛️ ${summaryContent.museumReflection.title}</h3>
-      <p>${summaryContent.museumReflection.body}</p>
-    `;
-  }
 }
 
 // Render dữ liệu phần Giới thiệu Nhóm & Cảm nghĩ
