@@ -80,5 +80,11 @@ lsd-web/
 
 ## 🚀 Hướng dẫn mở và kiểm tra Website
 
+### Cách 1: Chạy local 
+
 1. Mở file [src/index.html](./src/index.html) bằng bất kỳ trình duyệt nào (Chrome, Edge, Firefox, Cốc Cốc, Safari) hoặc mở qua tiện ích **Live Server** trong VS Code.
 2. Tại màn hình **Dòng thời gian & Slide**, bạn có thể bấm vào các mốc thời gian trên thanh Timeline ở dưới hoặc nhấn phím `←` / `→` trên bàn phím để chuyển đổi giữa các giai đoạn lịch sử.
+
+### Cách 2: Xem demo trực tiếp
+
+Click vào đường link sau để xem demo trực tiếp: [lsd-web-src.vercel.app](https://lsd-web-src.vercel.app/)
