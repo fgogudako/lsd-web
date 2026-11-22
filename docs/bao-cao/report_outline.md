@@ -5,7 +5,6 @@
 * **Người phụ trách chính:** **Trường (Nhóm trưởng)**  
 * **Hạn nộp báo cáo hoàn chỉnh:** **23:59 - 23/11/2026**  
 * **Sản phẩm web minh họa:** [src/index.html](../../src/index.html)  
-* **Kế hoạch phân công:** [PHAN_CONG.md](../../PHAN_CONG.md)
 
 ---
 

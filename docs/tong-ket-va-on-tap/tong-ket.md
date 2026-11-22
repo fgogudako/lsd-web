@@ -2,7 +2,7 @@
 
 * **Thành viên phụ trách:** **Quang**
 * **Nhiệm vụ:** Đánh giá vai trò lãnh đạo của Đảng, tổng kết nguyên nhân thắng lợi, ý nghĩa lịch sử và bài học kinh nghiệm
-* **Tài liệu tham khảo:** Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Chương 2), các nội dung giai đoạn tại [docs/](../) và [kế hoạch chung](../../PHAN_CONG.md)
+* **Tài liệu tham khảo:** Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Chương 2) và các nội dung giai đoạn tại [docs/](../).
 * **Câu hỏi ôn tập:** [cau-hoi-quiz.json](./cau-hoi-quiz.json)
 
 ## 1. Đánh giá vai trò lãnh đạo của Đảng

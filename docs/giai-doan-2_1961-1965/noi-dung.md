@@ -5,7 +5,6 @@
 * **Hạn nộp bài hoàn chỉnh:** **23:59 - 20/11/2026**  
 * **Tài liệu tham khảo:** Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Chương 2) & Chuyến khảo sát thực tế Bảo tàng Chứng tích Chiến tranh  
 * **Thư mục ảnh:** [./images/](./images/)  
-* **Kế hoạch chung:** [PHAN_CONG.md](../../PHAN_CONG.md)
 
 ---
 
