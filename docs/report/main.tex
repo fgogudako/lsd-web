@@ -1,0 +1,84 @@
+% Compile with XeLaTeX; see README.md.
+\documentclass[12pt,a4paper,oneside,openany]{book}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Consolas}[Scale=MatchLowercase]
+\usepackage{hcmus-report-template-book}
+\usepackage{booktabs,tabularx,longtable,needspace,bookmark}
+\geometry{top=2.2cm,bottom=2.2cm,left=2.5cm,right=2cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+\setstretch{1.25}
+\setlength{\emergencystretch}{3em}
+\setlength{\headheight}{16pt}
+\setlength{\headsep}{14pt}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\setlength{\arrayrulewidth}{0.4pt}
+\raggedbottom
+\widowpenalty=10000
+\clubpenalty=10000
+\hypersetup{unicode=true,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,
+  pdftitle={Báo cáo học phần Lịch sử Đảng Cộng sản Việt Nam},
+  pdfauthor={Nhóm 3 - Lớp 23C02},
+  pdfsubject={Từ đường lối đến thực tiễn: học liệu lịch sử 1954--1975},bookmarksnumbered=true}
+\addto\captionsvietnamese{
+  \renewcommand{\chaptername}{Phần}
+  \renewcommand{\contentsname}{MỤC LỤC}
+  \renewcommand{\listfigurename}{DANH MỤC HÌNH ẢNH}
+  \renewcommand{\listtablename}{DANH MỤC BẢNG}
+  \renewcommand{\bibname}{TÀI LIỆU THAM KHẢO}}
+\titleformat{\chapter}[display]{\normalfont\bfseries}
+  {\large PHẦN \thechapter}{6pt}{\LARGE}
+\titlespacing*{\chapter}{0pt}{0pt}{18pt}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.6em}{}
+\titlespacing*{\section}{0pt}{12pt}{5pt}
+\titlespacing*{\subsection}{0pt}{9pt}{4pt}
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{2}
+\captionsetup{font=small,labelfont=bf,labelsep=period,skip=6pt}
+\captionsetup[table]{position=bottom}
+\setlength{\textfloatsep}{14pt plus 2pt minus 2pt}
+\setlength{\intextsep}{12pt plus 2pt minus 2pt}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcommand{\coursename}{Lịch sử Đảng Cộng sản Việt Nam}
+\newcommand{\reporttitle}{TỪ ĐƯỜNG LỐI ĐẾN THỰC TIỄN}
+\newcommand{\reportname}{Tìm hiểu sự lãnh đạo của Đảng trong kháng chiến chống Mỹ, cứu nước (1954--1975)}
+\newcommand{\studentname}{Nhóm 3}
+\newcommand{\teachername}{ThS. Trần Thị Châu}
+\fancypagestyle{report}{
+  \fancyhf{}
+  \fancyhead[L]{\small Báo cáo học phần Lịch sử Đảng}
+  \fancyhead[R]{\small Nhóm 3 -- Lớp 23C02}
+  \fancyfoot[C]{\small\thepage}
+  \renewcommand{\headrulewidth}{0.3pt}}
+\fancypagestyle{plain}{
+  \fancyhf{}\fancyfoot[C]{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
+\begin{document}
+\selectlanguage{vietnamese}
+\frontmatter
+\pagestyle{plain}
+\input{content/title}
+\pagenumbering{Roman}
+\input{content/members}
+\begingroup
+\setstretch{1.05}
+\tableofcontents
+\listoffigures
+\begingroup
+\let\clearpage\relax
+\listoftables
+\endgroup
+\endgroup
+\mainmatter
+\pagestyle{report}
+\input{content/part-1}
+\input{content/part-2}
+\input{content/part-3}
+\input{content/part-4}
+\input{content/part-5}
+\backmatter
+\input{ref/ref}
+\end{document}

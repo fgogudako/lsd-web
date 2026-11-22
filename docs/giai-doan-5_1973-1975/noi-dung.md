@@ -11,7 +11,6 @@
   - Khảo sát thực tế di tích lịch sử **Hội trường Thống Nhất (Dinh Độc Lập)** (135 Nam Kỳ Khởi Nghĩa, P. Bến Thành, Q.1, TP.HCM).
 - **Bản đồ tra cứu & Đối chiếu trích dẫn chi tiết (Ref Map):** [./ref/README.md](./ref/README.md) _(Bảng đối chiếu toàn diện 18 chunks `chuong_2_0524` - `chuong_2_0541`, trang 228 - 236 giáo trình, văn kiện Đảng và metadata 8 ảnh)_
 - **Thư mục ảnh:** [./images/](./images/)
-- **Kế hoạch chung đề tài:** [PHAN_CONG.md](../../PHAN_CONG.md)
 
 ---
 
