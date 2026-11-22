@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Từ đường lối đến thực tiễn: Sự lãnh đạo của Đảng (1954 - 1975) | LSD-Web</title>
+    <title>Lịch sử Đảng 1954 – 1975 | Từ đường lối đến thực tiễn</title>
+    <!-- Logo tab trình duyệt: cùng một logo với header (SVG là bản chính; .ico và .png cho trình duyệt không đọc SVG).
+         ?v=2 để trình duyệt bỏ favicon cũ đã lưu; đổi số khi thay logo. -->
+    <link rel="icon" href="favicon.ico?v=2" sizes="32x32" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo-co-dang.svg?v=2" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png?v=2" />
 
     <!-- Phông chữ Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,10 +18,10 @@
       rel="stylesheet"
     />
 
-    <!-- Tách các file CSS chuyên biệt -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Tách các file CSS chuyên biệt. ?v=… để trình duyệt tải lại file đã sửa; đổi số khi cập nhật. -->
+    <link rel="stylesheet" href="assets/css/style.css?v=20261123" />
     <link rel="stylesheet" href="assets/css/timeline.css" />
-    <link rel="stylesheet" href="assets/css/gallery.css" />
+    <link rel="stylesheet" href="assets/css/gallery.css?v=20261123" />
     <link rel="stylesheet" href="assets/css/summary.css" />
     <link rel="stylesheet" href="assets/css/quiz.css" />
   </head>
@@ -27,7 +32,7 @@
     <header class="site-header">
       <div class="header-container">
         <a href="#" class="brand-wrapper">
-          <span class="brand-badge" aria-hidden="true"></span>
+          <img class="brand-badge" src="assets/images/logo-co-dang.svg" alt="" width="44" height="44" />
           <div class="brand-text">
             <h1>LỊCH SỬ ĐẢNG CỘNG SẢN VIỆT NAM</h1>
             <span>Kháng chiến chống Mỹ (1954 - 1975)</span>
@@ -59,13 +64,8 @@
         </h2>
         <p class="hero-desc">
           Góc nhìn sâu sắc từ hệ thống chứng tích lịch sử được lưu giữ và trưng bày tại Bảo tàng Chứng tích Chiến tranh
-          (TP. Hồ Chí Minh).
+          (Thành phố Hồ Chí Minh).
         </p>
-        <div class="hero-meta">
-          <span>🏛️ Địa điểm khảo sát: Bảo tàng Chứng tích Chiến tranh</span>
-          <span>⏱️ Giai đoạn: 1954 - 1975</span>
-          <span>👥 Đơn vị: Nhóm sinh viên HCMUS</span>
-        </div>
       </div>
     </section>
 
@@ -95,7 +95,7 @@
               Sự lãnh đạo của Đảng trong kháng chiến chống Mỹ, cứu nước – 21 năm, 5 giai đoạn, kể lại bằng những mốc cốt lõi
               và chứng tích tại Bảo tàng Chứng tích Chiến tranh.
             </p>
-            <ol class="stage-index" id="heroStages" aria-label="Năm giai đoạn"></ol>
+            <ol class="stage-index" id="heroStages" aria-label="Đi tới các phần khác"></ol>
           </div>
 
           <figure class="hero-board" aria-label="Sơ đồ minh họa dải đất hình chữ S bị chia cắt tại vĩ tuyến 17">
@@ -209,29 +209,7 @@
            VIEW 2: KHO TƯ LIỆU BẢO TÀNG (GALLERY ARCHIVE)
            ========================================== -->
       <section id="viewGallery" class="section-view">
-        <div class="section-heading-box">
-          <span class="section-tag">KHO TƯ LIỆU TRỰC QUAN</span>
-          <h2>Chứng tích Lịch sử tại Bảo tàng Chứng tích Chiến tranh</h2>
-          <p class="section-subtitle">
-            Tổng hợp hình ảnh hiện vật, chứng tích và tài liệu khảo sát tại số 28 Võ Văn Tần, Phường Võ Thị Sáu, Quận 3,
-            TP.HCM.
-          </p>
-        </div>
-
-        <!-- Bộ lọc theo giai đoạn -->
-        <div class="gallery-filters">
-          <button class="filter-btn active" data-filter="all">Tất cả hiện vật</button>
-          <button class="filter-btn" data-filter="1">1954 - 1960</button>
-          <button class="filter-btn" data-filter="2">1961 - 1965</button>
-          <button class="filter-btn" data-filter="3">1965 - 1968</button>
-          <button class="filter-btn" data-filter="4">1969 - 1973</button>
-          <button class="filter-btn" data-filter="5">1973 - 1975</button>
-        </div>
-
-        <!-- Lưới hiện vật -->
-        <div class="gallery-grid" id="galleryGrid">
-          <!-- Render từ JS -->
-        </div>
+        <!-- Nội dung do assets/js/gallery.js dựng từ historicalStages (data.js) -->
       </section>
 
       <!-- ==========================================
@@ -240,7 +218,7 @@
       <section id="viewQuiz" class="section-view" aria-labelledby="quizTitle">
         <header class="quiz-intro">
           <p class="eyebrow">Ôn tập tương tác <i aria-hidden="true"></i> 1954 – 1975</p>
-          <h2 id="quizTitle">Trắc nghiệm kiến thức Lịch sử Đảng</h2>
+          <h2 id="quizTitle">Trắc nghiệm kiến thức Lịch sử Đảng Cộng sản Việt Nam</h2>
           <p>
             Ôn lại các nghị quyết và sự kiện lịch sử. Chọn một đáp án cho mỗi câu để xem lời giải thích.
           </p>
@@ -313,8 +291,8 @@
             <p class="eyebrow">Nhóm 03 <i aria-hidden="true"></i> Lớp 23C02</p>
             <h2 id="teamTitle">Nhóm tác giả</h2>
             <p class="team-intro-description">
-              Nhóm sinh viên thực hiện đề tài học phần Lịch sử Đảng Cộng sản Việt Nam tại Trường Đại học Khoa học Tự
-              nhiên, ĐHQG-HCM.
+              Nhóm sinh viên thực hiện đề tài học phần Lịch sử Đảng Cộng sản Việt Nam tại Trường Đại học Khoa học tự
+              nhiên, ĐHQG - HCM.
             </p>
           </div>
 
@@ -389,14 +367,14 @@
     </footer>
 
     <!-- Tách các file JavaScript theo Module -->
-    <script src="assets/js/data.js"></script>
+    <script src="assets/js/data.js?v=20261123"></script>
     <script src="assets/js/quiz-data.js"></script>
     <script src="assets/js/timeline-data.js"></script>
     <script src="assets/js/land3d.js"></script>
-    <script src="assets/js/timeline.js"></script>
-    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/timeline.js?v=20261123"></script>
+    <script src="assets/js/gallery.js?v=20261123"></script>
     <script src="assets/js/summary.js"></script>
     <script src="assets/js/quiz.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=20261123"></script>
   </body>
 </html>

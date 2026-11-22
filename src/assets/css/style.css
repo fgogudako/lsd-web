@@ -101,22 +101,10 @@ body {
 }
 
 .brand-badge {
+  display: block;
   width: 44px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: #da251d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 44px;
   flex-shrink: 0;
-}
-
-.brand-badge::before {
-  content: "";
-  width: 48%;
-  aspect-ratio: 1;
-  background: #ff0;
-  clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 92%, 50% 70%, 21% 92%, 32% 57%, 2% 35%, 39% 35%);
 }
 
 .brand-text h1 {
@@ -208,15 +196,6 @@ body {
 .hero-desc {
   color: var(--ink-2);
   font-size: 0.9rem;
-}
-
-.hero-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem 1.5rem;
-  margin-top: 0.75rem;
-  color: var(--ink-2);
-  font: 400 0.875rem/1.5 var(--font-type);
 }
 
 /* ==========================================================================
@@ -328,13 +307,20 @@ body {
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
-  gap: 1rem;
+  column-gap: 1rem;
+  row-gap: 0;
   max-width: 1280px;
   margin-inline: auto;
   padding-inline: 1rem;
 }
 
+/* Mỗi thẻ là lưới con cao 5 hàng (ảnh, tên, MSSV, vai trò, mô tả): các thẻ cùng hàng luôn thẳng nhau. */
 .team-card {
+  display: grid;
+  grid-row: span 5;
+  grid-template-rows: subgrid;
+  align-content: start;
+  margin-bottom: 1rem;
   padding: 1.2rem 0.875rem;
   border: 1px solid var(--rule);
   border-top: 2px solid var(--amber);
@@ -381,7 +367,7 @@ body {
 @media (min-width: 1200px) {
   .team-grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 0.5rem;
+    column-gap: 0.5rem;
   }
 
   .team-card {
@@ -406,10 +392,12 @@ body {
   margin-bottom: 0.375rem;
 }
 
+/* Mô tả luôn gọn trong 2 dòng */
 .team-task {
-  font-size: 0.875rem;
+  min-height: 3em; /* luôn chiếm đủ 2 dòng để các thẻ cao bằng nhau */
+  font-size: 0.8125rem;
   color: var(--ink-2);
-  line-height: 1.55;
+  line-height: 1.5;
   text-wrap: balance;
 }
 
@@ -547,4 +535,94 @@ body {
     flex-direction: column;
     gap: 6px;
   }
+}
+
+/* ==========================================================================
+   NÚT LÊN ĐẦU TRANG (góc phải dưới, dùng chung cho mọi tab)
+   ========================================================================== */
+
+.to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 190;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--ink);
+  color: var(--paper);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity var(--fast) var(--ease), transform var(--fast) var(--ease),
+    background-color var(--fast) var(--ease), visibility 0s linear var(--fast);
+}
+
+.to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0s;
+}
+
+.to-top:hover { background: var(--rule-strong); }
+.to-top:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+
+@media (max-width: 719px) {
+  .to-top { right: 16px; bottom: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .to-top { transition: none; }
+}
+
+/* ==========================================================================
+   THANH CUỘN (đồng bộ phong cách web: mảnh, góc vuông, màu giấy và mực)
+   ========================================================================== */
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--paper-2); border-left: 1px solid var(--rule); }
+::-webkit-scrollbar-thumb {
+  background: var(--rule-strong);
+  border: 3px solid var(--paper-2);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--ink); }
+::-webkit-scrollbar-thumb:active { background: var(--red); }
+::-webkit-scrollbar-corner { background: var(--paper-2); }
+
+/* Firefox */
+@supports (-moz-appearance: none) {
+  html, * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--rule-strong) var(--paper-2);
+  }
+}
+
+/* ==========================================================================
+   CĂN ĐỀU HAI BÊN cho các đoạn văn dài (không áp dụng cho tiêu đề, nút, nhãn, chữ căn giữa)
+   ========================================================================== */
+
+#viewSummary .s-sec > p,
+#viewSummary .s-li-body p,
+#viewGallery .g-text,
+#galleryLightbox .g-lb-detail p,
+.tl .hero-lede,
+.tl .ch-lede,
+.tl .ev-text,
+.tl .art-text,
+.tl .lb-detail p,
+.tl .evd-section p,
+.tl .fin-lede,
+.team-intro-description,
+.team-reflection p,
+.explanation-content {
+  text-align: justify;
+  text-justify: inter-word;
 }

@@ -3,12 +3,13 @@
  * Phụ trách: Quý (Vibecode)
  *
  * - Layout theo Figma (màn hình "Kho tư liệu"); thẻ ảnh và hộp chi tiết cùng kiểu
- *   với tab Dòng thời gian (timeline.css / timeline.js).
+ *   với tab Dòng thời gian (timeline.css / timeline.js): ảnh "rửa" có viền giấy, mép giấy bị xé,
+ *   nghiêng nhẹ, nghiêng 3D và loá sáng theo con trỏ.
  * - Dữ liệu: historicalStages[].museumArtifacts trong data.js (13 hiện vật lấy nguyên văn từ mục
  *   "Chứng tích lịch sử tại Bảo tàng Chứng tích Chiến tranh" của các file noi-dung.md trong docs/).
  *   Ảnh nằm trong assets/images/artifacts/. Muốn đổi nội dung hay nguồn ảnh: sửa data.js, không sửa file này.
  *   Mỗi hiện vật: id, name, area, areaFull?, desc (tóm tắt trên thẻ), detail (toàn văn),
- *   images[{ src, w, h, caption?, alt?, source, credit }], refs[].
+ *   featured? (thẻ nổi bật chiếm trọn hàng), images[{ src, w, h, caption?, alt?, source, credit }].
  * - Nguồn ảnh hiển thị ngắn gọn theo images[].source: "internet" → "Internet", "sinhvien" → "Ảnh nhóm sinh viên chụp".
  *   credit (tác giả, giấy phép) chỉ lưu trong data.js, không hiển thị.
  * - Không dùng thuộc tính data-art (timeline.js bắt sự kiện toàn trang theo thuộc tính đó).
@@ -16,8 +17,6 @@
 
 const GalleryModule = (() => {
   "use strict";
-
-  const LEAD_MIN_WIDTH = 700; // ảnh nhỏ hơn mức này không làm thẻ tiêu biểu (2 cột sẽ bị mờ)
 
   // ---------- Tiện ích ----------
 
@@ -40,25 +39,49 @@ const GalleryModule = (() => {
 
   const reduceMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const scrollBehavior = () => (reduceMotion() ? "auto" : "smooth");
-  const stageOf = (n) => STAGES.find((s) => String(s.n) === String(n));
   const basename = (p) => String(p || "").split("/").pop();
 
   // "1954 - 1960" → "1954 – 1960"
   const years = (t) => String(t || "").replace(/\s*[-–—]\s*/, " – ");
 
+  // ---------- Giấy xé viền (cùng thuật toán với timeline.js, chép lại vì hàm đó nằm trong IIFE) ----------
+  // Tạo clip-path polygon răng cưa ngẫu nhiên, có hạt giống nên ổn định giữa các lần tải.
+
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = (a + 0x6d2b79f5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  function tornPolygon(edges, amp, seed) {
+    const R = mulberry32(seed);
+    const d = () => (R() < 0.14 ? amp * (0.65 + R() * 0.35) : R() * amp * 0.5).toFixed(1);
+    const pts = [];
+    if (edges.includes("t")) {
+      for (let x = 0; x < 100; x += 0.7 + R() * 2.2) pts.push(`${x.toFixed(2)}% ${d()}px`);
+      pts.push(`100% ${d()}px`);
+    } else pts.push("0% 0%", "100% 0%");
+    if (edges.includes("b")) {
+      for (let x = 100; x > 0; x -= 0.7 + R() * 2.2) pts.push(`${x.toFixed(2)}% calc(100% - ${d()}px)`);
+      pts.push(`0% calc(100% - ${d()}px)`);
+    } else pts.push("100% 100%", "0% 100%");
+    return `polygon(${pts.join(",")})`;
+  }
+
   // ---------- Dữ liệu dẫn xuất ----------
 
-  let STAGES = [];
   let items = [];
 
   function loadData() {
-    STAGES = [];
     items = [];
     if (typeof historicalStages === "undefined") return;
-    const tl = window.TL_DATA; // tab Dòng thời gian mới (nếu có) – dùng để nhảy đúng hiện vật
+    const tl = window.TL_DATA; // tab Dòng thời gian (nếu có) – dùng để nhảy đúng hiện vật
     historicalStages.forEach((st) => {
-      const stage = { n: Number(st.id), years: years(st.period) };
-      STAGES.push(stage);
+      const stageNo = Number(st.id);
+      const stageYears = years(st.period);
       (st.museumArtifacts || []).forEach((a) => {
         const raw = a.images && a.images.length ? a.images : a.image ? [{ src: a.image }] : [];
         const images = raw.map((im) => ({ ...im, url: im.src, alt: im.alt || a.name, w: im.w || 0, h: im.h || 0 }));
@@ -66,23 +89,23 @@ const GalleryModule = (() => {
         if (tl && Array.isArray(tl.stages)) {
           tl.stages.forEach((s, si) => (s.artifacts || []).forEach((t, ai) => {
             if (!tlRef && images.some((im) => {
-              const a = basename(im.src);
-              const b = basename(t.img);
-              return a === b || (a.replace(/b\.jpg$/, ".jpg") === b.replace(/b\.jpg$/, ".jpg"));
+              const x = basename(im.src);
+              const y = basename(t.img);
+              return x === y || (x.replace(/b\.jpg$/, ".jpg") === y.replace(/b\.jpg$/, ".jpg"));
             })) tlRef = `${si}-${ai}`;
           }));
         }
         items.push({
           id: a.id,
-          stage: stage.n,
-          years: stage.years,
+          stage: stageNo,
+          years: stageYears,
           title: a.name,
           where: a.area || "",
           whereFull: a.areaFull || a.area || "",
           text: a.desc || "",
           detail: a.detail || a.desc || "",
           images,
-          refs: a.refs || [],
+          featured: Boolean(a.featured),
           portrait: images.length > 0 && images[0].h > images[0].w,
           broken: false,
           tlRef
@@ -92,20 +115,17 @@ const GalleryModule = (() => {
   }
 
   const hasPhoto = (it) => it.images.length > 0 && !it.broken;
-  const isLeadCandidate = (it) => hasPhoto(it) && it.images[0].w >= LEAD_MIN_WIDTH && it.images[0].h > 0 && it.images[0].w / it.images[0].h >= 1.25;
 
   // ---------- Trạng thái & DOM ----------
 
-  let filter = "all";
-  let visible = [];
-  let current = -1;       // vị trí trong visible đang mở ở hộp chi tiết
+  let current = -1;       // vị trí trong items đang mở ở hộp chi tiết
   let imgIdx = 0;         // ảnh đang xem của hiện vật (có hiện vật có 2 ảnh)
   let openedAt = -1;
   let opener = null;
   let leavingToLesson = false;
-  let returnState = null; // { scrollY, filter, id } để quay lại sau "Xem trên dòng thời gian"
+  let returnState = null; // { scrollY, id } để quay lại sau "Xem trên dòng thời gian"
 
-  let root, gridEl, countEl, filtersEl, filterBtns = [], dlg, backBtn, liveEl;
+  let root, gridEl, dlg, backBtn, liveEl;
 
   function buildSection() {
     root = document.getElementById("viewGallery");
@@ -118,23 +138,11 @@ const GalleryModule = (() => {
             <p class="eyebrow">Bảo tàng số <i aria-hidden="true"></i> Kho tư liệu</p>
             <h2 class="g-title" id="galleryTitle">Chứng tích kể chuyện</h2>
           </div>
-          <p class="g-lede">Hiện vật và ảnh tư liệu về kháng chiến chống Mỹ, cứu nước (1954 – 1975), phần lớn tại Bảo tàng Chứng tích Chiến tranh, xếp theo năm giai đoạn. <span class="g-lede-hint">Chọn ảnh để xem mô tả đầy đủ và nguồn.</span></p>
         </header>
-
-        <div class="g-bar">
-          <div class="g-filters" role="group" aria-label="Lọc tư liệu theo giai đoạn">
-            <button class="g-filter" type="button" data-filter="all" aria-pressed="true">Tất cả</button>
-            ${STAGES.map((st) => `<button class="g-filter" type="button" data-filter="${st.n}" aria-pressed="false" aria-label="Giai đoạn ${st.n}: ${esc(st.years)}"><span class="g-filter-n" aria-hidden="true">0${st.n}</span>${esc(st.years)}</button>`).join("")}
-          </div>
-          <p class="g-count" id="galleryCount" aria-live="polite"></p>
-        </div>
 
         <div class="g-grid" id="galleryGrid"></div>
       </div>`;
     gridEl = root.querySelector("#galleryGrid");
-    countEl = root.querySelector("#galleryCount");
-    filtersEl = root.querySelector(".g-filters");
-    filterBtns = [...root.querySelectorAll(".g-filter")];
     return true;
   }
 
@@ -157,7 +165,7 @@ const GalleryModule = (() => {
           <dd id="glbWhere"></dd>
         </dl>
         <div class="g-lb-detail" id="glbDetail"></div>
-        <div class="g-lb-source" id="glbSource"></div>
+        <p class="g-lb-source" id="glbSource"></p>
         <div class="g-lb-actions">
           <button class="g-lesson" type="button" id="glbLesson">Xem trên dòng thời gian</button>
         </div>
@@ -180,7 +188,7 @@ const GalleryModule = (() => {
     });
     dlg.querySelectorAll(".g-lb-step").forEach((b) => b.addEventListener("click", () => step(Number(b.dataset.step))));
     dlg.querySelector("#glbLesson").addEventListener("click", () => {
-      const it = visible[current];
+      const it = items[current];
       leavingToLesson = true;
       dlg.close();
       if (it) goToLesson(it);
@@ -189,7 +197,7 @@ const GalleryModule = (() => {
       const b = e.target.closest("[data-img]");
       if (!b) return;
       imgIdx = Number(b.dataset.img);
-      fill(visible[current]);
+      fill(items[current]);
     });
     // Ảnh lỗi trong hộp chi tiết → ô báo không tải được
     dlg.querySelector(".g-lb-img").addEventListener("error", (e) => {
@@ -213,14 +221,14 @@ const GalleryModule = (() => {
     return `<span class="g-ph"><span class="g-ph-icon">${icon(broken ? "imageOff" : "image", 28)}</span><span class="g-ph-note">${broken ? "Không tải được ảnh" : "Ảnh sẽ được cập nhật sau"}</span></span>`;
   }
 
-  function cardHTML(it, idx, leadIdx) {
+  function cardHTML(it, idx) {
     const classes = ["g-art"];
-    if (idx === leadIdx) classes.push("g-art--lead");
+    if (it.featured && hasPhoto(it)) classes.push("g-art--lead");
     if (it.portrait) classes.push("is-portrait");
     if (!hasPhoto(it)) classes.push("is-pending");
     const im = it.images[0];
     const photo = hasPhoto(it)
-      ? `<button class="g-photo" type="button" tabindex="-1" data-gallery-art="${esc(it.id)}" aria-label="Phóng to: ${esc(it.title)}"><span><img src="${esc(im.url)}" alt="${esc(im.alt)}" loading="lazy" decoding="async"></span></button>`
+      ? `<button class="g-photo" type="button" tabindex="-1" data-gallery-art="${esc(it.id)}" aria-label="Phóng to: ${esc(it.title)}"><span data-torn="${idx % 2 ? "b" : "t"}"><img src="${esc(im.url)}" alt="${esc(im.alt)}" loading="lazy" decoding="async"><span class="g-glare" aria-hidden="true"></span></span></button>`
       : `<div class="g-photo" aria-hidden="true"><span>${placeholderHTML(it.broken)}</span></div>`;
     return `
       <figure class="${classes.join(" ")}" data-id="${esc(it.id)}">
@@ -231,7 +239,7 @@ const GalleryModule = (() => {
           <span class="g-where">${esc(it.where)}</span>
           <span class="g-text">${esc(it.text)}</span>
           <span class="g-links">
-            <button class="g-more" type="button" data-gallery-art="${esc(it.id)}">Xem chi tiết &amp; nguồn →</button>
+            <button class="g-more" type="button" data-gallery-art="${esc(it.id)}">Xem chi tiết →</button>
             <button class="g-lesson" type="button" data-gallery-lesson="${esc(it.id)}">Xem trên dòng thời gian</button>
           </span>
         </figcaption>
@@ -239,42 +247,36 @@ const GalleryModule = (() => {
   }
 
   function render() {
-    visible = filter === "all" ? items : items.filter((it) => String(it.stage) === filter);
-
-    filterBtns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.filter === filter)));
-    const st = stageOf(filter);
-    countEl.textContent = st
-      ? `${visible.length} mục · Giai đoạn ${st.n} (${st.years})`
-      : `${visible.length} mục tư liệu`;
-
-    // Thẻ tiêu biểu: mục đầu tiên có ảnh ngang đủ nét
-    const leadIdx = visible.findIndex(isLeadCandidate);
-    gridEl.innerHTML = visible.map((it, i) => cardHTML(it, i, leadIdx)).join("");
-    revealActiveFilter();
+    gridEl.innerHTML = items.map(cardHTML).join("");
+    decorate();
   }
 
-  // Trên điện thoại thanh lọc cuộn ngang: luôn đưa nút đang chọn vào khung nhìn.
-  function revealActiveFilter() {
-    const active = filtersEl.querySelector('.g-filter[aria-pressed="true"]');
-    if (!active || filtersEl.scrollWidth <= filtersEl.clientWidth) return;
-    const left = active.offsetLeft - filtersEl.offsetLeft;
-    const target = left - (filtersEl.clientWidth - active.offsetWidth) / 2;
-    filtersEl.scrollTo({ left: Math.max(0, target), behavior: "auto" });
+  // Mép giấy xé + nghiêng 3D và loá sáng theo con trỏ (giống ảnh ở tab Dòng thời gian)
+  function decorate() {
+    gridEl.querySelectorAll("[data-torn]").forEach((el, i) => {
+      el.style.clipPath = tornPolygon(el.dataset.torn, 10, 1000 + i * 7919);
+    });
+    gridEl.querySelectorAll("button.g-photo").forEach((f) => {
+      f.addEventListener("pointermove", (e) => {
+        if (reduceMotion() || e.pointerType === "touch") return;
+        const r = f.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width;
+        const py = (e.clientY - r.top) / r.height;
+        f.style.setProperty("--ry", (px - 0.5) * 14 + "deg");
+        f.style.setProperty("--rx", (0.5 - py) * 10 + "deg");
+        f.style.setProperty("--gx", px * 100 + "%");
+        f.style.setProperty("--gy", py * 100 + "%");
+      });
+      f.addEventListener("pointerleave", () => {
+        f.style.setProperty("--rx", "0deg");
+        f.style.setProperty("--ry", "0deg");
+      });
+    });
   }
 
-  // ---------- Khối "Nguồn" trong hộp chi tiết ----------
+  // ---------- Nguồn ảnh trong hộp chi tiết ----------
 
   const SOURCE_LABEL = { internet: "Internet", sinhvien: "Ảnh nhóm sinh viên chụp" };
-
-  function sourceHTML(it) {
-    const label = SOURCE_LABEL[it.images[imgIdx] && it.images[imgIdx].source];
-    const photo = label ? `<li>Nguồn ảnh: ${esc(label)}</li>` : "";
-    const refs = it.refs.map((r) => {
-      const t = typeof r === "string" ? r : r.t;
-      return `<li>${typeof r === "string" ? esc(t) : `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(t)}</a>`}</li>`;
-    }).join("");
-    return `<span class="g-lb-source-label">Nguồn</span><ul class="g-lb-source-list">${photo}${refs}</ul>`;
-  }
 
   function fill(it) {
     const im = it.images[imgIdx] || it.images[0];
@@ -291,20 +293,23 @@ const GalleryModule = (() => {
       .filter(Boolean)
       .map((p) => `<p>${esc(p.trim())}</p>`)
       .join("");
-    dlg.querySelector("#glbSource").innerHTML = sourceHTML(it);
-    dlg.querySelector(".g-lb-nav").hidden = visible.length < 2;
-    dlg.querySelector("#glbPos").textContent = `${current + 1} / ${visible.length}`;
+    const src = dlg.querySelector("#glbSource");
+    const label = SOURCE_LABEL[im && im.source];
+    src.hidden = !label;
+    src.textContent = label ? `Nguồn ảnh: ${label}` : "";
+    dlg.querySelector(".g-lb-nav").hidden = items.length < 2;
+    dlg.querySelector("#glbPos").textContent = `${current + 1} / ${items.length}`;
     dlg.querySelector(".g-lb-body").scrollTop = 0;
     dlg.scrollTop = 0;
   }
 
   function openAt(index, from) {
-    if (index < 0 || index >= visible.length) return;
+    if (index < 0 || index >= items.length) return;
     current = openedAt = index;
     imgIdx = 0;
     opener = from || document.activeElement;
     leavingToLesson = false;
-    fill(visible[current]);
+    fill(items[current]);
     if (!dlg.open) {
       document.documentElement.classList.add("g-lock");
       if (typeof dlg.showModal === "function") dlg.showModal();
@@ -314,11 +319,11 @@ const GalleryModule = (() => {
   }
 
   function step(dir) {
-    if (visible.length < 2) return;
-    current = (current + dir + visible.length) % visible.length;
+    if (items.length < 2) return;
+    current = (current + dir + items.length) % items.length;
     imgIdx = 0;
-    fill(visible[current]);
-    liveEl.textContent = `${current + 1} / ${visible.length}: ${visible[current].title}`;
+    fill(items[current]);
+    liveEl.textContent = `${current + 1} / ${items.length}: ${items[current].title}`;
   }
 
   function onDialogClose() {
@@ -328,7 +333,7 @@ const GalleryModule = (() => {
     let target = opener;
     if (current !== openedAt) {
       // Đã chuyển sang hiện vật khác: trả focus về nút của thẻ đó
-      const it = visible[current];
+      const it = items[current];
       target = it && gridEl.querySelector(`.g-more[data-gallery-art="${CSS.escape(it.id)}"]`);
     }
     if (target && document.contains(target)) {
@@ -340,11 +345,11 @@ const GalleryModule = (() => {
   // ---------- "Xem trên dòng thời gian" và quay lại ----------
 
   function goToLesson(it) {
-    returnState = { scrollY: window.scrollY, filter, id: it.id };
+    returnState = { scrollY: window.scrollY, id: it.id };
     const nav = document.querySelector('.nav-link[data-view="viewTimeline"]');
     if (nav) nav.click();
     window.setTimeout(() => {
-      // Tab Dòng thời gian mới: tới đúng hiện vật nếu có, không thì tới đầu chương id="gd-N"
+      // Tab Dòng thời gian: tới đúng hiện vật nếu có, không thì tới đầu chương id="gd-N"
       const art = it.tlRef && document.querySelector(`#viewTimeline [data-art="${it.tlRef}"]`);
       const artFig = art && art.closest("figure");
       const chapter = document.getElementById(`gd-${it.stage}`);
@@ -373,7 +378,6 @@ const GalleryModule = (() => {
     const nav = document.querySelector('.nav-link[data-view="viewGallery"]');
     if (nav) nav.click();
     if (!state) return;
-    if (state.filter !== filter) { filter = state.filter; render(); }
     window.setTimeout(() => {
       window.scrollTo({ top: state.scrollY, behavior: "auto" });
       const btn = gridEl.querySelector(`.g-more[data-gallery-art="${CSS.escape(state.id)}"]`);
@@ -390,24 +394,10 @@ const GalleryModule = (() => {
     buildDialog();
     buildBackButton();
 
-    filtersEl.addEventListener("click", (e) => {
-      const b = e.target.closest(".g-filter");
-      if (!b || b.dataset.filter === filter) return;
-      filter = b.dataset.filter;
-      render();
-      // Nếu đầu lưới đã cuộn khuất (thanh lọc đang dính), đưa người dùng về đầu kết quả
-      const bar = root.querySelector(".g-bar");
-      const barBottom = bar.getBoundingClientRect().bottom;
-      const gridTop = gridEl.getBoundingClientRect().top;
-      if (gridTop < barBottom) {
-        window.scrollTo({ top: window.scrollY + gridTop - barBottom - 16, behavior: scrollBehavior() });
-      }
-    });
-
     gridEl.addEventListener("click", (e) => {
       const art = e.target.closest("[data-gallery-art]");
       if (art) {
-        const idx = visible.findIndex((it) => it.id === art.dataset.galleryArt);
+        const idx = items.findIndex((it) => it.id === art.dataset.galleryArt);
         openAt(idx, art);
         return;
       }
@@ -444,17 +434,10 @@ const GalleryModule = (() => {
       if (link.dataset.view === "viewGallery") {
         window.setTimeout(() => {
           if (!returnState) root.scrollIntoView({ behavior: "auto", block: "start" });
-          revealActiveFilter();
         }, 30);
       }
       if (link.dataset.view !== "viewTimeline" && e.isTrusted) { backBtn.hidden = true; returnState = null; }
     });
-
-    // Chiều cao thanh menu (để thanh lọc dính ngay dưới nó)
-    const header = document.querySelector(".site-header");
-    const setTop = () => root.style.setProperty("--g-sticky-top", `${header ? header.offsetHeight : 0}px`);
-    setTop();
-    window.addEventListener("resize", setTop);
 
     render();
   }
