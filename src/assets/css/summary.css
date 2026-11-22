@@ -1,0 +1,258 @@
+/* ==========================================================================
+   SUMMARY.CSS – TAB "TỔNG KẾT & BÀI HỌC"
+   Bố cục đọc dài theo Figma (mục lục 01–05 bên trái, nội dung bên phải),
+   cùng bộ token với tab Dòng thời gian và Kho tư liệu.
+   Mọi quy tắc nằm trong #viewSummary để không ảnh hưởng tab khác.
+   ========================================================================== */
+
+/* Font của thiết kế mới (trùng với gallery.css thì trình duyệt dùng lại bản đã tải). */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+/* ---------- Token – đồng bộ với timeline.css (.tl) và gallery.css ---------- */
+#viewSummary {
+  --paper: #f3f0e8;
+  --paper-2: #e9e4da;
+  --ink: #1c2420;
+  --ink-2: #464c47;
+  --ink-3: #868980;
+  --rule: #d9d4c9;
+  --rule-strong: #363d39;
+  --red: #a8382c;
+  --amber: #d9a441;
+
+  --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
+  --font-body: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --fast: 160ms;
+
+  font-family: var(--font-body);
+  color: var(--ink);
+  /* Nền giấy tràn hết bề ngang dù khung .main-content có giới hạn rộng */
+  border-image: linear-gradient(var(--paper) 0 0) fill 0 / / 1.5rem 100vmax 4rem;
+}
+
+#viewSummary .s-wrap {
+  padding: clamp(56px, 6vw, 88px) 0 104px;
+}
+
+/* ---------- Đầu trang ---------- */
+#viewSummary .s-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+  font: 700 12px/1.4 var(--font-body);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+#viewSummary .s-dash {
+  display: inline-block;
+  width: 36px;
+  height: 1.5px;
+  background: currentColor;
+}
+
+#viewSummary .s-title {
+  margin: 18px 0 0;
+  max-width: 36ch;
+  font: 700 clamp(32px, 3.6vw, 50px)/1.18 var(--font-serif);
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+/* ---------- Thân bài: mục lục + nội dung ---------- */
+#viewSummary .s-body {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 80px);
+  align-items: start;
+  margin-top: 64px;
+}
+
+/* Mục lục (giống menu 01–05 bên trái màn "Bài học" trong Figma) */
+#viewSummary .s-toc {
+  position: sticky;
+  top: calc(var(--s-sticky-top, 0px) + 24px);
+  border-top: 1.5px solid var(--rule-strong);
+}
+#viewSummary .s-toc ol { margin: 0; padding: 0; list-style: none; }
+
+#viewSummary .s-toc a {
+  position: relative; /* giữ nhãn ẩn (trình đọc màn hình) nằm trong vùng cuộn của mục lục */
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 14px 12px 14px 10px;
+  border-bottom: 1px solid var(--rule);
+  border-left: 3px solid transparent;
+  font: 500 15px/1.45 var(--font-body);
+  color: var(--ink-2);
+  text-decoration: none;
+  transition: color var(--fast) var(--ease), background-color var(--fast) var(--ease), border-color var(--fast) var(--ease);
+}
+#viewSummary .s-toc a:hover { color: var(--ink); background: var(--paper-2); }
+#viewSummary .s-toc a[aria-current="true"] {
+  color: var(--ink);
+  font-weight: 600;
+  background: var(--paper-2);
+  border-left-color: var(--amber);
+}
+#viewSummary .s-toc-n {
+  flex: none;
+  font: 400 13px/1 var(--font-body);
+  font-variant-numeric: tabular-nums;
+  color: var(--red);
+}
+
+/* Nội dung */
+#viewSummary .s-doc { min-width: 0; max-width: 720px; }
+
+#viewSummary .s-sec {
+  padding-top: 28px;
+  border-top: 1.5px solid var(--rule-strong);
+  scroll-margin-top: calc(var(--s-sticky-top, 0px) + 24px);
+}
+#viewSummary .s-sec + .s-sec { margin-top: 72px; }
+#viewSummary .s-sec:first-child { border-top: 0; padding-top: 0; }
+
+#viewSummary .s-kicker {
+  margin: 0;
+  font: 700 12px/1.4 var(--font-body);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+  color: var(--red);
+}
+
+#viewSummary .s-h {
+  margin: 10px 0 22px;
+  font: 700 clamp(26px, 2.7vw, 34px)/1.25 var(--font-serif);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+#viewSummary .s-h:focus { outline: none; }
+#viewSummary .s-h:focus-visible { outline: 2px solid var(--red); outline-offset: 6px; }
+
+#viewSummary .s-sec > p {
+  margin: 0 0 20px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--ink-2);
+  text-wrap: pretty;
+}
+#viewSummary .s-sec > p:last-child { margin-bottom: 0; }
+
+/* Danh sách đánh số (4 nguyên nhân, 5 bài học) – phân tách bằng đường kẻ, không dùng thẻ */
+#viewSummary .s-list { margin: 0; padding: 0; list-style: none; }
+#viewSummary .s-list li {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 8px 16px;
+  padding: 24px 0;
+  border-top: 1px solid var(--rule);
+}
+#viewSummary .s-list li:last-child { border-bottom: 1px solid var(--rule); }
+
+#viewSummary .s-li-n {
+  font: 700 30px/1.1 var(--font-serif);
+  font-variant-numeric: tabular-nums;
+  color: var(--red);
+}
+#viewSummary .s-li-t {
+  margin: 0 0 8px;
+  font: 600 20px/1.4 var(--font-serif);
+  color: var(--ink);
+  text-wrap: balance;
+}
+#viewSummary .s-li-body p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--ink-2);
+  text-wrap: pretty;
+}
+
+/* Nút */
+#viewSummary .s-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px 0 0;
+}
+#viewSummary .s-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 1.5px solid var(--ink);
+  border-radius: 0;
+  background: transparent;
+  font: 600 15px/1.4 var(--font-body);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background-color var(--fast) var(--ease), color var(--fast) var(--ease);
+}
+#viewSummary .s-btn:hover { background: var(--paper-2); }
+#viewSummary .s-btn--solid { background: var(--ink); color: var(--paper); }
+#viewSummary .s-btn--solid:hover { background: var(--rule-strong); }
+
+/* Focus bàn phím */
+#viewSummary :is(.s-toc a, .s-btn):focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+#viewSummary .s-toc a:focus-visible { outline-offset: -3px; }
+
+/* ---------- Máy tính bảng và điện thoại ---------- */
+@media (max-width: 959px) {
+  #viewSummary .s-body { grid-template-columns: minmax(0, 1fr); gap: 36px; margin-top: 48px; }
+  /* Mục lục thành một hàng cuộn ngang trong khung riêng, mép phải mờ dần báo còn nữa */
+  #viewSummary .s-toc {
+    position: static;
+    border-top: 0;
+    border-bottom: 1.5px solid var(--rule-strong);
+    -webkit-mask-image: linear-gradient(to right, black calc(100% - 32px), transparent);
+    mask-image: linear-gradient(to right, black calc(100% - 32px), transparent);
+  }
+  #viewSummary .s-toc ol { display: flex; overflow-x: auto; scrollbar-width: none; }
+  #viewSummary .s-toc ol::-webkit-scrollbar { display: none; }
+  #viewSummary .s-toc li { flex: none; }
+  #viewSummary .s-toc a {
+    min-height: 44px;
+    padding: 10px 14px;
+    border-bottom: 0;
+    border-left: 0;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+  }
+  #viewSummary .s-toc a[aria-current="true"] { border-bottom-color: var(--amber); }
+}
+
+@media (max-width: 719px) {
+  /* Mục lục gọn: chỉ hiện số 01–05 (tên phần đã nằm ở tiêu đề bên dưới; tên vẫn đọc được bằng trình đọc màn hình) */
+  #viewSummary .s-toc a > span:last-child {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  #viewSummary .s-toc a { padding-inline: 18px; }
+  #viewSummary .s-toc-n { font-size: 15px; }
+  #viewSummary .s-wrap { padding: 28px 0 72px; }
+  #viewSummary .s-title { font-size: 34px; }
+  #viewSummary .s-sec + .s-sec { margin-top: 56px; }
+  #viewSummary .s-sec > p,
+  #viewSummary .s-li-body p { font-size: 16px; line-height: 1.75; }
+  #viewSummary .s-list li { grid-template-columns: 32px minmax(0, 1fr); gap: 6px 12px; }
+  #viewSummary .s-li-n { font-size: 24px; }
+  #viewSummary .s-li-t { font-size: 18px; }
+  #viewSummary .s-btn { width: 100%; justify-content: space-between; }
+}
