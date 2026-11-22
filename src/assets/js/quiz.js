@@ -4,13 +4,14 @@
  */
 
 const QuizModule = (() => {
+  const letters = ["A", "B", "C", "D"];
   let currentIndex = 0;
   let score = 0;
   let answered = false;
 
   let questionCardEl, resultScreenEl;
-  let stageIndicatorEl, questionTextEl, optionsListEl, explanationBoxEl, explanationTextEl;
-  let nextBtnEl, restartBtnEl;
+  let stageIndicatorEl, questionTextEl, optionsListEl, explanationBoxEl, explanationTextEl, answerFeedbackEl;
+  let nextBtnEl;
   let progressFillEl, questionCounterEl, scoreDisplayEl;
 
   function init() {
@@ -21,8 +22,8 @@ const QuizModule = (() => {
     optionsListEl = document.getElementById("quizOptionsList");
     explanationBoxEl = document.getElementById("quizExplanationBox");
     explanationTextEl = document.getElementById("quizExplanationText");
+    answerFeedbackEl = document.getElementById("quizAnswerFeedback");
     nextBtnEl = document.getElementById("quizNextBtn");
-    restartBtnEl = document.getElementById("quizRestartBtn");
     progressFillEl = document.getElementById("quizProgressFill");
     questionCounterEl = document.getElementById("quizQuestionCounter");
     scoreDisplayEl = document.getElementById("quizScoreDisplay");
@@ -30,20 +31,6 @@ const QuizModule = (() => {
     if (nextBtnEl) {
       nextBtnEl.addEventListener("click", handleNextQuestion);
     }
-    if (restartBtnEl) {
-      restartBtnEl.addEventListener("click", restartQuiz);
-    }
-
-    startQuiz();
-  }
-
-  function startQuiz() {
-    currentIndex = 0;
-    score = 0;
-    answered = false;
-
-    if (resultScreenEl) resultScreenEl.style.display = "none";
-    if (questionCardEl) questionCardEl.style.display = "block";
 
     loadQuestion();
   }
@@ -70,18 +57,25 @@ const QuizModule = (() => {
     if (nextBtnEl) nextBtnEl.style.display = "none";
 
     // Render danh sách lựa chọn
-    const letters = ["A", "B", "C", "D"];
     if (optionsListEl) {
-      optionsListEl.innerHTML = currentQ.options.map((opt, i) => `
-        <button class="quiz-option-btn" data-index="${i}">
-          <span class="option-letter">${letters[i]}</span>
-          <span class="option-text">${opt}</span>
-        </button>
-      `).join("");
+      const optionButtons = currentQ.options.map((option, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "quiz-option-btn";
 
-      optionsListEl.querySelectorAll(".quiz-option-btn").forEach(btn => {
-        btn.addEventListener("click", () => handleSelectOption(parseInt(btn.getAttribute("data-index"), 10)));
+        const letter = document.createElement("span");
+        letter.className = "option-letter";
+        letter.textContent = letters[index];
+
+        const text = document.createElement("span");
+        text.className = "option-text";
+        text.textContent = option;
+
+        button.append(letter, text);
+        button.addEventListener("click", () => handleSelectOption(index));
+        return button;
       });
+      optionsListEl.replaceChildren(...optionButtons);
     }
   }
 
@@ -91,39 +85,46 @@ const QuizModule = (() => {
 
     const currentQ = quizData[currentIndex];
     const optionBtns = optionsListEl.querySelectorAll(".quiz-option-btn");
+    const isCorrect = selectedIndex === currentQ.answer;
 
     // Vô hiệu hóa tất cả lựa chọn
     optionBtns.forEach(btn => btn.disabled = true);
 
-    if (selectedIndex === currentQ.answer) {
-      // Đúng
+    optionBtns[currentQ.answer].classList.add("correct");
+    if (isCorrect) {
       score += 1;
-      optionBtns[selectedIndex].classList.add("correct");
     } else {
-      // Sai
       optionBtns[selectedIndex].classList.add("wrong");
-      optionBtns[currentQ.answer].classList.add("correct");
     }
 
     // Cập nhật điểm
     if (scoreDisplayEl) scoreDisplayEl.textContent = `Điểm: ${score}`;
+    if (progressFillEl) progressFillEl.style.width = `${((currentIndex + 1) / quizData.length) * 100}%`;
 
     // Hiển thị hộp giải thích
+    if (answerFeedbackEl) {
+      answerFeedbackEl.textContent = isCorrect ? "Chính xác!" : `Chưa đúng. Đáp án đúng là ${letters[currentQ.answer]}.`;
+    }
     if (explanationTextEl) explanationTextEl.textContent = currentQ.explanation;
     if (explanationBoxEl) explanationBoxEl.classList.add("visible");
 
     // Hiển thị nút tiếp theo hoặc xem kết quả
     if (nextBtnEl) {
       nextBtnEl.style.display = "inline-flex";
-      nextBtnEl.textContent = (currentIndex === quizData.length - 1) ? "Xem kết quả tổng kết ➔" : "Câu tiếp theo ➔";
+      nextBtnEl.textContent = (currentIndex === quizData.length - 1) ? "Xem kết quả ➔" : "Câu tiếp theo ➔";
+      nextBtnEl.focus({ preventScroll: true });
     }
   }
 
   function handleNextQuestion() {
+    if (!answered) return;
+
     if (currentIndex < quizData.length - 1) {
       currentIndex++;
       loadQuestion();
+      questionTextEl?.focus();
     } else {
+      answered = false;
       showResults();
     }
   }
@@ -143,7 +144,7 @@ const QuizModule = (() => {
 
     if (finalScoreEl) finalScoreEl.textContent = `${score} / ${total}`;
 
-    let trophy = "🎖️";
+    let trophy = "";
     let message = "";
 
     if (ratio >= 0.85) {
@@ -153,16 +154,15 @@ const QuizModule = (() => {
       trophy = "⭐";
       message = "Rất tốt! Bạn đã hiểu được các sự kiện và chỉ đạo cơ bản. Hãy khám phá thêm kho tư liệu bảo tàng để hoàn thiện kiến thức nhé!";
     } else {
-      trophy = "📖";
       message = "Bạn đã hoàn thành thử thách! Đừng ngần ngại xem lại các slide thuyết trình 5 giai đoạn để củng cố thêm các kiến thức trọng tâm.";
     }
 
-    if (trophyEl) trophyEl.textContent = trophy;
+    if (trophyEl) {
+      trophyEl.textContent = trophy;
+      trophyEl.hidden = !trophy;
+    }
     if (feedbackEl) feedbackEl.textContent = message;
-  }
-
-  function restartQuiz() {
-    startQuiz();
+    document.getElementById("quizResultTitle")?.focus();
   }
 
   return { init };
