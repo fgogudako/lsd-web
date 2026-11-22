@@ -87,4 +87,4 @@ lsd-web/
 
 ### Cách 2: Xem demo trực tiếp
 
-Click vào đường link sau để xem demo trực tiếp: [lsd-web-src.vercel.app](https://lsd-web-src.vercel.app/)
+Click vào đường link sau để xem demo trực tiếp: [nhom03-lsd-23c02.vercel.app](https://nhom03-lsd-23c02.vercel.app/)
