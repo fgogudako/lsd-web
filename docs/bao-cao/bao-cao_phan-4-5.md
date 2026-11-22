@@ -18,7 +18,7 @@ Các số lượng trên được ghi nhận từ phiên bản website đang ho�
 
 ![Trang mở đầu của website](../report/img/screenshots/hinh-4-01-trang-chu.png)
 
-*Hình 4.1. Trang mở đầu với sơ đồ minh họa Việt Nam và các liên kết nhanh tới kho tư liệu, ôn tập, tổng kết. Nguồn: website của nhóm, chụp ngày 23/11/2026.*
+*Hình 4.1. Trang mở đầu với chủ đề học liệu và sơ đồ minh họa Việt Nam. Nguồn: website của nhóm, chụp ngày 23/11/2026.*
 
 ## 2 Kiến trúc và công nghệ sử dụng
 

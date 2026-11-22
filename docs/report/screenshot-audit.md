@@ -2,13 +2,15 @@
 
 **Nguồn:** https://nhom03-lsd-23c02.vercel.app/
 **Ngày đối chiếu và chụp lại:** 23/11/2026
+
+**Lần chụp mới nhất:** 2026-11-23T01:11:19.691213+07:00
 **Bản PDF:** `docs/bao-cao/bao-cao-nhom-3.pdf`
 
-Thanh điều hướng hiện dùng biểu tượng búa liềm thay biểu tượng sao của bản trước; banner, dòng thời gian và kho tư liệu có điều chỉnh bố cục. Vì thanh điều hướng xuất hiện trong tất cả các ảnh, toàn bộ 13 ảnh dùng trong báo cáo đã được chụp mới, không ghép hoặc sửa giao diện bằng công cụ ảnh.
+Đợt làm mới này phản ánh phiên bản website mới nhất: font chi tiết giao diện đổi sang Roboto Mono, trang mở đầu bỏ danh sách liên kết nhanh, dòng thời gian và tổng kết được điều chỉnh bố cục. Toàn bộ 13 ảnh dùng trong báo cáo đã được chụp lại trực tiếp bằng trình duyệt, không ghép hoặc sửa giao diện bằng công cụ ảnh. Hash của ảnh hiện tại và ảnh trước được lưu trong manifest để đối chiếu.
 
 | Hình | Đối chiếu và cập nhật |
 | --- | --- |
-| 4.1 | Logo điều hướng mới; trang mở đầu có ba liên kết nhanh tới kho tư liệu, ôn tập và tổng kết thay danh sách năm giai đoạn. Sửa cả chú thích hình. |
+| 4.1 | Trang mở đầu hiện không còn danh sách liên kết nhanh; chụp lại chủ đề và sơ đồ Việt Nam, sửa chú thích để không mô tả tính năng đã bỏ. |
 | 4.2 | Chụp lại giai đoạn 1961–1965 với điều hướng và bố cục hiện tại. |
 | 4.3 | Chụp lại hộp chi tiết Chiến thắng Ấp Bắc trong giao diện hiện tại. |
 | 4.4 | Kho tư liệu hiện trình bày toàn bộ 13 mục, không còn hàng bộ lọc giai đoạn; thẻ ảnh và tiêu đề đã thay đổi bố cục. |
@@ -17,7 +19,7 @@ Thanh điều hướng hiện dùng biểu tượng búa liềm thay biểu tư�
 | 4.7 | Nội dung bộ 19 câu không đổi; chụp lại để cập nhật thanh điều hướng và kiểu trình bày hiện tại. |
 | 4.8 | Chụp lại phản hồi sai, đáp án đúng và giải thích. Kiểm tra khóa bốn lựa chọn sau khi trả lời. |
 | 4.9 | Chụp lại kết quả 18/19 bằng lượt kiểm tra minh họa và giao diện chân trang hiện tại. |
-| 4.10 | Nội dung tổng kết không đổi; chụp lại mục lục, thanh điều hướng và giao diện hiện tại. |
+| 4.10 | Chụp lại bố cục tổng kết mới và mục lục; nội dung trang web đã đồng bộ cách trình bày bốn chiến lược chiến tranh. |
 | 4.11 | Tên và MSSV của 10 thành viên không đổi; chụp lại trang tác giả với thanh điều hướng hiện tại. |
 | 4.12a, 4.12b | Chụp lại giao diện điện thoại ở đầu bài ôn tập và sau khi cuộn; giữ hai ảnh song song, cùng trang với Hình 4.11. |
 

@@ -1,6 +1,6 @@
 {
   "url": "https://nhom03-lsd-23c02.vercel.app/",
-  "captured_at": "2026-11-23T00:40:15.019163+07:00",
+  "captured_at": "2026-11-23T01:11:19.691213+07:00",
   "browser": "Microsoft Edge (Chromium), headless",
   "viewport": {
     "width": 1440,
@@ -16,7 +16,8 @@
         "height": 1080
       },
       "scrollY": 0,
-      "sha256": "e0dbdf93b5480214c7af2e5d11ff8328e43c71c29af79e377b53da4b6500b590"
+      "sha256": "717ad19b7472753dc4ab5ebcbdb3a7028c6c025c19be4f917aea7310ad05b673",
+      "previous_sha256": "e0dbdf93b5480214c7af2e5d11ff8328e43c71c29af79e377b53da4b6500b590"
     },
     {
       "file": "hinh-4-02-dong-thoi-gian.png",
@@ -26,8 +27,9 @@
         "width": 1440,
         "height": 1080
       },
-      "scrollY": 4025,
-      "sha256": "a1d747deda9b76257d0a37f5f422b1ab71e233e0e653f76f4ed7caba14bdabdd"
+      "scrollY": 4169,
+      "sha256": "d937f8939d1d93ec4fd54e58e4e5e4350f720b2b1c4f1c9286ca0988217ab41e",
+      "previous_sha256": "a1d747deda9b76257d0a37f5f422b1ab71e233e0e653f76f4ed7caba14bdabdd"
     },
     {
       "file": "hinh-4-03-chi-tiet-su-kien.png",
@@ -37,8 +39,9 @@
         "width": 1440,
         "height": 1080
       },
-      "scrollY": 4915,
-      "sha256": "7ffc7cb108f57a852fdb74fe74a9fe287873a5d9539cbf6154543d5deecdbd3f"
+      "scrollY": 5063,
+      "sha256": "0ca82c0c2f9afcc650bbe8ba1887356147ef28fcf21c338ba7581ffcaf17ba5a",
+      "previous_sha256": "7ffc7cb108f57a852fdb74fe74a9fe287873a5d9539cbf6154543d5deecdbd3f"
     },
     {
       "file": "hinh-4-04-kho-tu-lieu.png",
@@ -49,7 +52,8 @@
         "height": 1080
       },
       "scrollY": 228,
-      "sha256": "154ef435f6ca6b446116881f512d6db40acc9bda351ffb257aa0cc59045dc527"
+      "sha256": "d83a2689210678410f11aa7d2897d6f90c0997fe37fab229fec56c25e3023aeb",
+      "previous_sha256": "154ef435f6ca6b446116881f512d6db40acc9bda351ffb257aa0cc59045dc527"
     },
     {
       "file": "hinh-4-05-tu-lieu-noi-bat.png",
@@ -60,7 +64,8 @@
         "height": 1080
       },
       "scrollY": 1069,
-      "sha256": "640726b87f03ae894312650f1ba5e5b220994d4f95390fad766fe68efc7164b9"
+      "sha256": "c971dfcfea7a3171d46559f0833dde5da6a2f63bcb9b1706f224e8046db178f4",
+      "previous_sha256": "640726b87f03ae894312650f1ba5e5b220994d4f95390fad766fe68efc7164b9"
     },
     {
       "file": "hinh-4-06-chi-tiet-tu-lieu.png",
@@ -71,7 +76,8 @@
         "height": 1080
       },
       "scrollY": 1069,
-      "sha256": "2d070f4c1e9a8c222a2baf2aa66de41e5d7489dbff0f33dacf968add22864c9f"
+      "sha256": "9e553801254160c3c0d72af53c68325fefc07832bb363d93fa48c6ce73e3dfd8",
+      "previous_sha256": "2d070f4c1e9a8c222a2baf2aa66de41e5d7489dbff0f33dacf968add22864c9f"
     },
     {
       "file": "hinh-4-07-cau-hoi-on-tap.png",
@@ -82,7 +88,8 @@
         "height": 1080
       },
       "scrollY": 229,
-      "sha256": "1e45d5a7dcce7f40f4e5fe942119dba6ce28b7433721b5a8d293dc263a640478"
+      "sha256": "b4b7a8bebe71e025089fa45a17f3a12432af2f8c7819d5732bf3093d969d93b8",
+      "previous_sha256": "1e45d5a7dcce7f40f4e5fe942119dba6ce28b7433721b5a8d293dc263a640478"
     },
     {
       "file": "hinh-4-08-phan-hoi-dap-an.png",
@@ -93,7 +100,8 @@
         "height": 1080
       },
       "scrollY": 229,
-      "sha256": "c2cf6d3893bd641ca3fe8fb7688e6128bd43731491273d5ef24b5e8fa0a76953"
+      "sha256": "f1a0f67ec2350cbd070d8d68c1dd7164b4a269d42680c7d185770733ffa2c7c4",
+      "previous_sha256": "c2cf6d3893bd641ca3fe8fb7688e6128bd43731491273d5ef24b5e8fa0a76953"
     },
     {
       "file": "hinh-4-09-ket-qua-on-tap.png",
@@ -104,7 +112,8 @@
         "height": 1080
       },
       "scrollY": 400,
-      "sha256": "d1a3936ac0b116432b3344c57254bc96f5d465ea46ca7fd18f86f510bd793c20"
+      "sha256": "d1a3936ac0b116432b3344c57254bc96f5d465ea46ca7fd18f86f510bd793c20",
+      "previous_sha256": "d1a3936ac0b116432b3344c57254bc96f5d465ea46ca7fd18f86f510bd793c20"
     },
     {
       "file": "hinh-4-10-tong-ket-bai-hoc.png",
@@ -115,7 +124,8 @@
         "height": 1080
       },
       "scrollY": 229,
-      "sha256": "a21c052e66f04bcbaf39af39ecb15aa598268ef4dc360f512b6c698dbf8e3702"
+      "sha256": "5d190bf7dfe9a7a703c3822659fe126db4a7724317c54803b0aaf59db3ed2e33",
+      "previous_sha256": "a21c052e66f04bcbaf39af39ecb15aa598268ef4dc360f512b6c698dbf8e3702"
     },
     {
       "file": "hinh-4-12-nhom-thuc-hien.png",
@@ -126,7 +136,8 @@
         "height": 1080
       },
       "scrollY": 0,
-      "sha256": "34e3a708016dbf9a6a7760bfa014c803d357c4ddafff8931016064cfa3f9f53c"
+      "sha256": "1faaec29ea3e11678615f70d4968161d4006f9254140eae67d172e215ddc56cd",
+      "previous_sha256": "34e3a708016dbf9a6a7760bfa014c803d357c4ddafff8931016064cfa3f9f53c"
     },
     {
       "file": "hinh-4-13-giao-dien-di-dong.png",
@@ -137,7 +148,8 @@
         "height": 844
       },
       "scrollY": 292,
-      "sha256": "0a5e759171d05223517e85222a01637efdfa55e13127da21e09e25968b9c4366"
+      "sha256": "2b100bb538bc75e37752552868e2633e768f54cbb1825ba344472968d83ebed2",
+      "previous_sha256": "0a5e759171d05223517e85222a01637efdfa55e13127da21e09e25968b9c4366"
     },
     {
       "file": "hinh-4-14-giao-dien-di-dong-cuon.png",
@@ -148,7 +160,8 @@
         "height": 844
       },
       "scrollY": 722,
-      "sha256": "101ba04c386abd44117ac15a9fa49f55f6255085e23c08d939d59393914006c4"
+      "sha256": "a5cef1a08113cc916a5170affc491f98d211fda2ec0a0180839e239e0e04a1e6",
+      "previous_sha256": "101ba04c386abd44117ac15a9fa49f55f6255085e23c08d939d59393914006c4"
     }
   ],
   "checks": [
@@ -215,8 +228,8 @@
   ],
   "errors": [],
   "http_status": 200,
-  "page_title": "Lịch sử Đảng 1954 – 1975 | Từ đường lối đến thực tiễn",
-  "html_sha256": "421d661ef144c255eaf9e30304f887f8d8aec81f0e0b653c3fdba737388fc804",
+  "page_title": "LSĐCSVN 1954 – 1975 | Từ đường lối đến thực tiễn",
+  "html_sha256": "87ddbec5d7b738011c0c5074f6a1b8f44cb4a05930c2d529c245ffb06d8b56a5",
   "script_urls": [
     "https://nhom03-lsd-23c02.vercel.app/assets/js/data.js?v=20261123",
     "https://nhom03-lsd-23c02.vercel.app/assets/js/quiz-data.js",
@@ -238,5 +251,6 @@
   ],
   "quiz_count": 19,
   "team_count": 10,
-  "mobile_overflow": false
+  "mobile_overflow": false,
+  "previous_captured_at": "2026-11-23T00:40:15.019163+07:00"
 }
