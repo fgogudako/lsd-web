@@ -51,7 +51,7 @@ html.g-lock { overflow: hidden; }
 /* Nền giấy tràn hết bề ngang dù khung .main-content có giới hạn rộng
    (border-image vẽ ra ngoài mà không tạo thanh cuộn ngang). */
 #viewGallery {
-  border-image: linear-gradient(var(--paper) 0 0) fill 0 / / 1.5rem 100vmax 4rem;
+  border-image: linear-gradient(var(--paper) 0 0) fill 0 / 0 / 1.5rem 100vmax 4rem;
 }
 
 #viewGallery .g-wrap {
@@ -667,7 +667,7 @@ html.g-lock { overflow: hidden; }
   margin: -1px;
   padding: 0;
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
 }

@@ -29,7 +29,7 @@
   font-family: var(--font-body);
   color: var(--ink);
   /* Nền giấy tràn hết bề ngang dù khung .main-content có giới hạn rộng */
-  border-image: linear-gradient(var(--paper) 0 0) fill 0 / / 1.5rem 100vmax 4rem;
+  border-image: linear-gradient(var(--paper) 0 0) fill 0 / 0 / 1.5rem 100vmax 4rem;
 }
 
 #viewSummary .s-wrap {
