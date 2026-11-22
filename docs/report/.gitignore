@@ -1,0 +1,12 @@
+﻿/build/
+/__pycache__/
+/bao-cao-nhom-3.pdf
+/*.aux
+/*.fdb_latexmk
+/*.fls
+/*.log
+/*.xdv
+/*.toc
+/*.lof
+/*.lot
+/*.out

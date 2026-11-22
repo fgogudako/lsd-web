@@ -1,0 +1,242 @@
+{
+  "url": "https://nhom03-lsd-23c02.vercel.app/",
+  "captured_at": "2026-11-23T00:40:15.019163+07:00",
+  "browser": "Microsoft Edge (Chromium), headless",
+  "viewport": {
+    "width": 1440,
+    "height": 1080
+  },
+  "captures": [
+    {
+      "file": "hinh-4-01-trang-chu.png",
+      "figure": "4.1",
+      "caption": "Trang mở đầu hiện hành",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "scrollY": 0,
+      "sha256": "e0dbdf93b5480214c7af2e5d11ff8328e43c71c29af79e377b53da4b6500b590"
+    },
+    {
+      "file": "hinh-4-02-dong-thoi-gian.png",
+      "figure": "4.2",
+      "caption": "Giai đoạn 1961–1965",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "scrollY": 4025,
+      "sha256": "a1d747deda9b76257d0a37f5f422b1ab71e233e0e653f76f4ed7caba14bdabdd"
+    },
+    {
+      "file": "hinh-4-03-chi-tiet-su-kien.png",
+      "figure": "4.3",
+      "caption": "Chi tiết Chiến thắng Ấp Bắc",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "scrollY": 4915,
+      "sha256": "7ffc7cb108f57a852fdb74fe74a9fe287873a5d9539cbf6154543d5deecdbd3f"
+    },
+    {
+      "file": "hinh-4-04-kho-tu-lieu.png",
+      "figure": "4.4",
+      "caption": "Bố cục kho tư liệu hiện hành",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "scrollY": 228,
+      "sha256": "154ef435f6ca6b446116881f512d6db40acc9bda351ffb257aa0cc59045dc527"
+    },
+    {
+      "file": "hinh-4-05-tu-lieu-noi-bat.png",
+      "figure": "4.5",
+      "caption": "Thẻ UH-1 nổi bật và liên kết dòng thời gian",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "scrollY": 1069,
+      "sha256": "640726b87f03ae894312650f1ba5e5b220994d4f95390fad766fe68efc7164b9"
+    },
+    {
+      "file": "hinh-4-06-chi-tiet-tu-lieu.png",
+      "figure": "4.6",
+      "caption": "Chi tiết UH-1 và nhãn nguồn ảnh",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "scrollY": 1069,
+      "sha256": "2d070f4c1e9a8c222a2baf2aa66de41e5d7489dbff0f33dacf968add22864c9f"
+    },
+    {
+      "file": "hinh-4-07-cau-hoi-on-tap.png",
+      "figure": "4.7",
+      "caption": "Câu hỏi và bốn lựa chọn",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "scrollY": 229,
+      "sha256": "1e45d5a7dcce7f40f4e5fe942119dba6ce28b7433721b5a8d293dc263a640478"
+    },
+    {
+      "file": "hinh-4-08-phan-hoi-dap-an.png",
+      "figure": "4.8",
+      "caption": "Phản hồi sai, đáp án đúng và giải thích",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "scrollY": 229,
+      "sha256": "c2cf6d3893bd641ca3fe8fb7688e6128bd43731491273d5ef24b5e8fa0a76953"
+    },
+    {
+      "file": "hinh-4-09-ket-qua-on-tap.png",
+      "figure": "4.9",
+      "caption": "Kết quả chạy minh họa, không phải khảo sát người học",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "scrollY": 400,
+      "sha256": "d1a3936ac0b116432b3344c57254bc96f5d465ea46ca7fd18f86f510bd793c20"
+    },
+    {
+      "file": "hinh-4-10-tong-ket-bai-hoc.png",
+      "figure": "4.10",
+      "caption": "Tổng kết và mục lục",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "scrollY": 229,
+      "sha256": "a21c052e66f04bcbaf39af39ecb15aa598268ef4dc360f512b6c698dbf8e3702"
+    },
+    {
+      "file": "hinh-4-12-nhom-thuc-hien.png",
+      "figure": "4.11",
+      "caption": "Trang nhóm tác giả hiện hành",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "scrollY": 0,
+      "sha256": "34e3a708016dbf9a6a7760bfa014c803d357c4ddafff8931016064cfa3f9f53c"
+    },
+    {
+      "file": "hinh-4-13-giao-dien-di-dong.png",
+      "figure": "4.12a",
+      "caption": "Phần đầu bài ôn tập trên điện thoại",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollY": 292,
+      "sha256": "0a5e759171d05223517e85222a01637efdfa55e13127da21e09e25968b9c4366"
+    },
+    {
+      "file": "hinh-4-14-giao-dien-di-dong-cuon.png",
+      "figure": "4.12b",
+      "caption": "Phần dưới bài ôn tập sau khi cuộn",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollY": 722,
+      "sha256": "101ba04c386abd44117ac15a9fa49f55f6255085e23c08d939d59393914006c4"
+    }
+  ],
+  "checks": [
+    {
+      "feature": "Chọn giai đoạn bằng thước thời gian",
+      "result": true
+    },
+    {
+      "feature": "Mở chi tiết sự kiện và đóng bằng Escape",
+      "result": true
+    },
+    {
+      "feature": "Kho tư liệu có 13 thẻ, phân bố giai đoạn 2/2/2/2/5",
+      "result": true
+    },
+    {
+      "feature": "Phiên bản hiện tại không có bộ lọc giai đoạn",
+      "result": true
+    },
+    {
+      "feature": "Trực thăng UH-1 là thẻ tư liệu nổi bật",
+      "result": true
+    },
+    {
+      "feature": "Chi tiết tư liệu hiển thị nguồn ảnh",
+      "result": true
+    },
+    {
+      "feature": "Chuyển hiện vật trong hộp chi tiết",
+      "result": true
+    },
+    {
+      "feature": "Đóng chi tiết tư liệu bằng Escape",
+      "result": true
+    },
+    {
+      "feature": "Xem trên dòng thời gian chuyển về giai đoạn liên quan",
+      "result": true
+    },
+    {
+      "feature": "Giải thích và khóa lựa chọn sau khi trả lời",
+      "result": true
+    },
+    {
+      "feature": "Lượt minh họa 1 sai và 18 đúng trả về 18/19",
+      "result": true
+    },
+    {
+      "feature": "Điều hướng mục Năm bài học kinh nghiệm",
+      "result": true
+    },
+    {
+      "feature": "Trang nhóm có 10 thành viên",
+      "result": true
+    },
+    {
+      "feature": "Menu điện thoại mở và chuyển được sang bài ôn tập",
+      "result": true
+    },
+    {
+      "feature": "Giao diện điện thoại không tràn ngang",
+      "result": true
+    }
+  ],
+  "errors": [],
+  "http_status": 200,
+  "page_title": "Lịch sử Đảng 1954 – 1975 | Từ đường lối đến thực tiễn",
+  "html_sha256": "421d661ef144c255eaf9e30304f887f8d8aec81f0e0b653c3fdba737388fc804",
+  "script_urls": [
+    "https://nhom03-lsd-23c02.vercel.app/assets/js/data.js?v=20261123",
+    "https://nhom03-lsd-23c02.vercel.app/assets/js/quiz-data.js",
+    "https://nhom03-lsd-23c02.vercel.app/assets/js/timeline-data.js",
+    "https://nhom03-lsd-23c02.vercel.app/assets/js/land3d.js",
+    "https://nhom03-lsd-23c02.vercel.app/assets/js/timeline.js?v=20261123",
+    "https://nhom03-lsd-23c02.vercel.app/assets/js/gallery.js?v=20261123",
+    "https://nhom03-lsd-23c02.vercel.app/assets/js/summary.js",
+    "https://nhom03-lsd-23c02.vercel.app/assets/js/quiz.js",
+    "https://nhom03-lsd-23c02.vercel.app/assets/js/main.js?v=20261123"
+  ],
+  "artifact_count": 13,
+  "artifact_counts_by_stage": [
+    2,
+    2,
+    2,
+    2,
+    5
+  ],
+  "quiz_count": 19,
+  "team_count": 10,
+  "mobile_overflow": false
+}
