@@ -38,7 +38,7 @@ lsd-web/
 │       │   └── quiz.css                # Ứng dụng trắc nghiệm đố vui ôn tập
 │       ├── js/
 │       │   ├── data.js                 # Cơ sở dữ liệu học liệu 5 giai đoạn & nhóm (Kho tư liệu dùng)
-│       │   ├── quiz-data.js            # Ngân hàng 12 câu hỏi trắc nghiệm ôn tập
+│       │   ├── quiz-data.js            # Ngân hàng câu hỏi trắc nghiệm ôn tập
 │       │   ├── timeline-data.js        # Dữ liệu cô đọng các mốc cho tab Dòng thời gian
 │       │   ├── timeline.js             # Dựng chương, tờ lịch bóc, thước năm, hoạt họa, phím ← →
 │       │   ├── land3d.js               # Dải đất chữ S dựng bằng hạt 3D trên canvas
