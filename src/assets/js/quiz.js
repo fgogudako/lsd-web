@@ -1,5 +1,5 @@
 /**
- * QUIZ.JS - HỆ THỐNG ĐỐ VUI ÔN TẬP LỊCH SỬ ĐẢNG (INTERACTIVE QUIZ)
+ * QUIZ.JS - HỆ THỐNG ĐỐ VUI ÔN TẬP LỊCH SỬ ĐẢNG CỘNG SẢN VIỆT NAM (INTERACTIVE QUIZ)
  * Phụ trách bởi Minh (Vibecode)
  */
 

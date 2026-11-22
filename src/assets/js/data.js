@@ -1,30 +1,11 @@
-// Dữ liệu học liệu 5 giai đoạn lịch sử kháng chiến chống Mỹ (1954 - 1975)
-// Thiết kế phục vụ hiển thị dạng slide tương tác và kho tư liệu bảo tàng
-
-// Ảnh hiện vật (museumArtifacts[].images[]):
-//   source: "internet" | "sinhvien"  → nội dung hiển thị ở mục "Nguồn ảnh" (Internet / Ảnh nhóm sinh viên chụp)
-//   credit: tác giả, trang gốc, giấy phép (KHÔNG hiển thị; giữ lại để ghi nguồn đầy đủ khi cần, vd ảnh CC BY-SA)
+// Dữ liệu Kho tư liệu (tab "Kho tư liệu Bảo tàng"): 5 giai đoạn, mỗi giai đoạn có danh sách hiện vật (museumArtifacts).
+// - featured: true  → thẻ nổi bật, chiếm trọn một hàng.
+// - images[].source: "internet" | "sinhvien" → nội dung hiển thị ở "Nguồn ảnh" (Internet / Ảnh nhóm sinh viên chụp).
+// - images[].credit: tác giả, trang gốc, giấy phép; KHÔNG hiển thị, giữ lại để ghi nguồn đầy đủ khi cần (vd ảnh CC BY-SA).
 const historicalStages = [
   {
     id: 1,
     period: "1954 - 1960",
-    shortTitle: "Giữ gìn lực lượng & Đồng Khởi",
-    title: "Xây dựng CNXH ở miền Bắc và đấu tranh giữ gìn lực lượng ở miền Nam (1954 - 1960)",
-    assignee: "Bảo",
-    context: [
-      "Sau Hiệp định Giơ-ne-vơ 1954, đất nước tạm thời chia làm hai miền tại vĩ tuyến 17.",
-      "Miền Bắc hoàn toàn giải phóng, bắt tay vào khôi phục kinh tế và cải tạo xã hội chủ nghĩa.",
-      "Ở miền Nam, đế quốc Mỹ hậu thuẫn chính quyền Ngô Đình Diệm thi hành chính sách đàn áp, ban hành đạo luật 10/59 hòng dập tắt phong trào yêu nước."
-    ],
-    partyGuidelines: [
-      "Nghị quyết Trung ương 15 (1/1959): Xác định con đường giải phóng miền Nam là khởi nghĩa vũ trang giành chính quyền về tay nhân dân, kết hợp đấu tranh chính trị với đấu tranh vũ trang.",
-      "Đại hội đại biểu toàn quốc lần thứ III của Đảng (9/1960): Đề ra đường lối tiến hành đồng thời hai chiến lược cách mạng: miền Bắc giữ vai trò quyết định nhất, miền Nam giữ vai trò quyết định trực tiếp."
-    ],
-    practicalValues: [
-      "Phong trào Đồng Khởi (cuối năm 1959 - 1960) bùng nổ từ Bến Tre, lan rộng khắp Nam Bộ và Tây Nguyên, làm tan rã bộ máy kìm kẹp của địch ở cơ sở.",
-      "Chuyển cách mạng miền Nam từ thế giữ gìn lực lượng sang thế tiến công.",
-      "Mặt trận Dân tộc Giải phóng miền Nam Việt Nam thành lập ngày 20/12/1960, tập hợp rộng rãi các tầng lớp nhân dân kháng chiến."
-    ],
     museumArtifacts: [
       {
         id: "gd1-may-chem",
@@ -40,16 +21,6 @@ const historicalStages = [
             w: 719,
             h: 961,
             credit: null
-          }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
           }
         ]
       },
@@ -68,46 +39,13 @@ const historicalStages = [
             h: 485,
             credit: null
           }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
-          }
         ]
       }
-    ],
-    keyNotes: [
-      "Hội nghị TW 15 (1959) mở lối cho phong trào vũ trang cách mạng miền Nam.",
-      "Đồng Khởi 1960 chuyển cách mạng miền Nam sang thế tiến công.",
-      "Đại hội III xác định rõ vai trò cách mạng của hai miền Nam - Bắc."
     ]
   },
   {
     id: 2,
     period: "1961 - 1965",
-    shortTitle: "Đánh bại Chiến tranh đặc biệt",
-    title: "Đánh bại chiến lược 'Chiến tranh đặc biệt' của đế quốc Mỹ (1961 - 1965)",
-    assignee: "Phong",
-    context: [
-      "Mỹ áp dụng chiến lược 'Chiến tranh đặc biệt', kết hợp quân đội Sài Gòn với vũ khí và cố vấn chỉ huy Mỹ.",
-      "Địch triển khai quốc sách dồn dân lập 'Ấp chiến lược' nhằm cô lập lực lượng cách mạng khỏi nhân dân.",
-      "Quân đội Mỹ trang bị các chiến thuật cơ động mới như 'trực thăng vận' và 'thiết xa vận'."
-    ],
-    partyGuidelines: [
-      "Trung ương Đảng chủ trương kết hợp chặt chẽ đấu tranh chính trị với đấu tranh quân sự.",
-      "Chỉ đạo tác chiến toàn diện trên 3 vùng chiến lược: rừng núi, nông thôn đồng bằng và đô thị.",
-      "Đẩy mạnh thế trận đánh địch bằng 'ba mũi giáp công': quân sự, chính trị và binh vận."
-    ],
-    practicalValues: [
-      "Phong trào phá ấp chiến lược diễn ra sôi nổi, biến ấp chiến lược thành làng chiến đấu kiên cố.",
-      "Chiến thắng Ấp Bắc (1/1963) khẳng định khả năng đánh bại chiến thuật cơ động tối tân của đối phương.",
-      "Các chiến dịch Bình Giã, Ba Gia, Đồng Xoài (1964 - 1965) làm sụp đổ hoàn toàn chiến lược 'Chiến tranh đặc biệt'."
-    ],
     museumArtifacts: [
       {
         id: "gd2-ap-chien-luoc",
@@ -130,20 +68,11 @@ const historicalStages = [
               note: "in trong ấn phẩm số 7724 của Bộ Ngoại giao Hoa Kỳ, tháng 8/1964"
             }
           }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
-          }
         ]
       },
       {
         id: "gd2-uh1-huey",
+        featured: true,
         name: "Trực thăng UH-1 Huey",
         area: "Sân ngoài trời",
         desc: "Chiếc trực thăng Bell UH-1 Iroquois (thường được gọi là “Huey”), mang dòng chữ “UNITED STATES ARMY”, đang được trưng bày nguyên trạng tại sân ngoài trời Bảo tàng.",
@@ -157,46 +86,13 @@ const historicalStages = [
             h: 927,
             credit: null
           }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
-          }
         ]
       }
-    ],
-    keyNotes: [
-      "Công thức: Quân đội Sài Gòn + Cố vấn/vũ khí Mỹ + Ấp chiến lược.",
-      "Phương châm: 3 vùng chiến lược, 3 mũi giáp công.",
-      "Chiến thắng Ấp Bắc 1963 đánh dấu bước ngoặt đánh bại chiến thuật mới của Mỹ."
     ]
   },
   {
     id: 3,
     period: "1965 - 1968",
-    shortTitle: "Đánh bại Chiến tranh cục bộ",
-    title: "Đánh bại chiến lược 'Chiến tranh cục bộ' và đòn Tổng tiến công Mậu Thân 1968",
-    assignee: "Văn An",
-    context: [
-      "Mỹ trực tiếp đưa ồ ạt quân viễn chinh Mỹ và quân đồng minh vào chiến trường miền Nam.",
-      "Mở rộng chiến tranh leo thang ném bom phá hoại miền Bắc bằng hải quân và không quân.",
-      "Mỹ tiến hành các cuộc phản công mùa khô với chiến lược 'tìm và diệt' kết hợp 'bình định'."
-    ],
-    partyGuidelines: [
-      "Hội nghị Trung ương 11 và 12 (1965): Quyết tâm động viên sức người, sức của cả nước đánh thắng giặc Mỹ xâm lược.",
-      "Khẳng định miền Bắc là hậu phương lớn, miền Nam là tiền tuyến lớn, giữ vững quyền chủ động chiến lược.",
-      "Nghị quyết Trung ương 14 (1/1968): Quyết định mở cuộc Tổng tiến công và nổi dậy đồng loạt trên chiến trường miền Nam, trọng tâm là các đô thị."
-    ],
-    practicalValues: [
-      "Chiến thắng Núi Thành, Vạn Tường (1965) mở ra phong trào thi đua đánh đuổi quân viễn chinh Mỹ.",
-      "Đập tan hai cuộc phản công chiến lược mùa khô (1965 - 1966 và 1966 - 1967).",
-      "Cuộc Tổng tiến công và nổi dậy Tết Mậu Thân 1968 giáng đòn bất ngờ vào đầu não đối phương, làm lung lay ý chí xâm lược của chính giới Mỹ, buộc Mỹ chấm dứt ném bom miền Bắc và chấp nhận đàm phán tại Paris."
-    ],
     museumArtifacts: [
       {
         id: "gd3-nha-ga-nam-dinh",
@@ -216,16 +112,6 @@ const historicalStages = [
               site: "Website Bảo tàng Chứng tích Chiến tranh",
               url: "https://www.baotangchungtichchientranh.vn/vi"
             }
-          }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
           }
         ]
       },
@@ -247,47 +133,13 @@ const historicalStages = [
               url: "https://www.baotangchungtichchientranh.vn/vi/kham-pha/bo-suu-tap/may-bay"
             }
           }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
-          }
         ]
       }
-    ],
-    keyNotes: [
-      "Chiến tranh cục bộ đưa quân viễn chinh Mỹ trực tiếp tham chiến trên bộ.",
-      "Chiến thắng Vạn Tường khẳng định bộ đội ta đủ sức đánh thắng quân Mỹ.",
-      "Tết Mậu Thân 1968 làm sụp đổ chiến lược Chiến tranh cục bộ và mở ra cục diện đàm phán."
     ]
   },
   {
     id: 4,
     period: "1969 - 1973",
-    shortTitle: "Đánh bại Việt Nam hóa chiến tranh",
-    title: "Đánh bại chiến lược 'Việt Nam hóa chiến tranh' và ký kết Hiệp định Paris (1969 - 1973)",
-    assignee: "Xuân An",
-    context: [
-      "Mỹ rút dần quân viễn chinh để giảm thương vong, chuyển gánh nặng quân sự sang quân đội Sài Gòn.",
-      "Thực hiện thủ đoạn 'dùng người Việt đánh người Việt' và mở rộng chiến tranh sang Lào và Campuchia.",
-      "Tăng cường ném bom rải thảm bằng pháo đài bay B-52 nhằm gây sức ép trên bàn đàm phán."
-    ],
-    partyGuidelines: [
-      "Biến quyết tâm thiêng liêng thành hành động, kiên trì kháng chiến trên cả nước.",
-      "Chỉ đạo nghệ thuật kết hợp chặt chẽ ba mặt trận: Quân sự, Chính trị và Ngoại giao.",
-      "Chủ trương vừa đánh vừa đàm, củng cố liên minh đoàn kết chiến đấu 3 nước Đông Dương."
-    ],
-    practicalValues: [
-      "Chiến thắng Đường 9 - Nam Lào (1971) đánh bại thử nghiệm lớn của học thuyết Nixon.",
-      "Chiến dịch tiến công chiến lược năm 1972 giải phóng nhiều địa bàn then chốt.",
-      "Chiến thắng 12 ngày đêm Điện Biên Phủ trên không (12/1972) đập tan uy thế của không lực Mỹ tại Hà Nội và Hải Phòng.",
-      "Buộc Mỹ phải ký Hiệp định Paris (27/1/1973), rút toàn bộ quân đội về nước, hoàn thành bước 'Đánh cho Mỹ cút'."
-    ],
     museumArtifacts: [
       {
         id: "gd4-da-cam",
@@ -303,16 +155,6 @@ const historicalStages = [
             w: 600,
             h: 369,
             credit: null
-          }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
           }
         ]
       },
@@ -334,46 +176,13 @@ const historicalStages = [
               note: "theo dấu bản quyền in trên ảnh"
             }
           }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
-          }
         ]
       }
-    ],
-    keyNotes: [
-      "Việt Nam hóa chiến tranh là âm mưu giảm thương vong quân Mỹ bằng hỏa lực tối tân.",
-      "Nghệ thuật kết hợp tài tình giữa quân sự, chính trị và ngoại giao.",
-      "Điện Biên Phủ trên không và Hiệp định Paris 1973 buộc quân Mỹ rút sạch về nước."
     ]
   },
   {
     id: 5,
     period: "1973 - 1975",
-    shortTitle: "Đại thắng mùa Xuân 1975",
-    title: "Tạo thời cơ và mở Cuộc Tổng tiến công mùa Xuân 1975 giải phóng miền Nam",
-    assignee: "Tấn",
-    context: [
-      "Quân viễn chinh Mỹ rút về nước, so sánh lực lượng trên chiến trường thay đổi căn bản có lợi cho cách mạng.",
-      "Chính quyền đối phương vi phạm hiệp định, tiếp tục lấn chiếm lãnh thổ.",
-      "Miền Bắc tăng cường xây dựng và chi viện thần tốc sức người, sức của qua tuyến đường Trường Sơn huyền thoại."
-    ],
-    partyGuidelines: [
-      "Hội nghị Trung ương 21 (7/1973): Khẳng định cách mạng miền Nam tiếp tục con đường bạo lực cách mạng, kiên quyết phản công và tiến công.",
-      "Hội nghị Bộ Chính trị (cuối 1974 - đầu 1975): Đề ra kế hoạch giải phóng hoàn toàn miền Nam trong hai năm 1975 - 1976, đồng thời sẵn sàng giải phóng ngay trong năm 1975 khi thời cơ chiến lược xuất hiện."
-    ],
-    practicalValues: [
-      "Chiến thắng Phước Long (1/1975) chứng minh thế và lực đã chín muồi cho đòn quyết định.",
-      "Chiến dịch Tây Nguyên (tháng 3/1975) mở đầu thắng lợi với đòn đánh hiểm Buôn Ma Thuột.",
-      "Chiến dịch Huế - Đà Nẵng giải phóng toàn bộ dải duyên hải miền Trung.",
-      "Chiến dịch Hồ Chí Minh lịch sử (26/4 - 30/4/1975): 5 cánh quân tiến công thần tốc, 11h30 trưa 30/4 giải phóng Sài Gòn, đất nước thống nhất trọn vẹn."
-    ],
     museumArtifacts: [
       {
         id: "gd5-phao-m107",
@@ -397,23 +206,13 @@ const historicalStages = [
               note: "đã thu nhỏ"
             }
           }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
-          }
         ]
       },
       {
         id: "gd5-xe-tang-390",
         name: "Xe tăng lịch sử 390 — Biểu tượng Ngày Toàn thắng 30/4/1975",
         area: "Bản sao đồng dạng 1:1 tại bãi cỏ trước Hội trường Thống Nhất (Dinh Độc Lập)",
-        areaFull: "Bản gốc chiếc xe tăng 390 hiện được lưu giữ trang trọng tại Bảo tàng Lực lượng Tăng thiết giáp (Hà Nội) và đã được công nhận là Bảo vật Quốc gia. Phiên bản đồng dạng kích thước 1:1 được trưng bày tại bãi cỏ phía trước Hội trường Thống Nhất (Dinh Độc Lập, 135 Nam Kỳ Khởi Nghĩa, TP. Hồ Chí Minh) và hệ thống tư liệu ảnh được trưng bày tại Bảo tàng Chứng tích Chiến tranh.",
+        areaFull: "Bản gốc chiếc xe tăng 390 hiện được lưu giữ trang trọng tại Bảo tàng Lực lượng Tăng thiết giáp (Hà Nội) và đã được công nhận là Bảo vật Quốc gia. Phiên bản đồng dạng kích thước 1:1 được trưng bày tại bãi cỏ phía trước Hội trường Thống Nhất (Dinh Độc Lập, 135 Nam Kỳ Khởi Nghĩa, Thành phố Hồ Chí Minh) và hệ thống tư liệu ảnh được trưng bày tại Bảo tàng Chứng tích Chiến tranh.",
         desc: "Chiếc xe tăng T-59 mang số hiệu 390 (thuộc Đại đội 4, Tiểu đoàn 1, Lữ đoàn Tăng thiết giáp 203, Quân đoàn 2) do Trung úy Chính trị viên Vũ Đăng Toàn chỉ huy cùng kíp lái gồm Nguyễn Văn Tập (lái xe), Ngô Sĩ Nguyên (pháo thủ số 1) và Lê Văn Phượng (pháo thủ số 2).",
         detail: "Chiếc xe tăng T-59 mang số hiệu 390 (thuộc Đại đội 4, Tiểu đoàn 1, Lữ đoàn Tăng thiết giáp 203, Quân đoàn 2) do Trung úy Chính trị viên Vũ Đăng Toàn chỉ huy cùng kíp lái gồm Nguyễn Văn Tập (lái xe), Ngô Sĩ Nguyên (pháo thủ số 1) và Lê Văn Phượng (pháo thủ số 2). Đúng 10 giờ 45 phút ngày 30/4/1975, chiếc xe tăng 390 đã dũng mãnh húc đổ cổng chính Dinh Độc Lập, mở toang sào huyệt cuối cùng của chính quyền ngụy Sài Gòn. Khoảnh khắc lịch sử này đã trở thành biểu tượng thị giác bất hủ của thế kỷ XX, đánh dấu mốc non sông thu về một mối.",
         image: "assets/images/artifacts/gd5-xe-tang-390.jpg",
@@ -430,20 +229,6 @@ const historicalStages = [
               license: "Phạm vi công cộng",
               note: "đã thu nhỏ; ảnh chụp bản sao xe 390 tại Hội trường Thống Nhất"
             }
-          }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
-          },
-          {
-            t: "Di tích Hội trường Thống Nhất (Dinh Độc Lập)",
-            url: "https://www.dinhdoclap.gov.vn/"
           }
         ]
       },
@@ -469,16 +254,6 @@ const historicalStages = [
               note: "đã thu nhỏ"
             }
           }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
-          }
         ]
       },
       {
@@ -502,16 +277,6 @@ const historicalStages = [
               licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
               note: "đã thu nhỏ"
             }
-          }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
           }
         ]
       },
@@ -554,23 +319,8 @@ const historicalStages = [
               note: "đã thu nhỏ"
             }
           }
-        ],
-        refs: [
-          {
-            t: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam (Bộ Giáo dục và Đào tạo, NXB Chính trị quốc gia Sự thật, 2021), Chương 2",
-            url: "https://nxbctqg.org.vn/giao-trinh-lich-su-dang-cong-san-viet-nam-danh-cho-bac-dai-hoc-he-khong-chuyen-ly-luan-chinh-tri-.html"
-          },
-          {
-            t: "Bảo tàng Chứng tích Chiến tranh",
-            url: "https://www.baotangchungtichchientranh.vn/vi"
-          }
         ]
       }
-    ],
-    keyNotes: [
-      "Nghị quyết 21 (1973) định hướng phản công và tiến công kiên quyết.",
-      "Nghệ thuật chớp thời cơ chiến lược giải phóng miền Nam trong mùa khô 1975.",
-      "Ba chiến dịch thần tốc đỉnh cao là Chiến dịch Hồ Chí Minh kết thúc toàn thắng 30/4/1975."
     ]
   }
 ];
@@ -664,6 +414,6 @@ const teamMembers = [
   { name: "Mạch Quốc Tấn", studentId: "23127115", photo: "tan.jpg", role: "Nội dung giai đoạn 5", task: "Nghiên cứu giai đoạn 1973–1975 và Chiến dịch Hồ Chí Minh." },
   { name: "Lê Hữu Minh Quang", studentId: "23127108", photo: "quang.jpg", role: "Tổng kết và hiệu đính", task: "Biên soạn bài tổng kết và bộ câu hỏi ôn tập." },
   { name: "Hoàng Minh Giang", studentId: "23127043", photo: "giang.jpg", role: "Giao diện và dòng thời gian", task: "Xây dựng giao diện chung và slide thuyết trình tương tác." },
-  { name: "Văn Ngọc Quý", studentId: "23127114", photo: "quy.jpg", role: "Kho tư liệu", task: "Xây dựng bộ lọc và giao diện xem chi tiết hiện vật." },
+  { name: "Văn Ngọc Quý", studentId: "23127114", photo: "quy.jpg", role: "Kho tư liệu", task: "Xây dựng Kho tư liệu và giao diện xem chi tiết hiện vật." },
   { name: "Vũ Hoàng Minh", studentId: "23127427", photo: "minh.jpg", role: "Đố vui và trang nhóm", task: "Xây dựng phần trắc nghiệm và trang nhóm tác giả, cảm nghĩ." }
 ];

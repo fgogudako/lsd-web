@@ -1,9 +1,10 @@
 /**
- * MAIN.JS - ĐIỀU PHỐI ỨNG DỤNG HỌC LIỆU LỊCH SỬ ĐẢNG
+ * MAIN.JS - ĐIỀU PHỐI ỨNG DỤNG HỌC LIỆU LỊCH SỬ ĐẢNG CỘNG SẢN VIỆT NAM
  * Khởi chạy các module, quản lý điều hướng thanh menu và render trang nhóm
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+  initBackToTop(); // chạy đầu tiên để lỗi ở phần khác không làm mất nút
   initNavigation();
   renderTeamSection();
 
@@ -89,7 +90,7 @@ function renderTeamSection() {
         <h3 class="team-name">${member.name}</h3>
         <p class="team-student-id">MSSV: ${member.studentId}</p>
         <p class="team-role">${member.role}</p>
-        <p class="team-task">${member.task}</p>
+        <p class="team-task">${member.task.replace(/–/g, "–\u2060")}</p>
       </article>
     `).join("");
 
@@ -104,4 +105,27 @@ function renderTeamSection() {
       image.src = `assets/images/team/${photo}`;
     });
   }
+}
+
+// Nút lên đầu trang (góc phải dưới): hiện khi cuộn xuống quá 300px, dùng chung cho mọi tab
+function initBackToTop() {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "to-top";
+  btn.setAttribute("aria-label", "Lên đầu trang");
+  btn.innerHTML =
+    '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>';
+  document.body.appendChild(btn);
+
+  // Hiện khi cuộn xuống quá 300px; nghe cả cuộn trong khung con (capture) cho chắc
+  const scrolled = () => Math.max(window.scrollY, document.documentElement.scrollTop, document.body.scrollTop);
+  const update = () => btn.classList.toggle("is-visible", scrolled() > 300);
+  document.addEventListener("scroll", update, { passive: true, capture: true });
+  window.addEventListener("resize", update);
+  update();
+
+  btn.addEventListener("click", () => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+  });
 }

@@ -283,8 +283,16 @@
 
   $("#chapters").innerHTML = DATA.stages.map(renderChapter).join("");
   $("#ruler").innerHTML = renderRuler();
-  $("#heroStages").innerHTML = DATA.stages
-    .map((st, i) => `<li><a href="#${st.id}"><span class="si-n">${pad(i + 1)}</span><span class="si-t">${esc(st.short)}</span><span class="si-y">${esc(st.years)}</span></a></li>`)
+  // Lối tắt sang các tab khác (số liệu đếm từ dữ liệu thật nên không lệch)
+  const nArt = typeof historicalStages !== "undefined" ? historicalStages.reduce((n, s) => n + (s.museumArtifacts || []).length, 0) : 0;
+  const nQuiz = typeof quizData !== "undefined" && Array.isArray(quizData) ? quizData.length : 0;
+  const shortcuts = [
+    ["viewGallery", "gallery", "Kho tư liệu", nArt ? `${nArt} hiện vật` : "Hiện vật"],
+    ["viewQuiz", "quiz", "Đố vui ôn tập", nQuiz ? `${nQuiz} câu hỏi` : "Trắc nghiệm"],
+    ["viewSummary", "summary", "Tổng kết & bài học", "5 phần"]
+  ];
+  $("#heroStages").innerHTML = shortcuts
+    .map(([view, hash, t, m], i) => `<li><a href="#${hash}" data-open-view="${view}"><span class="si-n">${pad(i + 1)}</span><span class="si-t">${esc(t)}</span><span class="si-y">${esc(m)} →</span></a></li>`)
     .join("");
   $("#finReasons").innerHTML = DATA.finale.reasons.map((r, i) => `<li><b>${pad(i + 1)}</b><span>${esc(r)}</span></li>`).join("");
   applyTorn();
