@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Xanh+Mono&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Xanh+Mono&amp;display=swap"
       rel="stylesheet"
     />
 
@@ -27,7 +27,7 @@
     <header class="site-header">
       <div class="header-container">
         <a href="#" class="brand-wrapper">
-          <div class="brand-badge">★</div>
+          <span class="brand-badge" aria-hidden="true"></span>
           <div class="brand-text">
             <h1>LỊCH SỬ ĐẢNG CỘNG SẢN VIỆT NAM</h1>
             <span>Kháng chiến chống Mỹ (1954 - 1975)</span>
@@ -237,14 +237,14 @@
       <!-- ==========================================
            VIEW 3: ĐỐ VUI ÔN TẬP (INTERACTIVE QUIZ)
            ========================================== -->
-      <section id="viewQuiz" class="section-view">
-        <div class="section-heading-box">
-          <span class="section-tag">ÔN TẬP TƯƠNG TÁC</span>
-          <h2>Trắc nghiệm kiến thức Lịch sử Đảng (1954 - 1975)</h2>
-          <p class="section-subtitle">
+      <section id="viewQuiz" class="section-view" aria-labelledby="quizTitle">
+        <header class="quiz-intro">
+          <p class="eyebrow">Ôn tập tương tác <i aria-hidden="true"></i> 1954 – 1975</p>
+          <h2 id="quizTitle">Trắc nghiệm kiến thức Lịch sử Đảng</h2>
+          <p>
             Ôn lại các nghị quyết và sự kiện lịch sử. Chọn một đáp án cho mỗi câu để xem lời giải thích.
           </p>
-        </div>
+        </header>
 
         <div class="quiz-container">
           <!-- Tiến độ Quiz -->
@@ -307,44 +307,53 @@
       <!-- ==========================================
            VIEW 5: VỀ CHÚNG TÔI / NHÓM THỰC HIỆN
            ========================================== -->
-      <section id="viewTeam" class="section-view" aria-labelledby="teamTitle">
-        <div class="section-heading-box">
-          <h2 id="teamTitle">Nhóm tác giả</h2>
-          <p class="section-subtitle">
-            Nhóm sinh viên thực hiện đề tài học phần Lịch sử Đảng Cộng sản Việt Nam tại Trường Đại học Khoa học Tự
-            nhiên, ĐHQG-HCM.
-          </p>
-        </div>
+      <section id="viewTeam" class="section-view team-view" aria-labelledby="teamTitle">
+        <header class="team-intro">
+          <div>
+            <p class="eyebrow">Nhóm 03 <i aria-hidden="true"></i> Lớp 23C02</p>
+            <h2 id="teamTitle">Nhóm tác giả</h2>
+            <p class="team-intro-description">
+              Nhóm sinh viên thực hiện đề tài học phần Lịch sử Đảng Cộng sản Việt Nam tại Trường Đại học Khoa học Tự
+              nhiên, ĐHQG-HCM.
+            </p>
+          </div>
 
-        <img
-          class="team-group-photo"
-          src="assets/images/team/nhom.jpg"
-          alt="Ảnh tập thể nhóm tác giả"
-          width="2568"
-          height="1926"
-          loading="lazy"
-          decoding="async"
-        />
+          <figure class="team-photo-frame">
+            <div class="team-photo-paper" data-torn="tb" data-amp="5" data-seed="2303">
+              <img
+                class="team-group-photo"
+                src="assets/images/team/nhom.jpg"
+                alt="Ảnh tập thể nhóm tác giả"
+                width="2568"
+                height="1926"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </figure>
+        </header>
 
         <div class="team-grid" id="teamGrid">
           <!-- Render từ JS -->
         </div>
 
         <section class="team-reflection" aria-labelledby="teamReflectionTitle">
-          <h3 id="teamReflectionTitle">Cảm nghĩ tập thể</h3>
-          <p>
-            Khi học về các mốc lịch sử trên ghế nhà trường, chúng mình chưa hình dung hết sự tàn khốc của chiến tranh.
-            Chỉ khi đối chiếu tư liệu tại Bảo tàng Chứng tích Chiến tranh với các mốc lịch sử trong giáo trình, chúng
-            mình mới cảm nhận rõ hơn những gì người dân đã trải qua. Qua những bức ảnh và câu chuyện, chúng mình hiểu
-            rằng di chứng chiến tranh vẫn ảnh hưởng đến cuộc sống của nhiều người hôm nay. Điều đó giúp chúng mình thêm
-            trân trọng và ý thức hơn về việc gìn giữ hòa bình.
-          </p>
-          <p>
-            Mỗi thành viên tìm hiểu một phần của đề tài. Khi kết nối các phần nội dung để xây dựng dòng thời gian, kho
-            tư liệu và bộ câu hỏi ôn tập, chúng mình hiểu rõ hơn vì sao Đảng đề ra từng chủ trương trong hoàn cảnh lịch
-            sử cụ thể. Chúng mình hy vọng website sẽ giúp các bạn dễ dàng ôn lại từng giai đoạn và có thêm câu hỏi để tự
-            tìm hiểu khi đọc giáo trình hoặc xem tư liệu bảo tàng.
-          </p>
+          <div class="team-reflection-paper" data-torn="tb" data-amp="5" data-seed="2310">
+            <h3 id="teamReflectionTitle">Cảm nghĩ tập thể</h3>
+            <p>
+              Khi học về các mốc lịch sử trên ghế nhà trường, chúng mình chưa hình dung hết sự tàn khốc của chiến tranh.
+              Chỉ khi đối chiếu tư liệu tại Bảo tàng Chứng tích Chiến tranh với các mốc lịch sử trong giáo trình, chúng
+              mình mới cảm nhận rõ hơn những gì người dân đã trải qua. Qua những bức ảnh và câu chuyện, chúng mình hiểu
+              rằng di chứng chiến tranh vẫn ảnh hưởng đến cuộc sống của nhiều người hôm nay. Điều đó giúp chúng mình thêm
+              trân trọng và ý thức hơn về việc gìn giữ hòa bình.
+            </p>
+            <p>
+              Mỗi thành viên tìm hiểu một phần của đề tài. Khi kết nối các phần nội dung để xây dựng dòng thời gian, kho
+              tư liệu và bộ câu hỏi ôn tập, chúng mình hiểu rõ hơn vì sao Đảng đề ra từng chủ trương trong hoàn cảnh lịch
+              sử cụ thể. Chúng mình hy vọng website sẽ giúp các bạn dễ dàng ôn lại từng giai đoạn và có thêm câu hỏi để tự
+              tìm hiểu khi đọc giáo trình hoặc xem tư liệu bảo tàng.
+            </p>
+          </div>
         </section>
       </section>
     </main>
