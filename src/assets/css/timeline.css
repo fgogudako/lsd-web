@@ -187,18 +187,6 @@
   margin: 28px 0 0; max-width: 52ch; padding-left: 22px; border-left: 3px solid var(--amber);
   font-size: clamp(15.5px, 1.2vw, 17px); color: var(--ink-2);
 }
-/* Danh mục giai đoạn (kiểu thanh bên ảnh tham chiếu) */
-.tl .stage-index { list-style: none; margin: 36px 0 0; padding: 0; max-width: 460px; border-top: 1.5px solid var(--rule-strong); }
-.tl .stage-index a {
-  display: grid; grid-template-columns: 34px 1fr auto; align-items: baseline; gap: 6px;
-  padding: 12px 14px; text-decoration: none; border-bottom: 1px solid var(--rule);
-  border-left: 3px solid transparent; transition: background-color 0.2s, border-color 0.2s;
-}
-.tl .stage-index a:hover,
-.tl .stage-index a:focus-visible { background: var(--card); border-left-color: var(--amber); }
-.tl .si-n { font: 500 12px var(--font-body); color: var(--ink-3); }
-.tl .si-t { font: 600 14.5px var(--font-body); color: var(--ink); }
-.tl .si-y { font: 500 12.5px var(--font-body); color: var(--ink-3); font-variant-numeric: tabular-nums; }
 
 .tl .hero-board { position: relative; margin: 0; height: min(76vh, 720px); min-height: 460px; }
 .tl .hero-board .sheet-wrap { position: absolute; inset: 26px 0 30px 18px; }
