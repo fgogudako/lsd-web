@@ -235,13 +235,13 @@ const historicalStages = [
         area: "Bộ sưu tập hiện vật Máy bay trên website bảo tàng",
         desc: "A-37B là máy bay cường kích phản lực hạng nhẹ; dòng A-37 được đưa tới miền Nam tham chiến từ tháng 8/1967.",
         detail: "A-37B là máy bay cường kích phản lực hạng nhẹ; dòng A-37 được đưa tới miền Nam tham chiến từ tháng 8/1967. Hiện vật minh họa phương tiện và hỏa lực không quân trong bối cảnh “Chiến tranh cục bộ”.",
-        image: "assets/images/artifacts/gd3-a37b.jpg",
+        image: "assets/images/artifacts/gd3-a37.jpg",
         images: [
           {
-            src: "assets/images/artifacts/gd3-a37b.jpg",
+            src: "assets/images/artifacts/gd3-a37.jpg",
             source: "internet",
-            w: 1375,
-            h: 1070,
+            w: 1280,
+            h: 853,
             credit: {
               site: "Website Bảo tàng Chứng tích Chiến tranh, Bộ sưu tập Máy bay (Máy bay A-37B)",
               url: "https://www.baotangchungtichchientranh.vn/vi/kham-pha/bo-suu-tap/may-bay"

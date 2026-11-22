@@ -44,9 +44,6 @@
   color: var(--ink);
 }
 
-/* Modal cũ của mẫu dựng sẵn không còn dùng */
-#artifactModal { display: none !important; }
-
 /* Khoá cuộn nền khi mở hộp chi tiết */
 html.g-lock { overflow: hidden; }
 

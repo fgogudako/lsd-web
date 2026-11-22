@@ -65,7 +65,11 @@ const GalleryModule = (() => {
         let tlRef = null;
         if (tl && Array.isArray(tl.stages)) {
           tl.stages.forEach((s, si) => (s.artifacts || []).forEach((t, ai) => {
-            if (!tlRef && images.some((im) => basename(im.src) === basename(t.img))) tlRef = `${si}-${ai}`;
+            if (!tlRef && images.some((im) => {
+              const a = basename(im.src);
+              const b = basename(t.img);
+              return a === b || (a.replace(/b\.jpg$/, ".jpg") === b.replace(/b\.jpg$/, ".jpg"));
+            })) tlRef = `${si}-${ai}`;
           }));
         }
         items.push({
